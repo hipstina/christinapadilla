@@ -1,0 +1,61 @@
+---
+site_title: Christina Padilla
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="description" content="{{description}}"/>
+    <meta name="author" content="{{author}}">
+    <meta property="og:title" content="{{site_title}}"/>
+    <meta property="og:description" content="{{description}}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="{{logo}}">
+    <meta name="twitter:card" content="{{description}}"/>
+    <meta name="twitter:creator" content="{{twitter_handle}}"/>
+    <meta name="twitter:title" content="{{site_title}}"/>
+    <meta name="twitter:description" content="{{description}}"/>
+    <meta name="twitter:image" content="{{logo}}">
+    {% if site_title %}
+        <title>{{site_title}}</title>
+    {% endif %}
+    <link rel="canonical" href="https://christinapadilla.com/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FAVICONS ( Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
+    {% if favicon %}
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{favicon}}</text></svg>">
+    {% endif %}
+    
+   
+</head>
+
+ <body>
+    
+    <main>
+    {{content}}
+   
+    </main>
+    <hr>
+    <footer>
+        <image src="{{logo}}" alt="logo-alt-text"></image>
+        <p>Built with 11ty and hosted on NearlyFreeSpeech</p>
+        <p>© 2020 Christina</p>
+        <ul class="socials">
+            <li class="email">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </li>
+            <li  class="linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </li>
+            <li class="github">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </footer>
+
+    </body>
+
+</html>

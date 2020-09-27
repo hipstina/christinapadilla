@@ -1,0 +1,40 @@
+---
+layout: internal.liquid
+
+---
+<body>
+    <h1> {{project_title}} </h1>
+    <image src="{{project_thumbnail}}" alt="{{thumbnail_alt}}"></image>
+    <div>
+        <div>
+            <p><strong>Type</strong></p>
+            <p> {{project_type}} </p>
+        </div>
+        <div>
+            <p><strong>Role</strong></p>
+            <p>{{project_role}}</p>
+        </div>
+        <div>
+            <p><strong>Stack</strong></p>
+            <p>{{project_stack}}</p>
+        </div>
+    </div>
+    <div>
+        <a href="{{project_demo}}"><button>Demo</button></a>
+        <a href="{{project_code}}"><button>Source Code</button></a>
+    </div>
+    <main> 
+    {{content}} 
+    
+    </main>
+  
+       
+    {%- for entry in collections.project %}
+    {%- if entry.url != page.url %} 
+    <div>
+        <a href="{{entry.url}}"><button>Next Project</button></a>
+    </div>
+    {% endif %}
+{%- endfor %}
+
+    </body>

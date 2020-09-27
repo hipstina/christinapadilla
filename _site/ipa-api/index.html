@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="description" content=""/>
+    <meta name="author" content="">
+    <meta property="og:title" content="IPA API"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content=""/>
+    <meta name="twitter:creator" content=""/>
+    <meta name="twitter:title" content="IPA API"/>
+    <meta name="twitter:description" content=""/>
+    <meta name="twitter:image" content="">
+    
+        <title>IPA API</title>
+    
+    <link rel="canonical" href="https://christinapadilla.com/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FAVICONS ( Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
+    
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍺</text></svg>">
+    
+    
+   
+</head>
+
+ <body>
+    
+    <main>
+    
+<header>
+    <a href="/"><p>← Return Home</p></a>
+</header>
+<body>
+    <main><body>
+    <h1> IPA API </h1>
+    <image src="" alt=""></image>
+    <div>
+        <div>
+            <p><strong>Type</strong></p>
+            <p> Personal </p>
+        </div>
+        <div>
+            <p><strong>Role</strong></p>
+            <p>Front-end development, visual design</p>
+        </div>
+        <div>
+            <p><strong>Stack</strong></p>
+            <p>JavaScript, HTML, CSS</p>
+        </div>
+    </div>
+    <div>
+        <a href="https://hipstina.github.io/ipa-api"><button>Demo</button></a>
+        <a href="https://github.com/hipstina/ipa-api"><button>Source Code</button></a>
+    </div>
+    <main> 
+    <h3>Overview</h3>
+<p>A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU. <strong>Key feature:</strong> Client side tools fetch and filter beers styles from an API.</p>
+<h3>Purpose &amp; Goal</h3>
+<p>I was charmed by <a href="tandia.dev">tania.dev</a>'s simple exercise for <a href="https://tania.dev/how-to-connect-to-an-api-with-javascript">connecting to an API with plain Javascript</a>, and so I decided to expand upon her tutorial and make my web app interactive, too. To keep things simple, I picked a free, open-source API that didn't require authentication or a password to connect to the data. I also chose this API as it happened to be related to a passion of mine: craft beer.</p>
+<p>Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.</p>
+<h3>Thought process</h3>
+<p>An issue I faced during development was in constructing a new XMLHttpRequest based on user triggered events. I needed to chain together one or multiple parameters and update the rendered data everytime a filter changed states. I solved this by storing the user input value and then using a separate function to check the current state of the other filter types.</p>
+<p>Another issue I faced was repainting an updated Menu everytime a new search filter was (de)selected. I am particularly proud of a simple little function I wrote <code>wipeMenu</code> for recursively removing HTML elements when a filter was updated.</p>
+<h3>Takeaways</h3>
+<p>This project gave me a lot of insight into how powerful APIs can be, and also that a web app is only as robust as its API. The API I used capped each data request at no more than 80 beers at a time, and lacked methods for searching within many of the beer properties. In the future, I know better what I should look for the next time I get to work with an API of my choice.</p>
+<p>As this is the biggest project I've worked on so far, I also got a taste of just how important my code structure is for development. As my web app grew more complex with each feature, I iterated through my scripts quite a bit until I realized that I needed to just break up my 3-4 giant functions into smaller pieces. This step toward modularity improved my code's readabilty and made adding new features more efficient because it allowed me to introduce complexity quickly.</p>
+<p>A project is never truly finished, there is always something that can be improved. To improve this project, there are 2 features I may add on later:</p>
+<ul>
+<li>A button on each card that triggers an overlay of the beer description.</li>
+<li>Make the side toolbar toggle in-to and out-of view, so that the app holds up better on smaller devices.</li>
+</ul>
+ 
+    
+    </main> 
+    <div>
+        <a href="/my-little-editor/"><button>Next Project</button></a>
+    </div>
+    
+
+    </body> </main>
+</body>
+   
+    </main>
+    <hr>
+    <footer>
+        <image src="" alt="logo-alt-text"></image>
+        <p>Built with 11ty and hosted on NearlyFreeSpeech</p>
+        <p>© 2020 Christina</p>
+        <ul class="socials">
+            <li class="email">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </li>
+            <li  class="linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </li>
+            <li class="github">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </footer>
+
+    </body>
+
+</html>
