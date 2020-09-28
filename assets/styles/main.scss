@@ -1,0 +1,27 @@
+
+// Theme Name: Papaya
+// Description: Portfolio website
+// Author: christina padilla
+// Author URI: https://christinapadilla.com/
+// Tags: js, scss, portfolio, personal
+// Version: 1.0.0
+
+
+/* Table of contents */
+/* ============================================ */
+
+// Base
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/variables';
+
+
+// Components
+@import 'components/buttons';
+@import 'components/layout';
+@import 'components/navigation';
+@import 'components/sections';
+@import 'components/typography';
+
+
+

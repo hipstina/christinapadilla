@@ -21,43 +21,51 @@
     
     <link rel="canonical" href="https://christinapadilla.com/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- FAVICONS ( Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
+    <!-- FAVICONS (Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
     
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
     
-    
+    <!-- pathPrefix https://www.11ty.dev/docs/filters/url/ -->
+    <link rel="stylesheet" href="/assets/styles/css/style.min.css">
    
 </head>
 
  <body>
-    
+    <div class="container">
     <main>
-    <h3>My name's <a href="/about">Christina</a> and I am a front-end developer building joyful, inclusive digital experiences for the web.</h3>
+        
+    <div class="intro col-10 col-12">
+<h3 class="intro-title">My name's <a href="/about">Christina</a> and I am a front-end developer building joyful, inclusive digital experiences for the web.</h3>
 
-<p>See what I've been working on</p>
-<p>↓</p>
+<p class="intro-sub">See what I've been working on</p>
+<p class="intro-sub">↓</p>
+</div>
 
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
-    <div class="card">
-        <img src="" alt="">
-        <h1>IPA API</h1>
-        <p>A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU.</p>
-        <a href="/ipa-api/"><button>View Details</button></a>
+    <div class="card col-10 col-6 col-12">
+        <img class="img" src="" alt="">
+        <div class="prj-data-thumb col-8 ">
+        <h2 class="prj-title">IPA API</h2>
+        <p class="prj-sum">A web app that generates a custom beer menu by filtering beers by style, ABV, and IBU.</p>
+        <a href="/ipa-api/"><button class="btn">View Details</button></a>
+        </div>
     </div>
-    <div class="card">
-        <img src="" alt="">
-        <h1>My Little Editor</h1>
-        <p>My Little Editor is a tool for editing and previewing simple HTML markup.</p>
-        <a href="/my-little-editor/"><button>View Details</button></a>
+    <div class="card col-10 col-6 col-12">
+        <img class="img" src="" alt="">
+        <div class="prj-data-thumb col-8 ">
+        <h2 class="prj-title">My Little Editor</h2>
+        <p class="prj-sum">A tool for editing and previewing simple HTML markup.</p>
+        <a href="/my-little-editor/"><button class="btn">View Details</button></a>
+        </div>
     </div>
 
-   
+
     </main>
-    <hr>
+    
     <footer>
-        <image src="" alt="logo-alt-text"></image>
-        <p>Built with 11ty and hosted on NearlyFreeSpeech</p>
-        <p>© 2020 Christina</p>
+        <a href="/"><img class="logo" src="" alt=""></image></a>
+        <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
+        <p class="ftr-text">© 2020 Christina</p>
         <ul class="socials">
             <li class="email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -70,7 +78,7 @@
             </li>
         </ul>
     </footer>
-
-    </body>
+    </div>
+</body>
 
 </html>

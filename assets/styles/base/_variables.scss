@@ -1,0 +1,59 @@
+//  sass CLI commands
+//  + to compile sass file:
+//      `   sass style.scss:style.css   `
+//  
+//  +  to initiate sass watch for css file:
+//      `   sass --watch styles.scss:style.css    `
+//  
+//  +  to initiate sass watch for compressed css file:
+//      `   sass --watch main.scss:css/style.min.css --style compressed    `    
+//  
+//  [Press Ctrl-C to stop.]
+//  ------------------------------------------------------------------------
+
+/* Color palette */
+
+$cocoa40: #211918;
+$cocoa30: #3f2f2d;
+$cocoa20: #5d4542;
+$cocoa10: #7b5b57;
+
+$flesh60: #87341c;
+$flesh50: #c64d29;
+$flesh40: #d96a49;
+$flesh30: #E69E88;
+$flesh20: #efc0b2;
+$flesh10: #f8e3dc;
+
+$carrot60: #c67e29;
+$carrot50: #d99749;
+$carrot40: #dda25d;
+$carrot30: #e2b075;
+// $carrot20: #f4dfc7;
+$carrot20: #f8ebdc;
+$carrot10: #fcf7f2;
+
+$rose40: #bd406e;
+$rose30: #cb658b;
+$rose20: #d88ba8;
+$rose10: #e5b1c5;
+
+$wizard50: #5934d5;
+$wizard40: #8d73e2;
+$wizard30: #af9deb;
+$wizard20: #cdc2f2;
+$wizard10: #f4f2fc;
+
+
+/* Shadows + borders */
+$flesh-grey: #6d4e45;
+$flesh-lt-grey: #ece2df;
+$carrot-grey: #6d5b45;
+$carrot-lt-grey: #DEDDDC;
+$rose-grey: #65434f;
+$rose-lt-grey: #eadee2;
+$wizard-grey: #58516f;
+$wizard-lt-grey: #e5e3ed;
+
+/* Padding + margins */
+$space: 15px;

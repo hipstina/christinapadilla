@@ -1,0 +1,35 @@
+.btn {
+    width: 100%;
+    color: $cocoa30;
+    height: 50px;
+    background: $wizard20;
+    border: 2px solid $cocoa30;
+    border-radius: 100em;
+    margin: 0 0 $space*2 0 ;
+}
+
+.btn-pgtn {
+    border: 2px solid $cocoa30;
+    background: $cocoa30; 
+    color: $carrot20;
+    margin: $space*2 0;
+    font-size: 20px;
+    line-height: 1.0;
+}
+
+.pgtn-rt {
+    border-radius: 100em 0 0 100em;
+}
+
+.pgtn-lt {
+    border-radius: 0 100em 100em 0;
+}
+
+@media only screen and (min-width: 800px) {
+    .btn {
+        width: auto;
+    }
+    .btn-pgtn {
+        font-size: 22px;
+    }
+}

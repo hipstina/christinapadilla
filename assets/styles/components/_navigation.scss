@@ -1,0 +1,63 @@
+/* return link */
+/* ----------------*/
+ .return-nav {
+    margin: 0 $space;
+}
+
+.return-nav,
+.return-icon,
+.return-nav:visited ,
+.return-icon:visited {
+    color: $cocoa30;
+    text-decoration: none;
+    display: inline;
+}
+
+.return-nav:hover {
+    text-decoration: underline solid 2px $cocoa30;
+}
+
+.return-icon:hover {
+    // make tail grow
+    font-weight: 600;
+}
+
+/* footer */
+/* ----------------*/
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    margin: $space*4 0 $space 0;
+}
+
+.ftr-text {
+    margin: 0 0 $space 0;
+}
+
+.logo {
+    background: $cocoa30;
+    border-radius: 6px;
+    height: 100px;
+    width: 100px;
+    margin: $space*2 auto;
+}
+
+.socials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 200px;
+    margin: $space*2 auto;
+    padding: 0;
+}
+
+.socials li {
+    list-style: none;
+    font-size: 28px;
+    margin: 0 $space 0 $space;
+}
+

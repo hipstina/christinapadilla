@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    font-family: "Inter",system-ui, Helvetica, Arial, sans-serif;
+    font-size: 1em;    
+    color: $cocoa30;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 { 
+    margin: $space 0;
+    font-weight: 600;
+    color: $cocoa30;
+    font-style: normal;
+}
+
+h1 { 
+    line-height: 1.2; 
+    font-size: 50px;
+}
+h2 { 
+    line-height: 1.3; 
+    font-size: 42px;
+}
+h3 { 
+    line-height: 1.4; 
+    font-size: 34px;
+    margin: $space*2 0 0 0;
+}
+h4 { 
+    line-height: 1.5; 
+    font-size: 26px;
+}
+
+button {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+p, ul, ol, li, table { 
+    line-height: 1.6; 
+    font-size: 18px;
+}
+
+figcaption {
+    font-size: 14px;
+}
+
+a,
+a:visited {
+    color: $flesh50;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+

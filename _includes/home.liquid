@@ -1,17 +1,21 @@
 ---
 layout: base.liquid
 ---
-<h3>My name's <a href="/about">Christina</a> and I am a front-end developer building joyful, inclusive digital experiences for the web.</h3>
+<div class="intro col-10 col-12">
+<h3 class="intro-title">My name's <a href="/about">Christina</a> and I am a front-end developer building joyful, inclusive digital experiences for the web.</h3>
 
-<p>See what I've been working on</p>
-<p>↓</p>
+<p class="intro-sub">See what I've been working on</p>
+<p class="intro-sub">↓</p>
+</div>
 
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
 {%- for entry in collections.project %}
-    <div class="card">
-        <img src="{{ project_thumbnail }}" alt="">
-        <h1>{{entry.data.project_title}}</h1>
-        <p>{{entry.data.project_summary}}</p>
-        <a href="{{entry.url}}"><button>View Details</button></a>
+    <div class="card col-10 col-6 col-12">
+        <img class="img" src="{{ project_thumbnail }}" alt="">
+        <div class="prj-data-thumb col-8 ">
+        <h2 class="prj-title">{{entry.data.project_title}}</h2>
+        <p class="prj-sum">{{entry.data.project_summary}}</p>
+        <a href="{{entry.url}}"><button class="btn">View Details</button></a>
+        </div>
     </div>
 {%- endfor %}

@@ -13,9 +13,11 @@ Once I started interfacing directly with users and developers, my assumptions ab
 
 I started small: I built a website. Then I started building small interactive web apps in Javascript. I've since designed and developed several JS based web apps, including my most robust creation, [insert completed project here]. Currently, I'm learning about React hooks and my project [insert react project description] features {cool feature]}.
 
-I'd say my experience advocating for the user while acting as an intermediary for devs has certainly informed the kind of developer I want to be now: focused on inclusive UXs and invested in the full development lifecycle. In the future, I'd like to work with/on [insert project] and build things in Node.js.
+My experience advocating for the user while acting as an intermediary for devs has certainly informed the kind of developer I want to be now: focused on inclusive UXs and invested in the full development lifecycle. In the future, I'd like to work with/on [insert project] and build things in Node.js.
 
 When I'm not trying to apply JS concepts to real life applications, you can find me updating my Letterboxd.
 
-<image src="" alt="profile-picture"/>
-
+<figure>
+<img class="img" src="" alt="">
+<figcaption>↑ Click me to see more selfies.</figcaption>
+</figure>

@@ -24,25 +24,27 @@ site_title: Christina Padilla
     {% endif %}
     <link rel="canonical" href="https://christinapadilla.com/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- FAVICONS ( Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
+    <!-- FAVICONS (Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
     {% if favicon %}
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{favicon}}</text></svg>">
     {% endif %}
-    
+    <!-- pathPrefix https://www.11ty.dev/docs/filters/url/ -->
+    <link rel="stylesheet" href="{{'/assets/styles/css/style.min.css' | url}}">
    
 </head>
 
  <body>
-    
+    <div class="container">
     <main>
+        
     {{content}}
-   
+
     </main>
-    <hr>
+    
     <footer>
-        <image src="{{logo}}" alt="logo-alt-text"></image>
-        <p>Built with 11ty and hosted on NearlyFreeSpeech</p>
-        <p>© 2020 Christina</p>
+        <a href="/"><img class="logo" src="{{logo}}" alt=""></image></a>
+        <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
+        <p class="ftr-text">© 2020 Christina</p>
         <ul class="socials">
             <li class="email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -55,7 +57,7 @@ site_title: Christina Padilla
             </li>
         </ul>
     </footer>
-
-    </body>
+    </div>
+</body>
 
 </html>

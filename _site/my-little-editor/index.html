@@ -21,48 +21,58 @@
     
     <link rel="canonical" href="https://christinapadilla.com/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- FAVICONS ( Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
+    <!-- FAVICONS (Emojis as favicons https://twitter.com/LeaVerou/status/1241619866475474946)--> 
     
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
     
-    
+    <!-- pathPrefix https://www.11ty.dev/docs/filters/url/ -->
+    <link rel="stylesheet" href="/assets/styles/css/style.min.css">
    
 </head>
 
  <body>
-    
+    <div class="container">
     <main>
+        
     
 <header>
-    <a href="/"><p>← Return Home</p></a>
+    <a class="return-nav" id="return" href="/"><p>← Return Home</p></a>
 </header>
 <body>
     <main><body>
     <h1> My Little Editor </h1>
-    <image src="" alt=""></image>
-    <div>
-        <div>
-            <p><strong>Type</strong></p>
-            <p> Personal </p>
+    <image class="prj-img" src="" alt=""></image>
+    <div class="prj">
+        <div class="prj-item">
+            <p class="prj-label">Type</p>
+            <p class="prj-data"> Personal </p>
         </div>
-        <div>
-            <p><strong>Role</strong></p>
-            <p>Front-end development, visual design</p>
+        <div class="prj-item">
+            <p class="prj-label">Role</p>
+            <p class="prj-data">Front-end development, visual design</p>
         </div>
-        <div>
-            <p><strong>Stack</strong></p>
-            <p>JavaScript, HTML, CSS</p>
+        <div class="prj-item">
+            <p class="prj-label">Stack</p>
+            <p class="prj-data">JavaScript, HTML, CSS</p>
         </div>
     </div>
-    <div>
-        <a href="https://hipstina.github.io/little-editor"><button>Demo</button></a>
-        <a href="https://github.com/hipstina/little-editor"><button>Source Code</button></a>
+    <div class="cta">
+        <a href="https://hipstina.github.io/little-editor"><button class="btn">Demo</button></a>
+        <a href="https://github.com/hipstina/little-editor"><button class="btn">Source Code</button></a>
     </div>
     <main> 
     <h3>Overview</h3>
 <p>My Little Editor is a tool for editing and previewing simple HTML markup. <strong>Key feature:</strong> Edit raw text and preview window will automatically display the rendered HTML.</p>
+<figure>
+<img class="img" src="" alt="">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
 <h3>Purpose &amp; Goal</h3>
 <p>The Little Editor is a project I designed and developed when I first started learning about the DOM and event handlers. The idea for this project came about because I wanted to create a tool for my hard coded website that would let me write and export short notes or posts. I also wanted to reinforce my understanding of browser events and event handlers, so I knew I'd be developing this tool from scratch to really exercise my DOM manipulation skills.</p>
+<figure>
+<img class="img" src="" alt="">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
 <h3>Thought process</h3>
 <p>This project was a good way for me to get some practical experience with some simple yet powerful DOM navigation methods and properties. To make the user experience as frictionless as possible, I decided to focus on building a tool that was as intuitive as any other text editor (like WordPress)--albeit on a much smaller scale.</p>
 <p>At one point, I kept coming across a persisting problem in which the rendering window omitted the last character from the text output. To solve this, I relied on Firefox dev tools to debug the source of the problem. I also experienced some minor yet noticeable rendering delays, which resulted in a clunky user experience. Improving the performance of the rendering output was a matter of refactoring my code and trying other DOM creation methods. Both times, coming to a solution for these issues required me to review my assumptions about how event handlers interpret events.</p>
@@ -71,20 +81,21 @@
  
     
     </main> 
-    <div>
-        <a href="/ipa-api/"><button>Next Project</button></a>
+    <div class="ftr-cta">
+        <a href="/"><button class="btn pgtn-rt btn-pgtn">Return Home</button></a>
+        <a href="/ipa-api/"><button class="btn pgtn-lt btn-pgtn">Next Project</button></a>
     </div>
     
 
     </body> </main>
 </body>
-   
+
     </main>
-    <hr>
+    
     <footer>
-        <image src="" alt="logo-alt-text"></image>
-        <p>Built with 11ty and hosted on NearlyFreeSpeech</p>
-        <p>© 2020 Christina</p>
+        <a href="/"><img class="logo" src="" alt=""></image></a>
+        <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
+        <p class="ftr-text">© 2020 Christina</p>
         <ul class="socials">
             <li class="email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -97,7 +108,7 @@
             </li>
         </ul>
     </footer>
-
-    </body>
+    </div>
+</body>
 
 </html>

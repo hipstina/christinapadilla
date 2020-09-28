@@ -4,24 +4,24 @@ layout: internal.liquid
 ---
 <body>
     <h1> {{project_title}} </h1>
-    <image src="{{project_thumbnail}}" alt="{{thumbnail_alt}}"></image>
-    <div>
-        <div>
-            <p><strong>Type</strong></p>
-            <p> {{project_type}} </p>
+    <image class="prj-img" src="{{project_thumbnail}}" alt="{{thumbnail_alt}}"></image>
+    <div class="prj">
+        <div class="prj-item">
+            <p class="prj-label">Type</p>
+            <p class="prj-data"> {{project_type}} </p>
         </div>
-        <div>
-            <p><strong>Role</strong></p>
-            <p>{{project_role}}</p>
+        <div class="prj-item">
+            <p class="prj-label">Role</p>
+            <p class="prj-data">{{project_role}}</p>
         </div>
-        <div>
-            <p><strong>Stack</strong></p>
-            <p>{{project_stack}}</p>
+        <div class="prj-item">
+            <p class="prj-label">Stack</p>
+            <p class="prj-data">{{project_stack}}</p>
         </div>
     </div>
-    <div>
-        <a href="{{project_demo}}"><button>Demo</button></a>
-        <a href="{{project_code}}"><button>Source Code</button></a>
+    <div class="cta">
+        <a href="{{project_demo}}"><button class="btn">Demo</button></a>
+        <a href="{{project_code}}"><button class="btn">Source Code</button></a>
     </div>
     <main> 
     {{content}} 
@@ -31,8 +31,9 @@ layout: internal.liquid
        
     {%- for entry in collections.project %}
     {%- if entry.url != page.url %} 
-    <div>
-        <a href="{{entry.url}}"><button>Next Project</button></a>
+    <div class="ftr-cta">
+        <a href="{{ '/' | url}}"><button class="btn pgtn-rt btn-pgtn">Return Home</button></a>
+        <a href="{{entry.url}}"><button class="btn pgtn-lt btn-pgtn">Next Project</button></a>
     </div>
     {% endif %}
 {%- endfor %}

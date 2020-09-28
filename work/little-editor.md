@@ -7,7 +7,7 @@ tags: project
 project_title: My Little Editor
 # project_thumbnail: ipa-api-image
 # thumbnail_alt: 
-project_summary: My Little Editor is a tool for editing and previewing simple HTML markup.
+project_summary: A tool for editing and previewing simple HTML markup.
 project_type: Personal
 project_role: Front-end development, visual design
 project_stack: JavaScript, HTML, CSS 
@@ -19,8 +19,18 @@ project_code: https://github.com/hipstina/little-editor
 ### Overview
 My Little Editor is a tool for editing and previewing simple HTML markup. **Key feature:** Edit raw text and preview window will automatically display the rendered HTML. 
 
+<figure>
+<img class="img" src="" alt="">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
+
 ### Purpose & Goal
 The Little Editor is a project I designed and developed when I first started learning about the DOM and event handlers. The idea for this project came about because I wanted to create a tool for my hard coded website that would let me write and export short notes or posts. I also wanted to reinforce my understanding of browser events and event handlers, so I knew I'd be developing this tool from scratch to really exercise my DOM manipulation skills. 
+
+<figure>
+<img class="img" src="" alt="">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
 
 ### Thought process 
 This project was a good way for me to get some practical experience with some simple yet powerful DOM navigation methods and properties. To make the user experience as frictionless as possible, I decided to focus on building a tool that was as intuitive as any other text editor (like WordPress)--albeit on a much smaller scale.
