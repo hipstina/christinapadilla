@@ -30,11 +30,12 @@ footer {
     justify-content: center;
     align-content: space-between;
     text-align: center;
-    margin: $space*4 0 $space 0;
+    margin: 100px 0 $space 0;
 }
 
 .ftr-text {
-    margin: 0 0 $space 0;
+    margin: 0 auto $space auto;
+    font-size: 1rem;
 }
 
 .logo {
@@ -42,7 +43,12 @@ footer {
     border-radius: 6px;
     height: 100px;
     width: 100px;
-    margin: $space*2 auto;
+    margin: $space*2 auto ;
+}
+
+.colophon {
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .socials {
@@ -61,3 +67,16 @@ footer {
     margin: 0 $space 0 $space;
 }
 
+@media only screen and (min-width: 800px) {
+    footer {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-content: baseline ;
+    }
+
+    .logo,
+    .colophon,
+    .social  {
+        margin: $space*2 auto;
+    }
+}

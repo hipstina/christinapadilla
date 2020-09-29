@@ -39,9 +39,11 @@
     <a class="return-nav" id="return" href="/"><p>← Return Home</p></a>
 </header>
 <body>
-    <main><body>
-    <h1> My Little Editor </h1>
-    <image class="prj-img" src="" alt=""></image>
+    <body>
+    <h1 class="prj-title"> My Little Editor </h1>
+    <div class="prj-img-wrapper">
+    <image class="prj-img" src="/assets/images/project2.png" alt=""><
+</div>
     <div class="prj">
         <div class="prj-item">
             <p class="prj-label">Type</p>
@@ -61,7 +63,8 @@
         <a href="https://github.com/hipstina/little-editor"><button class="btn">Source Code</button></a>
     </div>
     <main> 
-    <h3>Overview</h3>
+        <div class="prj-details">
+            <h3>Overview</h3>
 <p>My Little Editor is a tool for editing and previewing simple HTML markup. <strong>Key feature:</strong> Edit raw text and preview window will automatically display the rendered HTML.</p>
 <figure>
 <img class="img" src="" alt="">
@@ -79,7 +82,7 @@
 <h3>Takeaways</h3>
 <p>I learned quite a bit while developing this tool. I learned the hard way that defining a project's scope is crucial to the development process, no matter how simple the initial idea seems; it's quite easy to let a project run away from you if you're making it up as you go. On a technical level, I got a lot of practice writing event handlers and navigating the DOM. This project finally allowed me to use Javascript in the context of the browser, which opened my eyes to how nuanced a user interaction can be.</p>
  
-    
+        </div>
     </main> 
     <div class="ftr-cta">
         <a href="/"><button class="btn pgtn-rt btn-pgtn">Return Home</button></a>
@@ -87,15 +90,19 @@
     </div>
     
 
-    </body> </main>
+    </body> 
 </body>
 
     </main>
     
-    <footer>
-        <a href="/"><img class="logo" src="" alt=""></image></a>
-        <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
-        <p class="ftr-text">© 2020 Christina</p>
+    <footer class="col-12">
+        <a class="logo" href="/"><img  src="" alt=""></image></a>
+
+        <div class="colophon">
+            <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
+            <p class="ftr-text">© 2020 Christina Padilla</p>
+        </div>
+
         <ul class="socials">
             <li class="email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -107,6 +114,7 @@
                 <i class="fa fa-github" aria-hidden="true"></i>
             </li>
         </ul>
+
     </footer>
     </div>
 </body>

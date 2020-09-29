@@ -34,38 +34,48 @@
     <div class="container">
     <main>
         
-    <div class="intro col-10 col-12">
-<h3 class="intro-title">My name's <a href="/about">Christina</a> and I am a front-end developer building joyful, inclusive digital experiences for the web.</h3>
+    <div class="intro col-10 col-6 ">
+    <h1 class="intro-title">My name's <a href="/about">Christina</a> 
+and I'm building things that live on the web.</h1>
 
-<p class="intro-sub">See what I've been working on</p>
-<p class="intro-sub">↓</p>
+    <p class="intro-sub">See what I've been working on</br>
+    ↓</p>
 </div>
 
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
-    <div class="card col-10 col-6 col-12">
-        <img class="img" src="" alt="">
+<div class="cards">
+    <div class="card col-10 col-6 col-12 ">
+        <div class="card-img-wrapper">
+        <img class="img img-thumb" src="/assets/images/project3.png" alt="">
+    </div>
         <div class="prj-data-thumb col-8 ">
-        <h2 class="prj-title">IPA API</h2>
-        <p class="prj-sum">A web app that generates a custom beer menu by filtering beers by style, ABV, and IBU.</p>
-        <a href="/ipa-api/"><button class="btn">View Details</button></a>
+            <h2 class="prj-title">IPA API</h2>
+            <p class="prj-sum">A web app that generates a custom beer menu by filtering beers by style, ABV, and IBU.</p>
+            <a href="/ipa-api/"><button class="btn">View Details</button></a>
         </div>
     </div>
-    <div class="card col-10 col-6 col-12">
-        <img class="img" src="" alt="">
+    <div class="card col-10 col-6 col-12 ">
+        <div class="card-img-wrapper">
+        <img class="img img-thumb" src="/assets/images/project2.png" alt="">
+    </div>
         <div class="prj-data-thumb col-8 ">
-        <h2 class="prj-title">My Little Editor</h2>
-        <p class="prj-sum">A tool for editing and previewing simple HTML markup.</p>
-        <a href="/my-little-editor/"><button class="btn">View Details</button></a>
+            <h2 class="prj-title">My Little Editor</h2>
+            <p class="prj-sum">A tool for editing and previewing simple HTML markup.</p>
+            <a href="/my-little-editor/"><button class="btn">View Details</button></a>
         </div>
     </div>
-
+</div>
 
     </main>
     
-    <footer>
-        <a href="/"><img class="logo" src="" alt=""></image></a>
-        <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
-        <p class="ftr-text">© 2020 Christina</p>
+    <footer class="col-12">
+        <a class="logo" href="/"><img  src="" alt=""></image></a>
+
+        <div class="colophon">
+            <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
+            <p class="ftr-text">© 2020 Christina Padilla</p>
+        </div>
+
         <ul class="socials">
             <li class="email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -77,6 +87,7 @@
                 <i class="fa fa-github" aria-hidden="true"></i>
             </li>
         </ul>
+
     </footer>
     </div>
 </body>

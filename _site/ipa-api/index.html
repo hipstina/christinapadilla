@@ -39,9 +39,11 @@
     <a class="return-nav" id="return" href="/"><p>← Return Home</p></a>
 </header>
 <body>
-    <main><body>
-    <h1> IPA API </h1>
-    <image class="prj-img" src="" alt=""></image>
+    <body>
+    <h1 class="prj-title"> IPA API </h1>
+    <div class="prj-img-wrapper">
+    <image class="prj-img" src="/assets/images/project3.png" alt=""><
+</div>
     <div class="prj">
         <div class="prj-item">
             <p class="prj-label">Type</p>
@@ -61,13 +63,14 @@
         <a href="https://github.com/hipstina/ipa-api"><button class="btn">Source Code</button></a>
     </div>
     <main> 
-    <h3>Overview</h3>
+        <div class="prj-details">
+            <h3>Overview</h3>
 <p>A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU. <strong>Key feature:</strong> Client side tools fetch and filter beers styles from an API.</p>
 <h3>Purpose &amp; Goal</h3>
 <p>I was charmed by <a href="tandia.dev">tania.dev</a>'s simple exercise for <a href="https://tania.dev/how-to-connect-to-an-api-with-javascript">connecting to an API with plain Javascript</a>, and so I decided to expand upon her tutorial and make my web app interactive, too. To keep things simple, I picked a free, open-source API that didn't require authentication or a password to connect to the data. I also chose this API as it happened to be related to a passion of mine: craft beer.</p>
 <p>Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.</p>
 <figure>
-<img class="img" src="" alt="">
+<img class="img" src="../assets/images/project3.png" alt="" height="900px">
 <figcaption>↑ A caption for my project.</figcaption>
 </figure>
 <h3>Thought process</h3>
@@ -86,7 +89,7 @@
 <li>Make the side toolbar toggle in-to and out-of view, so that the app holds up better on smaller devices.</li>
 </ul>
  
-    
+        </div>
     </main> 
     <div class="ftr-cta">
         <a href="/"><button class="btn pgtn-rt btn-pgtn">Return Home</button></a>
@@ -94,15 +97,19 @@
     </div>
     
 
-    </body> </main>
+    </body> 
 </body>
 
     </main>
     
-    <footer>
-        <a href="/"><img class="logo" src="" alt=""></image></a>
-        <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
-        <p class="ftr-text">© 2020 Christina</p>
+    <footer class="col-12">
+        <a class="logo" href="/"><img  src="" alt=""></image></a>
+
+        <div class="colophon">
+            <p class="ftr-text">Built with 11ty and hosted on NearlyFreeSpeech</p>
+            <p class="ftr-text">© 2020 Christina Padilla</p>
+        </div>
+
         <ul class="socials">
             <li class="email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -114,6 +121,7 @@
                 <i class="fa fa-github" aria-hidden="true"></i>
             </li>
         </ul>
+
     </footer>
     </div>
 </body>

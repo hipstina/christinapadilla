@@ -5,7 +5,8 @@ permalink: /ipa-api/
 favicon: 🍺
 tags: project
 project_title: IPA API
-# project_thumbnail: ipa-api-image
+project_thumbnail: "/assets/images/project3.png" 
+
 # thumbnail_alt: 
 project_summary: A web app that generates a custom beer menu by filtering beers by style, ABV, and IBU.
 project_type: Personal
@@ -24,7 +25,7 @@ I was charmed by [tania.dev](tandia.dev)'s simple exercise for [connecting to an
 Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.
 
 <figure>
-<img class="img" src="" alt="">
+<img class="img" src="../assets/images/project3.png" alt="" height="900px">
 <figcaption>↑ A caption for my project.</figcaption>
 </figure>
 
