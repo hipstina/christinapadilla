@@ -24,20 +24,13 @@ I was charmed by [tania.dev](tandia.dev)'s simple exercise for [connecting to an
 
 Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.
 
-<figure>
-<img class="img" src="../assets/images/project3.png" alt="" height="900px">
-<figcaption>↑ A caption for my project.</figcaption>
-</figure>
+
 
 ### Thought process
 An issue I faced during development was in constructing a new XMLHttpRequest based on user triggered events. I needed to chain together one or multiple parameters and update the rendered data everytime a filter changed states. I solved this by storing the user input value and then using a separate function to check the current state of the other filter types. 
 
 Another issue I faced was repainting an updated Menu everytime a new search filter was (de)selected. I am particularly proud of a simple little function I wrote `wipeMenu` for recursively removing HTML elements when a filter was updated.
 
-<figure>
-<img class="img" src="" alt="">
-<figcaption>↑A caption for my project.</figcaption>
-</figure>
 
 ### Takeaways
 This project gave me a lot of insight into how powerful APIs can be, and also that a web app is only as robust as its API. The API I used capped each data request at no more than 80 beers at a time, and lacked methods for searching within many of the beer properties. In the future, I know better what I should look for the next time I get to work with an API of my choice.

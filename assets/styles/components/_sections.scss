@@ -52,35 +52,75 @@
 
 
 
-/* Project-thumb
+/* Card
 ------------------------ */
 .card {
     margin: 0 auto;
     margin-bottom: 200px;
-    
-}
-.prj-data-thumb {
-    padding: 0 $space;
+    position: relative;
+    max-width: 100%;
 }
 
-@media only screen and (min-width:700px) {
-    .card:nth-child(even) {
-        
-        & .prj-data-thumb {
-        text-align: left;
-        
-        }
-    }
+.card-img-wrapper {
+    position: relative;
+    background: $flesh40;
+    border: 3px solid $cocoa30;
+    border-radius: 6px;
+    max-height: 330px;
+    width: 100%;   
+    transition: .35s all ease-in-out; 
+    overflow: hidden;
+    margin-bottom: $space*2;
 
-    .card:nth-child(odd) {
-        
-        & .prj-data-thumb {
-        text-align: right;
-        margin: 0 0 0 33.33%;
-        }
+    &:hover {
+        border-color: $wizard50;
+        border-width: 3px;
+        background: $wizard30;
     }
-    
 }
+
+.card-img-overlay {
+    background-image: url('/assets/images/twinkles.svg');
+    background-size: 7%;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    transition: .35s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+        height: 200%;
+        width: 200%;
+    }
+}
+
+
+
+.card-title {
+    margin: 0;
+}
+
+.card-sum {
+    padding: 0 0 $space 0;
+    color: $flesh50;
+    font-weight: 500;
+}
+
+.card-img {
+    $card-width: 550px;
+    width: $card-width;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s cubic-bezier(0.42, -0.01, 0, 1.51);
+    transform: scale(1.1) rotatez(-9deg);
+    margin: 12% 35%;
+}
+
 
 @media only screen and (min-width: 1100px) {
     .card {
@@ -89,143 +129,93 @@
         justify-content: space-between;
     }
 
-    .prj-data-thumb {
+    .card-data {
         display: flex;
         flex-flow: column nowrap;
         align-content: left;
         justify-content: flex-start;
-        
-
-        &:nth-child(even)  {
-            padding: 0 $space*3 ;
-        }
-
-        
+        padding: 0 $space*2 ;
+        margin: 0 0 200px 0;
     }
 
     .card:nth-child(odd) {
         flex-flow: row-reverse nowrap;
-        margin: 0 ;
-        margin-bottom: 200px;
 
-        & .prj-data-thumb {
+        & .card-data {
             text-align: right;
             margin: 0;
             }
     }
-
-
-    .card:nth-child(even) {
-        margin: 0 ;
-        margin-bottom: 200px;
-
-    }
-
-    
-}
-
-
-.card .card-img-wrapper .img {
-    width: 550px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    // margin: 5% 22%;
-    transition: .5s cubic-bezier(0.42, -0.01, 0, 1.51);
-}
-
-
-
-.card:nth-child(odd) .card-img-wrapper .img {
-    margin: 5% 22%;
-    
-}
-
-.card:nth-child(even) .card-img-wrapper .img {
-    margin: 5% 22%;
-    
-}
-
-.card:nth-child(odd) .card-img-wrapper .img:hover {
-    transform: scale(1.1) rotatez(-9deg);
-    margin: 12% 35%;
-}
-
-.card:nth-child(even) .card-img-wrapper .img:hover {
-    transform: scale(1.1) rotatez(-9deg);
-    margin: 12% 35%;
-}
-
-
-@media only screen and (min-width: 700px) {
-    .card:nth-child(odd) .card-img-wrapper .img {
-        transform: rotatez(9deg);
-        margin: 10% -55%;
-    }
-
-    .card:nth-child(odd) .card-img-wrapper .img:hover {
-        transform: rotatez(10deg);
-        margin: 15% -60%;
-    }
-
-    .card:nth-child(even) .card-img-wrapper .img {
-        transform: rotatez(-10deg);
-        margin: 5% 38%;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    .card:nth-child(odd) .card-img-wrapper .img {
-        transform: rotatez(9deg);
-        margin: 5% -60%;
-    }
-
-    .card:nth-child(odd) .card-img-wrapper .img:hover {
-        transform:  rotatez(10deg);
-        margin: 10% -55%;
-    }
-
-}
-
-
-@media only screen and (min-width: 1000px) {
-    .card:nth-child(odd) .card-img-wrapper .img {
-        transform: rotatez(10deg);
-        margin: 5% -30%;
-    }
-
-    .card:nth-child(odd) .card-img-wrapper .img:hover {
-        transform: scale(1.1) rotatez(9deg);
-        margin: 12% -25%;
-    }
-
-    
-}
-
-.card-img-wrapper {
-    position: relative;
-    background: rgb(217,151,73);
-    background: radial-gradient(circle, rgba(217,151,73,1) 6%, rgba(217,148,73,1) 16%, rgba(217,106,73,1) 48%, rgba(204,87,52,1) 71%, rgba(198,77,41,1) 94%); 
-    border: 3px solid $cocoa30;
-    border-radius: 6px;
-    max-height: 330px;
-    width: 100%;   
-    transition: .35s ease-in-out; 
-    box-shadow: 0 24px 32px lighten($cocoa10, 50%);
-    overflow: hidden;
 }
 
 @media only screen and (min-width: 700px) {
     .card-img-wrapper {
         max-height: 430px;
-        // width: 430px;   
+        position: relative;
+    }
+
+    .card-img {
+        transform: scale(1) rotatez(0deg);
+        margin: 12% 22%;
+    }
+
+    .card:nth-child(odd) .card-img {        
+       transform: translateX(-30%) ;
+        margin: 5% 0% 5% 0 ;
+
+        &:hover {
+            transform: rotatez(12deg);
+            margin: 11% -50%;
+        }
+    }
+
+    .card:nth-child(even) .card-img {
+        margin: 5% 38%;
+
+        &:hover {
+            transform: rotatez(-10deg);
+            margin: 12% 25%;
+        }
+    }
+
+    .card:nth-child(even) .card-data{
+        text-align: left;
+    }
+
+    .card:nth-child(odd) .card-data{
+        text-align: right;
+        // margin: 0 0 0 33.33%;
+    }
+
+    .card:nth-child(odd) .card-img-overlay {
+        left: 70%;
     }
 }
+
+// @media only screen and (min-width: 800px) {
+//     .card:nth-child(odd) .card-img {
+//         margin: 5% -60%;
+
+//         &:hover {
+//             transform:  rotatez(10deg);
+//             margin: 10% -55%;
+//         }
+//     }
+// }
 
 @media only screen and (min-width: 1000px) {
     .card-img-wrapper {
         max-height: 500px;  
     }
+
+    // .card:nth-child(odd) .card-img {
+    //     margin: 5% -50%;
+
+    //     &:hover {
+    //         transform: scale(1.1) rotatez(5deg);
+    //         margin: 18% -40%;
+    //     }
+    // }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -235,34 +225,24 @@
     }
 }
 
-.card-img-wrapper:hover {
-    box-shadow: 0 36px 54px lighten($cocoa10, 45%);
-    border-color:$wizard30;
-    border-width: 3px;
-}
-
-
-
 
 /* project detail */  
 /* ----------------------- */
-.prj-title {
+.prj-detail-title {
     margin: 0 auto;
     text-align: center;
 }
 
 .prj-img { 
-    width: 100%;
+    width: 120%;
     display: block;
-    margin: -260px auto auto auto;
-    z-index: 0;
-    background-position-x: center;
-    background-position-y: 300px;
+    margin: -400px 0 0 -90px;
+
 }
 
 .prj-img-wrapper {
     max-height: 400px;
-    background: $flesh40;
+    background: $wizard50;
     width: 100%;
     overflow: hidden;
     border: 3px solid $cocoa30;
@@ -274,32 +254,36 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     
-    background: $carrot40;
-    border: 3px solid $cocoa30;
+    background: $flesh50;
+    border: 3px solid $wizard60;
     border-radius: 6px;
     padding: $space*3;
+    color: $carrot10;
 
     position: relative;
-    top: -120px;
+    top: -60px;
     z-index: 4;
     margin: 0 auto $space*2 auto;
-    width: 75%;
+    width: 90%;
 }
 
 .prj-label {
     text-transform: uppercase;
+    font-size: 1.1rem;
     font-weight: 400; 
-    line-height: 1.3;
+    line-height: 1;
+    color: $carrot10;
+    letter-spacing: .1rem;
 }
 
 .prj-data {
     font-weight: 600; 
     line-height: 1.3;
     padding: 0 $space*2;
-    max-width: 200px;
+    max-width: 350px;
 }
 
 .ftr-cta  {
@@ -307,26 +291,40 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     max-width: 290px;
-    margin: auto;
+    margin: 100px auto 150px auto;
+}
+
+.prj-details {
+    width: 100%;
+    margin: 0 auto;
+    color: $wizard60;
+    
 }
 
 @media only screen and (min-width: 700px) {
+
+    .prj {
+        top: -120px;
+    }
+
     .cta {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        margin: -80px 0 $space 0;
+        margin: -80px 0 100px 0;
     }
 
     .ftr-cta {
         max-width: 320px;
     }
+
+    .prj-details {
+        width: 65%;
+        
+    }
 }
 
-.prj-details {
-    width: 75%;
-    margin: 0 auto;
-}
+
 
 /* About
 ------------------------ */

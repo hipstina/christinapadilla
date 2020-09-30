@@ -27,38 +27,46 @@
 footer {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-between;
+    flex: 1 1 1 30%;
+    align-content:  center;
     text-align: center;
-    margin: 100px 0 $space 0;
+    margin: 200px auto $space auto;
 }
 
 .ftr-text {
     margin: 0 auto $space auto;
-    font-size: 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: $wizard50;    
+}
+
+.ftr-copy {
+    margin: 0 auto $space auto;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: $wizard50;
 }
 
 .logo {
-    background: $cocoa30;
-    border-radius: 6px;
-    height: 100px;
-    width: 100px;
-    margin: $space*2 auto ;
+    background: transparent;
+    max-width: 100%;
+    // margin: $space  auto $space*2 auto;
 }
 
-.colophon {
-    max-width: 300px;
-    margin: 0 auto;
-}
+// .colophon {
+//     max-width: 300px;
+// }
 
 .socials {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-content: center;
-    max-width: 200px;
-    margin: $space*2 auto;
+    width: 100%;
+    margin: auto 0 auto $space;
     padding: 0;
+    color: $wizard50;
 }
 
 .socials li {
@@ -67,16 +75,37 @@ footer {
     margin: 0 $space 0 $space;
 }
 
-@media only screen and (min-width: 800px) {
-    footer {
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-content: baseline ;
+.colophon,
+    .socials  {
+        margin: $space*2 auto;
     }
 
-    .logo,
+   
+    .logo  {
+        margin-bottom: $space*2;
+    }
+
+@media only screen and (min-width: 700px) {
+    footer {
+        flex-flow: row nowrap;
+        flex: 1 1 1 30%;
+    justify-content: space-between;
+    align-content:  baseline;
+    text-align: center;
+    margin: auto auto $space auto;
+    }
+
+    .socials {
+        width: 23%;
+    }
+    
     .colophon,
-    .social  {
-        margin: $space*2 auto;
+    .socials  {
+        margin: $space*2 0 auto auto;
+    }
+
+   
+    .logo  {
+        margin-bottom: $space*2;
     }
 }

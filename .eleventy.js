@@ -6,8 +6,9 @@ module.exports = {
 // add scss-generated, min.css folder to _site 
 // https://michaelsoolee.com/add-css-11ty/
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy('assets/styles/css')
-    eleventyConfig.addPassthroughCopy('assets/images')
+    eleventyConfig.addPassthroughCopy('assets/styles/css');
+    eleventyConfig.addPassthroughCopy('assets/images');
+    eleventyConfig.addPassthroughCopy('assets/scripts');
     return {
       passthroughFileCopy: true
     }
