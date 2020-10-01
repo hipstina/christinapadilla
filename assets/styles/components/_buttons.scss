@@ -1,16 +1,37 @@
-.btn {
+.btn,
+.card-btn {
     width: 100%;
     color: $carrot10;
     font-weight: 400;
     height: 50px;
     background: $wizard50;
-    border: 2px solid $wizard50;
+    border: 3px solid $wizard50;
     border-radius: 100em;
     margin: 0 0 $space*2 0 ;
+    transition: .06s all linear;
+
+    &:hover { //mouseover
+        background: $carrot30;
+        color: $wizard60;
+    }
+    
+    &:active { //mouseup
+        background: $wizard20;
+        color: $wizard60;
+        transform: scale(.97);
+    }
+    
+    &:focus { //click
+        outline: $rose30;
+    }
 }
 
+
+
+
+
 .btn-pgtn {
-    border: 2px solid $cocoa30;
+    border: 3px solid $cocoa30;
     background: $cocoa30; 
     color: $carrot20;
     margin: $space*2 0;
@@ -26,8 +47,10 @@
     border-radius: 0 100em 100em 0;
 }
 
+
 @media only screen and (min-width: 800px) {
-    .btn {
+    .btn,
+    .card-btn {
         width: auto;
     }
     .btn-pgtn {

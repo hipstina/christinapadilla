@@ -1,7 +1,7 @@
 "use strict";
 
-const returnIcon = document.getElementById('returnIcon');
-const returnLink = document.getElementById('returnLink');
+export const returnIcon = document.getElementById('returnIcon');
+export const returnLink = document.getElementById('returnLink');
 
 returnIcon.addEventListener('mouseover', returnHover )
 returnIcon.addEventListener('mouseout', returnHover )
@@ -13,15 +13,15 @@ returnLink.addEventListener('mouseout', returnHover )
 returnLink.addEventListener('mouseup', returnActive )
 returnLink.addEventListener('click', returnFocus )
 
-function returnHover() {
+export function returnHover() {
     returnLink.classList.toggle('return-hover');
 }
 
-function returnActive() {
+export function returnActive() {
     returnLink.classList.toggle('return-active');
 }
 
-function returnFocus() {
+export function returnFocus() {
     returnLink.classList.add('return-focus');
 
 }

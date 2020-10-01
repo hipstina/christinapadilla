@@ -1,26 +1,44 @@
 /* return link */
 /* ----------------*/
- .return-nav {
-    margin: 0 $space;
-}
-
 .return-nav,
-.return-icon,
-.return-nav:visited ,
-.return-icon:visited {
+.return-nav:visited {
+    display: flex;
+    flex-flow: row nowrap;
     color: $cocoa30;
     text-decoration: none;
-    display: inline;
+    font-weight: 500;
+    
 }
 
-.return-nav:hover {
-    text-decoration: underline solid 2px $cocoa30;
+
+.return-icon {
+    padding: $space $space*2 0 0;
 }
 
-.return-icon:hover {
-    // make tail grow
-    font-weight: 600;
+
+.return-link {
+    margin: $space*2.25 0 20px 0;
+    padding: 0;
+    border: 3px solid transparent;
 }
+
+.return-hover {
+    
+    border-bottom-color: $wizard50;
+    color: $wizard40;
+}
+
+.return-active {
+    color: $flesh50;
+}
+
+.return-focus {
+    border: 3px solid $flesh50;
+}
+
+
+
+
 
 /* footer */
 /* ----------------*/

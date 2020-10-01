@@ -1,0 +1,174 @@
+/* Card
+------------------------ */
+.card {
+    margin: 0 auto;
+    margin-bottom: 200px;
+    position: relative;
+    max-width: 100%;
+
+    @media only screen and (min-width: 1100px) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+    }
+}
+
+.card-img-wrapper {
+    position: relative;
+    background: $flesh40;
+    border: 3px solid $cocoa30;
+    border-radius: 6px;
+    max-height: 330px;
+    max-width: 100%;   
+    transition: .35s all ease-in-out; 
+    overflow: hidden;
+    margin-bottom: $space*2;
+
+    // &:hover {
+    //     border-color: $wizard50;
+    //     border-width: 3px;
+    //     background: $wizard30;
+    // }
+
+    @media only screen and (min-width: 700px) {
+            max-height: 430px;
+            position: relative;
+        
+    }
+}
+
+
+.card-img {
+    $card-width: 550px;
+    width: $card-width;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .5s cubic-bezier(0.42, -0.01, 0, 1.51);
+    transform: scale(1.1) rotatez(-9deg);
+    margin: 12% 35%;
+
+    @media only screen and (min-width: 699px) {
+        transform: scale(1) rotatez(0deg);
+        margin: 12% 22%;
+    }
+}
+
+.card-img-hover {
+    border-color: $wizard50;
+    border-width: 3px;
+    background: $wizard30;
+}
+
+.card-img-overlay {
+    background-image: url('/assets/images/twinkles.svg');
+    background-size: 7%;
+    background-position: 50px 130px;
+    background-repeat: no-repeat;
+    // background-color: yellow;
+    opacity: 0.95;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 150%;
+    width: 150%;
+    z-index: 5;
+    transition: .5s all cubic-bezier(0.42, -0.01, 0, 1.51);
+
+    // &:hover {
+    //     top: 90px;
+    //     left: 45px;
+        
+    //     height: 200%;
+    //     width: 200%;
+    // }
+
+    
+}
+
+.card-img-overlay-hover {
+    // top: 90px;
+    // left: 45px;
+    // transform-origin: top left;
+    // transform: rotatez(5deg);
+    height: 200%;
+    width: 200%;
+}
+
+
+.card-data {
+
+    @media only screen and (min-width: 1100px) {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: left;
+        justify-content: flex-start;
+        padding: 0 $space*2 ;
+        margin: 0 0 200px 0;
+    }
+    
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-sum {
+    padding: 0 0 $space 0;
+    color: $flesh50;
+    font-weight: 500;
+}
+
+
+.card-rotate-hover {
+    transform: rotatez(-10deg);
+    margin: 12% 25%;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    
+
+
+    .card .card-img {
+        margin: 5% 38%;
+
+      
+    }
+
+    .card .card-data{
+        text-align: left;
+    }
+
+  
+
+    
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        // border: 1px solid $wizard50;
+        flex: 1 1 50%;
+    }
+
+    
+
+    .card-img-wrapper {
+        flex-basis: 100%;
+        width: 500px;
+        max-height: 500px; 
+    }
+    
+  
+}
+
+@media only screen and (min-width: 1400px) {
+    .card-img-wrapper {
+        max-height: 500px;  
+        // width: 70%;
+    }
+}

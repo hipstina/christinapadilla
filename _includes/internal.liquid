@@ -5,8 +5,13 @@ layout: base.liquid
 ---
 
 <header>
-    <a class="return-nav" id="return" href="/"><p>← Return Home</p></a>
+    <a class="return-nav" id="return" href="/">
+        <p id="returnIcon" class="return-icon">←</p>
+        <p id="returnLink" class="return-link">Return Home</p>
+    </a>
 </header>
 <body>
     {{content}} 
+    <script src="{{"/assets/scripts/main.js" | url}}"></script>
+
 </body>

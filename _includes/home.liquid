@@ -14,14 +14,15 @@ and I'm making things that live on the web.</h1>
 {%- for entry in collections.project %}
     <div class="card col-10 col-6 col-12 ">
         <div class="card-img-wrapper">
-        <img class="card-img" src="{{entry.data.project_thumbnail | url}}" alt="">
-        <div class="card-img-overlay"></div>
-    </div>
-        <div class="card-data  ">
+            <img class="card-img" src="{{entry.data.project_thumbnail | url}}" alt="">
+            <div class="card-img-overlay"></div>
+        </div>
+        <div class="card-data">
             <h1 class="card-title">{{entry.data.project_title}}</h1>
             <p class="card-sum">{{entry.data.project_summary}}</p>
-            <a  class=" card-thumb-btn" href="{{entry.url}}"><button class="btn">View Details</button></a>
+            <a  class="" href="{{entry.url}}"><button class="card-btn">View Details</button></a>
         </div>
     </div>
 {%- endfor %}
 </div>
+<script src="{{"/assets/scripts/card.js" | url}}"></script>
