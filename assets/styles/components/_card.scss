@@ -1,7 +1,7 @@
 /* Card
 ------------------------ */
 .card {
-    margin: 0 auto;
+    margin: 0 auto ;
     margin-bottom: 200px;
     position: relative;
     max-width: 100%;
@@ -22,7 +22,7 @@
     max-width: 100%;   
     transition: .35s all ease-in-out; 
     overflow: hidden;
-    margin-bottom: $space*2;
+    margin: 5px;
 
     // &:hover {
     //     border-color: $wizard50;
@@ -41,23 +41,26 @@
 .card-img {
     $card-width: 550px;
     width: $card-width;
-    background-position: center center;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: contain;
     transition: .5s cubic-bezier(0.42, -0.01, 0, 1.51);
-    transform: scale(1.1) rotatez(-9deg);
+    transform: scale(1.1) rotatez(-9deg) translateY(20px);
     margin: 12% 35%;
 
-    @media only screen and (min-width: 699px) {
+    @media only screen and (min-width: 899px) {
         transform: scale(1) rotatez(0deg);
         margin: 12% 22%;
     }
 }
 
 .card-img-hover {
+    /* Disabling Mobile Animations */
+    @media only screen and (min-width: 700px) {
     border-color: $wizard50;
     border-width: 3px;
     background: $wizard30;
+    }
 }
 
 .card-img-overlay {
@@ -70,10 +73,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 150%;
-    width: 150%;
+    height: 200%;
+    width: 200%;
     z-index: 5;
     transition: .5s all cubic-bezier(0.42, -0.01, 0, 1.51);
+    cursor: pointer;
+    margin: 0;
+
+    @media only screen and (min-width: 600px) {
+        height: 150%;
+        width: 150%;
+    }
 
     // &:hover {
     //     top: 90px;
@@ -87,12 +97,12 @@
 }
 
 .card-img-overlay-hover {
-    // top: 90px;
-    // left: 45px;
-    // transform-origin: top left;
-    // transform: rotatez(5deg);
-    height: 200%;
-    width: 200%;
+    /* Disabling Mobile Animations */
+    @media only screen and (min-width: 700px) {
+        height: 200%;
+        width: 200%;
+    }
+    
 }
 
 
@@ -104,7 +114,7 @@
         align-content: left;
         justify-content: flex-start;
         padding: 0 $space*2 ;
-        margin: 0 0 200px 0;
+        margin: 0 ;
     }
     
 }
@@ -121,29 +131,25 @@
 
 
 .card-rotate-hover {
+    /* Disabling Mobile Animations */
+    @media only screen and (min-width: 700px) {
     transform: rotatez(-10deg);
     margin: 12% 25%;
+    }
 }
 
 
 
 @media only screen and (min-width: 700px) {
     
-
-
     .card .card-img {
         margin: 5% 38%;
-
-      
     }
 
     .card .card-data{
         text-align: left;
     }
 
-  
-
-    
 }
 
 
@@ -151,24 +157,23 @@
 
 @media only screen and (min-width: 1000px) {
     .card {
-        // border: 1px solid $wizard50;
         flex: 1 1 50%;
     }
-
-    
 
     .card-img-wrapper {
         flex-basis: 100%;
         width: 500px;
         max-height: 500px; 
     }
-    
-  
 }
 
 @media only screen and (min-width: 1400px) {
     .card-img-wrapper {
         max-height: 500px;  
-        // width: 70%;
     }
+}
+
+.card-btn-wrapper {
+    margin: 0;
+    align-self: flex-start;
 }

@@ -3,6 +3,7 @@
 const returnIcon = document.getElementById('returnIcon');
 const returnLink = document.getElementById('returnLink');
 
+
 returnIcon.addEventListener('mouseover', returnHover )
 returnIcon.addEventListener('mouseout', returnHover )
 returnIcon.addEventListener('mouseup', returnActive )
@@ -26,6 +27,3 @@ function returnFocus() {
 
 }
 
-//click
-//mouseover
-// mouseup

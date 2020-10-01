@@ -41,56 +41,19 @@ cardOverlay.forEach(e => e.addEventListener("mouseover", function(e) {
         }}));
 
 
-    // console.log(Array.from(cardBtn))
-    // cardWrapper = Array.from(cardWrapper);
-    // cardWrapper.forEach(e => e.addEventListener("mouseover", function(e) {
-
-    //     for (let i in e.target.classList) {
-    //      if (e.target.classList[i] == "card-img-wrapper") {
-
-    //         let cardOverlay = e.target.lastElementChild;
-    //         cardOverlayHover(cardOverlay);
-
-    //         let cardImgWrapper = e.target;
-    //         cardBackgroundHover(cardImgWrapper);
-
-    //         let cardImg = e.target.firstElementChild;
-    //         imgTilt(cardImg);
-    //      }
- 
-    //  }}));
-
-    //  cardWrapper.forEach(e => e.addEventListener("mouseout", function(e) {
-
-    //     for (let i in e.target.classList) {
-    //      if (e.target.classList[i] == "card-img-wrapper") {
-    //         console.log(e.target.classList[i]); 
-        
-    //         let cardOverlay = e.target.lastElementChild;
-    //         cardUnhover(cardOverlay);
-
-    //         let cardImgWrapper = e.target;
-    //         cardBackgroundUnhover(cardImgWrapper);
-
-    //         let cardImg = e.target.firstElementChild;
-    //         imgUntilt(cardImg);
-    //      }
- 
-    //  }}));
-
 
     cardBtn = Array.from(cardBtn);
     cardBtn.forEach(e => e.addEventListener("mouseover", function(e) {
 
        for (let i in e.target.classList) {
         if (e.target.classList[i] == "card-btn") {
-            let cardOverlay = e.target.parentElement.parentElement.parentElement.firstElementChild.lastElementChild;
+            let cardOverlay = e.target.parentElement.parentElement.previousElementSibling.firstElementChild.lastElementChild;
             cardOverlayHover(cardOverlay);
 
-            let cardImgWrapper = e.target.parentElement.parentElement.parentElement.firstElementChild;
+            let cardImgWrapper = e.target.parentElement.parentElement.previousElementSibling.firstElementChild;
             cardBackgroundHover(cardImgWrapper)
 
-            let cardImg = e.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild;
+            let cardImg = e.target.parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild;
             imgTilt(cardImg);
         }
     }}));
@@ -100,27 +63,17 @@ cardOverlay.forEach(e => e.addEventListener("mouseover", function(e) {
         for (let i in e.target.classList) {
          if (e.target.classList[i] == "card-btn") {
 
-            let cardOverlay = e.target.parentElement.parentElement.parentElement.firstElementChild.lastElementChild;
+            let cardOverlay = e.target.parentElement.parentElement.previousElementSibling.firstElementChild.lastElementChild;
             cardUnhover(cardOverlay);
 
-            let cardImgWrapper = e.target.parentElement.parentElement.parentElement.firstElementChild;
+            let cardImgWrapper = e.target.parentElement.parentElement.previousElementSibling.firstElementChild;
             cardBackgroundUnhover(cardImgWrapper)
             
-            let cardImg = e.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild;
+            let cardImg = e.target.parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild;
             imgUntilt(cardImg);
          }
      }}));
-        // else if (e.target.classList[i] == "card-title") {
-        //     cardHover(e);
 
-        // } else if (e.target.classList[i] == "card-img-overlay") {
-        //     cardHover(e);
-            
-        // } else if (e.target.classList[i] == "card-img-wrapper") {
-        //     cardHover(e);
-            
-        // }
-    //    }
 
 
 
@@ -152,46 +105,3 @@ function cardBackgroundUnhover(cardImgWrapper) {
 
 
 
-// https://stackoverflow.com/questions/25130798/check-if-current-element-is-even-or-odd
-function evenOrOdd (e) {
-    console.log(e.target.parentElement.parentElement.parentElement.parentElement);
-
-    let currentCard = e.target.parentElement.parentElement.parentElement;
-
-    let odd;
-
-    let cards = document.getElementsByClassName("card");
-    for (var i = 0; i < cards.length; i++) {
-        var card = cards[i];
-        var parent = card.parentNode;
-        var child = parent.firstChild;
-        var index = 0;
-
-    while (true) {
-        if (child.nodeType === Node.ELEMENT_NODE) {
-           index++;
-        }
-  
-        if (child === card || !child.nextSibling) {
-           break;
-        }
-  
-        child = child.nextSibling;
-     }
-  
-     if (index % 2 == 0) {
-        if (card == currentCard) {
-            console.log("even");
-            odd = 'false';
-            return imgTiltEven(e);
-        }
-     } else {
-        if (card == currentCard) {
-            console.log("odd")
-            odd = 'true';
-            return imgTiltOdd(e);
-        }
-     }
-    }
-    
-}

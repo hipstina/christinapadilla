@@ -7,25 +7,37 @@
     color: $cocoa30;
     text-decoration: none;
     font-weight: 500;
+    width: 200px;
+    height: 40px;
+    margin: 100px 0 100px $space*2;
+
+    @media only screen and (min-width: 1100px) {
+        margin: 100px 0 100px 0;
+    }
     
 }
 
 
 .return-icon {
-    padding: $space $space*2 0 0;
+    padding: 0;
 }
 
 
 .return-link {
-    margin: $space*2.25 0 20px 0;
+    margin: $space*2.25  20px 0;
+    margin: $space 0 0 $space;
     padding: 0;
-    border: 3px solid transparent;
+    text-decoration: underline 2px solid $flesh40;
+    transition: .5s all cubic-bezier(0.42, -0.01, 0, 1.51);
+
 }
 
 .return-hover {
-    
-    border-bottom-color: $wizard50;
-    color: $wizard40;
+    text-decoration-color: $wizard50;
+    // border-bottom-color: $wizard50;
+    font-weight: 400;
+    letter-spacing: .02rem;
+    color: $flesh50;
 }
 
 .return-active {

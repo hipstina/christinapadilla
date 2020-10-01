@@ -2,27 +2,33 @@
 layout: base.liquid
 ---
 <div class="intro col-10 col-6 ">
-    <h1 class="intro-title">My name's <a href="/about">Christina</a> 
-and I'm making things that live on the web.</h1>
-
-    <p class="intro-sub">See what I've been working on</br>
-    ↓</p>
+    <h1 class="intro-title">My name's <a class="abt-link" id="abtLink1" href="/about">Christina</a> 
+and I'm making things that live on the web. See what I've been <a class="abt-link" id="abtLink2" href="/#projects">working on</a>.</h1>
+<div class="intro-overlay-1" id="intro1"></div>
+<div class="intro-overlay-2" id="intro2"></div>
+    <h1 class="intro-title"></br></h1>
+        <!-- <h1> ↓</h1> -->
 </div>
 
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
-<div class="cards">
+<div class="cards" id="projects">
 {%- for entry in collections.project %}
     <div class="card col-10 col-6 col-12 ">
-        <div class="card-img-wrapper">
-            <img class="card-img" src="{{entry.data.project_thumbnail | url}}" alt="">
-            <div class="card-img-overlay"></div>
-        </div>
+        <a href="{{entry.url}}">
+            <div class="card-img-wrapper">
+                <img class="card-img" src="{{entry.data.project_thumbnail | url}}" alt="">
+                <div class="card-img-overlay"></div>
+            </div>
+        </a>
         <div class="card-data">
             <h1 class="card-title">{{entry.data.project_title}}</h1>
             <p class="card-sum">{{entry.data.project_summary}}</p>
-            <a  class="" href="{{entry.url}}"><button class="card-btn">View Details</button></a>
+            <a  class="card-btn-wrapper" href="{{entry.url}}">
+                <button class="card-btn">View Details</button>
+            </a>
         </div>
     </div>
 {%- endfor %}
 </div>
 <script src="{{"/assets/scripts/card.js" | url}}"></script>
+<script src="{{"/assets/scripts/intro.js" | url}}"></script>

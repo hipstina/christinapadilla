@@ -7,7 +7,7 @@
     background: $wizard50;
     border: 3px solid $wizard50;
     border-radius: 100em;
-    margin: 0 0 $space*2 0 ;
+    margin: 5px 0;
     transition: .06s all linear;
 
     &:hover { //mouseover
@@ -34,16 +34,18 @@
     border: 3px solid $cocoa30;
     background: $cocoa30; 
     color: $carrot20;
-    margin: $space*2 0;
+    margin: 0;
     font-size: 20px;
     line-height: 1.0;
 }
 
 .pgtn-rt {
+    margin: 5px 0;
     border-radius: 100em 0 0 100em;
 }
 
 .pgtn-lt {
+    margin: 5px 0;
     border-radius: 0 100em 100em 0;
 }
 
