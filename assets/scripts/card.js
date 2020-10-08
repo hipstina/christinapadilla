@@ -90,7 +90,6 @@ function imgTilt(cardImg) {
 }
 
 function imgUntilt(cardImg) {
-
     cardImg.classList.remove('card-rotate-hover')
 }
 

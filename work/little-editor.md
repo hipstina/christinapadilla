@@ -17,7 +17,7 @@ project_code: https://github.com/hipstina/little-editor
 ---
 
 ### Overview
-My Little Editor is a tool for editing and previewing simple HTML markup. **Key feature:** Edit raw text and preview window will automatically display the rendered HTML. 
+My Little Editor is a tool for editing and previewing simple HTML markup. **Key feature:** Raw text can be edited and preview window will automatically display the rendered HTML. 
 
 <figure>
 <img class="img" src="" alt="">
@@ -35,8 +35,7 @@ The Little Editor is a project I designed and developed when I first started lea
 ### Thought process 
 This project was a good way for me to get some practical experience with some simple yet powerful DOM navigation methods and properties. To make the user experience as frictionless as possible, I decided to focus on building a tool that was as intuitive as any other text editor (like WordPress)--albeit on a much smaller scale.
 
-At one point, I kept coming across a persisting problem in which the rendering window omitted the last character from the text output. To solve this, I relied on Firefox dev tools to debug the source of the problem. I also experienced some minor yet noticeable rendering delays, which resulted in a clunky user experience. Improving the performance of the rendering output was a matter of refactoring my code and trying other DOM creation methods. Both times, coming to a solution for these issues required me to review my assumptions about how event handlers interpret events. 
-
+I had a persisting problem in which the rendering window omitted the last character from the text output. I relied on Firefox dev tools to debug the source of the problem: the key event before value assigned. I also experienced noticeable rendering delays, which created a clunky user experience. Improving the performance of the rendering output was a matter of refactoring my code and trying other DOM creation methods. 
 ### Takeaways
-I learned quite a bit while developing this tool. I learned the hard way that defining a project's scope is crucial to the development process, no matter how simple the initial idea seems; it's quite easy to let a project run away from you if you're making it up as you go. On a technical level, I got a lot of practice writing event handlers and navigating the DOM. This project finally allowed me to use Javascript in the context of the browser, which opened my eyes to how nuanced a user interaction can be. 
+I learned quite a bit while developing this tool. I learned the hard way that defining a project's scope is crucial to the development process, no matter how simple the initial idea seems; it's quite easy to let a project run away from you if you're making it up as you go. On a technical level, I gained a lot of insight into how the browser interprets events. 
 

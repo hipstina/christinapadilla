@@ -1,23 +1,28 @@
 .btn,
 .card-btn {
     width: 100%;
+    // color: $carrot10;
     color: $carrot10;
-    font-weight: 400;
+    font-weight: 500;
     height: 50px;
-    background: $wizard50;
-    border: 3px solid $wizard50;
-    border-radius: 100em;
+    // background: $wizard50;
+    background: $cocoa30;
+    border: 3px solid $cocoa30;
+
+    border-radius: .1rem;
     margin: 5px 0;
     transition: .06s all linear;
 
     &:hover { //mouseover
-        background: $carrot30;
-        color: $wizard60;
+        background: $carrot20;
+        color: $cocoa30;
+        border-color: $cocoa30;
     }
     
     &:active { //mouseup
         background: $wizard20;
         color: $wizard60;
+        border-color: $wizard60;
         transform: scale(.97);
     }
     

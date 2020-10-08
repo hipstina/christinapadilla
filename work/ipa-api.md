@@ -8,7 +8,7 @@ project_title: IPA API
 project_thumbnail: "/assets/images/project3.png" 
 
 # thumbnail_alt: 
-project_summary: A web app that generates a custom beer menu by filtering beers by style, ABV, and IBU.
+project_summary: A digital beer menu that filters beers by style, ABV, and IBU.
 project_type: Personal
 project_role: Front-end development, visual design
 project_stack: JavaScript, HTML, CSS 

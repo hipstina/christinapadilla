@@ -6,7 +6,7 @@
 
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1em;    
+    // font-size: 1em;    
     color: $cocoa30;
     line-height: 1.6;
 }
@@ -16,48 +16,51 @@ h1, h2, h3, h4 {
     // font-weight: 600;
     color: $cocoa30;
     font-style: normal;
+    margin: 0;
 }
+
+$fs: 1.8rem;
 
 h1 { 
     line-height: 1.2; 
-    font-size: 50px;
-    font-size: 2.5rem;
+    // font-size: 50px;
+    font-size: $fs;
 }
 h2 { 
     line-height: 1.3; 
-    font-size: 42px;
-    font-size: 2.2rem;
+    // font-size: 42px;
+    font-size: $fs*.9;
 }
 h3 { 
     line-height: 1.4; 
-    font-size: 34px;
-    font-size: 1.9rem;
+    // font-size: 34px;
+    font-size: $fs*.8;
 }
 h4 { 
     line-height: 1.5; 
-    font-size: 26px;
-    font-size: 1.6rem;
+    // font-size: 26px;
+    font-size: $fs*.7;
 }
 
 button {
     font-size: 22px;
-    font-size: 1.4rem;
+    font-size: $fs*.65;
     font-weight: 500;
 }
 
 p, ul, ol, li, table { 
     line-height: 1.6; 
-    font-size: 18px;
-    font-size: 1.3rem;
+    // font-size: 18px;
+    font-size: $fs*.6;
 }
 
 figcaption {
-    font-size: 14px;
+    // font-size: 14px;
 }
 
 a,
 a:visited {
-    color: $wizard50;
+    color: $cocoa30;
     text-decoration: underline 2px solid $flesh50;
     font-weight: 600;
     transition: .2s all cubic-bezier(0.42, -0.01, 0, 1.51);
@@ -81,5 +84,5 @@ a:visited {
 }
 
 .about {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
 }
