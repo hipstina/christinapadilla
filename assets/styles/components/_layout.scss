@@ -7,15 +7,34 @@
 }
 
 body { 
-    margin: 0 $space;
-    background: $carrot10;
+    margin: 0 ;
+    padding:  0 ;
+    background: $wizard-lt-grey;
+    background: rgba(88,81,111,.2);
+    background: rgba(36,19,93,.2);
     // background: linear-gradient(180deg, $carrot10 0%, $carrot10 60%, $carrot10 80%, $carrot20 90%, $flesh20 95%, $rose20 100%);
     // background: linear-gradient(180deg, $carrot10 0%, $carrot10 75%, $flesh20 87.5%, $rose20 100%);
+    // background: linear-gradient(180deg, $carrot10 0%, $wizard10 20%,$rose10  40%,  $carrot30 60%, $flesh50 100%);
+    
+    
+    background-size: 100%;
+            background-position: center;
+            background-repeat: repeat;
+    // background-image: 
+    // linear-gradient(55deg,$rose30 0%,transparent 45%),
+    // linear-gradient(160deg,$carrot30 10.23%,$carrot60 80.88%)
+    
  }
 
 .container { 
     position: relative;
-    margin: $space;
+    margin: 0;
+    padding: 0 $space $space $space  ;
+    // border: $border;
+    border-radius: .2rem;
+    // background: rgba(255,255,255,.4);
+    // box-shadow: 8px 18px 20px rgba(0,0,0,.2);
+
 }
 
 .row {
@@ -49,6 +68,11 @@ body {
   /* =DEVICES >800px
 ============================================ */
 @media only screen and (min-width: 700px) {
+
+    .container {
+        padding: 0 $space*4;
+    }
+
     // .col-12 {
     //     width: 100%;
     // }
@@ -67,8 +91,7 @@ body {
 @media only screen and (min-width: 1100px) {
     .container {
         max-width: 1100px;
-        padding: 0 $space*4;
-        margin: 0 auto;
+        margin: $space*4 auto $space*4 auto;
     }
 
     .col-4 {

@@ -1,15 +1,38 @@
 /* Intro
 ------------------------ */
+
+.intro-wrapper {
+    padding: 15vh $space $space*2 $space;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 700px) {
+        flex-flow: row nowrap;
+        padding: 30vh $space $space*2 $space;
+    }
+    // width: 100%;
+    // border: $border;
+}
+
 .intro {
     display: flex;
     flex-flow: column nowrap;
     align-content: space-around;
     justify-content: flex-start;
     
-    min-height: 50vh;
-    // margin: 0 auto 0 auto;
+    min-height: 60vh;
+    margin: 0 auto 0 auto;
     text-align: left;
     z-index: 6;
+    // background: $carrot20;
+    padding:  0 $space;
+    // border: 3px solid $cocoa30;
+    border-radius: .2rem;
+  
+    // border: $border;
+    
 
     .intro-overlay-1 {
         
@@ -49,29 +72,29 @@
         }
     }
 
-    .intro-overlay-2  {
-        @media only screen and (min-width: 900px) {
-            top: 50vh;
-            left: 5vw;
-            background-image: url('/assets/images/twinkles.svg');
-            transform: rotate(180deg);
-            transform-origin: 50px;
-            background-size: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 50px;
-            // border: 1px solid red;
-            opacity: 0.5;
-            position: absolute;
-            height: 100px;
-            width: 100px;
-            z-index: 1;
-            animation: bounce-2 2s infinite;
-            transition: .7s all cubic-bezier(0.42, -0.01, 0, 1.51);
-        }
+    // .intro-overlay-2  {
+    //     @media only screen and (min-width: 900px) {
+    //         top: 50vh;
+    //         left: 5vw;
+    //         background-image: url('/assets/images/twinkles.svg');
+    //         transform: rotate(180deg);
+    //         transform-origin: 50px;
+    //         background-size: 70%;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
+    //         margin: 50px;
+    //         // border: 1px solid red;
+    //         opacity: 0.5;
+    //         position: absolute;
+    //         height: 100px;
+    //         width: 100px;
+    //         z-index: 1;
+    //         animation: bounce-2 2s infinite;
+    //         transition: .7s all cubic-bezier(0.42, -0.01, 0, 1.51);
+    //     }
         
        
-    }
+    // }
 
     .intro-2-hover {
         @media only screen and (min-width: 1100px) {
@@ -84,12 +107,39 @@
         text-align: left;
         font-weight: 600;
         line-height: 1.3;
+        width: 100%;
+       
         // font-size: 2rem;
-        margin: 0;
+        margin: 0 ;
+        padding: 0 0 $space 0;
+        // color: $wizard70;
+        @media only screen and (min-width: 1100px) {
+            // padding: $space*2 0;
+            padding: 0 0 $space $space*2 ;
+        }
+      
+    
+    }
+
+    .intro-subtitle {
+        text-align: left;
+        font-weight: 500;
+        line-height: 1.3;
+        width: 100%;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        // font-size: 2rem;
+        margin: 0 ;
+        color: $wizard70;
+        padding: 0 0 $space 0 ;
+        @media only screen and (min-width: 1100px) {
+            // padding: $space*2 0;
+            padding: 0 0 $space $space*2 ;
+            width: 70%;
+        }
     }
 
     .intro-name {
-        font-weight: 700;
+        // font-weight: 700;
         margin: 0;
         line-height: 1;
     }
@@ -155,7 +205,9 @@
 
 }
 
-
+.arrow-link {
+    color: $flesh50;
+}
 
 
 
@@ -169,8 +221,9 @@
 
 .prj-img { 
     width: 120%;
+    height: auto;
     display: block;
-    margin: -400px 0 0 -90px;
+    // margin: -400px 0 0 -90px;
 
 }
 
@@ -179,42 +232,68 @@
     background: $wizard50;
     width: 100%;
     overflow: hidden;
-    border: 3px solid $cocoa30;
-    border-radius: 6px;
+    border: $border;
+    border-radius: .1rem;
     margin-top: $space*2;
+}
+
+.prj-hilights {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media only screen and (min-width: 700px) { 
+        
+        width: 65%;
+    }
+    width: 100%;
+    margin: $space auto;
+}
+
+.cta-item {
+    margin: 0 $space;
 }
 
 .prj {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    text-align: center;
+    text-align: left;
     
-    background: $flesh50;
-    border: 3px solid $wizard60;
-    border-radius: 6px;
+    background: $wizard70;
+    // background-image: 
+    // linear-gradient(57.09deg,$carrot40 0%,rgba(252,255,101,0) 37.99%),linear-gradient(162.34deg,$flesh30 25.23%,$flesh40 70.88%),
+    // linear-gradient(95.09deg,$carrot20 1.14%, $carrot30 33.44%,$rose30 62.8%,$carrot30 99.02%);
+    border: $border;
+    border-radius: 1rem;
     padding: $space*3;
     color: $carrot10;
 
     position: relative;
-    top: -60px;
+    // top: -60px;
     z-index: 4;
-    margin: 0 auto $space*2 auto;
-    width: 90%;
+    margin: $space*2 0;
+    width: 100%;
+    @media only screen and (min-width: 1100px) {  
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+    
 }
 
 .prj-label {
     text-transform: uppercase;
     // font-size: 1.1rem;
+    padding: 0 $space*2;
     font-weight: 400; 
     line-height: 1;
-    color: $carrot10;
+    color: $rose10;
     letter-spacing: .1rem;
 }
 
 .prj-data {
-    font-weight: 600; 
+    font-weight: 400; 
     line-height: 1.3;
     padding: 0 $space*2;
     max-width: 350px;
@@ -224,32 +303,41 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    max-width: 290px;
+    max-width: 360px;
     margin: 100px auto 150px auto;
 }
 
 .prj-details {
     width: 100%;
     margin: 0 auto;
-    color: $wizard60;
+    color: $cocoa30;
     
 }
+
+.cta {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: stretch;
+    width: 100%;
+    margin: 0 auto 60px auto;
+}
+
 
 @media only screen and (min-width: 700px) {
 
     .prj {
-        top: -120px;
+        // top: -120px;
     }
 
     .cta {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
-        margin: -80px 0 100px 0;
+        margin: 0 0 100px 0;
     }
 
     .ftr-cta {
-        max-width: 320px;
+        max-width: 400px;
     }
 
     .prj-details {
@@ -269,7 +357,7 @@
     justify-content: space-between;
     align-content: flex-start;
     width: 90%;
-    margin: 100px auto 75px auto;
+    margin: 150px auto 75px auto;
 
     .abt-text {
         padding: 0 $space 0 0 ;
@@ -287,6 +375,7 @@
     .abt-fig {
         margin: $space*2 auto 100px auto;
         position: relative;
+        
 
         @media only screen and (min-width: 600px) {
             align-self: center;
@@ -298,7 +387,12 @@
         width: 200px;
         height: auto;
         margin: 0 0 0 0;
+        border: $border;
+        border-radius: 2px;
         transition: .5s all cubic-bezier(0.42, -0.01, 0, 1.51);
+    //     background-image: 
+    // linear-gradient(55deg,$carrot30 0%,transparent 45%),
+    // linear-gradient(160deg,$rose20 15.23%,$flesh20 50.88%);
 
         &:hover {
             transform: rotate(3deg);
@@ -343,7 +437,7 @@
         align-content: space-between;
         flex-flow: row;
         overflow: unset;
-        margin: 200px 0 200px 0;
+        // margin: 100px 0 200px 0;
 
         .abt-text {
             padding: 0 10% 0 0 ;
@@ -354,8 +448,9 @@
 
     .abt-fig {
         margin: 200px 5% 200px -8%;
+       
         position: fixed;
-        top: 140px;
+        top: 220px;
         left: 74%;
         min-width: 9vw;
         max-width: 200px;
@@ -372,7 +467,8 @@
 
 @media only screen and (min-width: 1670px) {
     .abt-fig {
-        margin: 200px 5% 200px -11%;
+        margin: 200px 5% 200px -16%;
+        // margin: 200px 0 200px 0;
     }
 
     .abt-text {

@@ -4,10 +4,11 @@ layout: internal.liquid
 ---
 <body>
     <h1 class="prj-detail-title"> {{project_title}} </h1>
-    <div class="prj-img-wrapper">
+    <!-- <div class="prj-img-wrapper">
     <image class="prj-img" src="{{project_thumbnail}}" alt="{{thumbnail_alt}}">
     
-</div>
+</div> -->
+<div class="prj-hilights">
     <div class="prj">
         <div class="prj-item">
             <p class="prj-label">Type</p>
@@ -23,9 +24,10 @@ layout: internal.liquid
         </div>
     </div>
     <div class="cta">
-        <a href="{{project_demo}}"><button class="btn">Demo</button></a>
-        <a href="{{project_code}}"><button class="btn">Source Code</button></a>
+        <a class="cta-item" href="{{project_demo}}"><button class="btn">Demo</button></a>
+        <a class="cta-item" href="{{project_code}}"><button class="btn">Source Code</button></a>
     </div>
+</div>
     <main> 
         <div class="prj-details">
             {{content}} 

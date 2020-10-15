@@ -4,19 +4,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     // font-size: 1em;    
     color: $cocoa30;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4 { 
-    
+    font-family: "Epilogue",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     // font-weight: 600;
-    color: $cocoa30;
+    color: $wizard60;
     font-style: normal;
     margin: 0;
+    
 }
 
 $fs: 1.8rem;
@@ -43,12 +47,14 @@ h4 {
 }
 
 button {
+    font-family: "Epilogue",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 22px;
     font-size: $fs*.65;
     font-weight: 500;
 }
 
 p, ul, ol, li, table { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6; 
     // font-size: 18px;
     font-size: $fs*.6;
@@ -58,10 +64,10 @@ figcaption {
     // font-size: 14px;
 }
 
-a,
-a:visited {
-    color: $cocoa30;
-    text-decoration: underline 2px solid $flesh50;
+.link,
+.link:visited {
+    color: $flesh50;
+    text-decoration: underline 2px solid transparent;
     font-weight: 600;
     transition: .2s all cubic-bezier(0.42, -0.01, 0, 1.51);
 

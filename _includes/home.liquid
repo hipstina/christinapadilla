@@ -2,18 +2,36 @@
 layout: base.liquid
 ---
 <header>
-    <div class="abt-nav">
-    <a class="abt-img-link" href="/about">
-        <img class="abt-nav-img" src="" alt="">
-    </a>
-    </div>
+    <!-- <nav>
+        <ul class="nav-list">
+            <li  class="nav-item"><a class="logo" href="/"><img class="logo-img" src="{{"/assets/images/logo-04-dk-purp-yell.svg" | url}}" alt=""></a></li>
+            <li></li>
+        </ul>
+    </nav> -->
+   
 </header>
 
-<div class="intro col-10 col-6 col-4">
+<div class="intro-wrapper ">
    
-        
-    <h1 class="intro-title">My name's <a class="abt-link" id="abtLink1" href="/about">Christina</a> 
-and I'm making things that live on the web. See what I've been <a class="abt-link" id="abtLink2" href="/#projects">working on</a>.</h1>
+    <!-- <div class="abt-nav">
+        <a class="abt-img-link" href="/about"> <img class="abt-nav-img" src="" alt="">
+        </a>
+       
+    </div> -->
+    
+    <img class="abt-nav-img" src="" alt="">
+    <div class="intro">
+    <h1 class="intro-title  ">Hey there. My name's Christina. </h1>
+
+    <h3 class="intro-subtitle col-8"> I started learning Javascript during quarantine. 
+    </h3>
+    <h3 class="intro-subtitle col-8">Now I design and build websites (plus other things that live on the web).</h3>
+   
+    <!-- <p class="intro-title ">Let me show you what I've been working on these last few months. </p> -->
+</div>
+<!-- <a class="arrow-link"  href="/#projects"></a> -->
+        <!-- <a class="abt-link" id="abtLink1" href="/about">Christina</a>  -->
+
 <!-- <div class="intro-overlay-1" id="intro1"></div>
 <div class="intro-overlay-2" id="intro2"></div> -->
 
@@ -22,9 +40,15 @@ and I'm making things that live on the web. See what I've been <a class="abt-lin
 </div>
 
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
-<div class="cards" id="projects">
+
+
+<h1 class="cards-title" id="projects"> Some things I've been working on </h1>
+
+<div class="cards" >
+    
+
 {%- for entry in collections.project %}
-    <div class="card col-10 col-6 col-12 ">
+    <div class="card ">
         <a href="{{entry.url}}">
             <div class="card-img-wrapper">
                 <img class="card-img" src="{{entry.data.project_thumbnail | url}}" alt="">
@@ -32,8 +56,10 @@ and I'm making things that live on the web. See what I've been <a class="abt-lin
             </div>
         </a>
         <div class="card-data">
+            
             <h1 class="card-title">{{entry.data.project_title}}</h1>
             <p class="card-sum">{{entry.data.project_summary}}</p>
+            <p class="card-stack">{{entry.data.project_stack}}</p>
             <a  class="card-btn-wrapper" href="{{entry.url}}">
                 <button class="card-btn">View Details</button>
             </a>
@@ -42,4 +68,3 @@ and I'm making things that live on the web. See what I've been <a class="abt-lin
 {%- endfor %}
 </div>
 <script src="{{"/assets/scripts/card.js" | url}}"></script>
-<script src="{{"/assets/scripts/intro.js" | url}}"></script>

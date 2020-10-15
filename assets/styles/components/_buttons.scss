@@ -4,30 +4,43 @@
     // color: $carrot10;
     color: $carrot10;
     font-weight: 500;
-    height: 50px;
+    height: 60px;
     // background: $wizard50;
-    background: $cocoa30;
-    border: 3px solid $cocoa30;
+    // background: $wizard60;
+    // background-image: 
+    // linear-gradient(55deg,$rose40 0%,transparent 45%),
+    // linear-gradient(160deg,$carrot60 10.23%,$flesh50 80.88%);
+    border: $border;
+    background: $wizard70;
 
     border-radius: .1rem;
     margin: 5px 0;
-    transition: .06s all linear;
+    padding: .7rem .85rem .5rem .85rem;
+    transition: .3s all cubic-bezier(0.42, -0.01, 0, 1.51);
 
     &:hover { //mouseover
-        background: $carrot20;
-        color: $cocoa30;
-        border-color: $cocoa30;
+        // background: $carrot10;
+        color: $carrot10;
+        background-image: 
+    linear-gradient(55deg,$wizard40 0%,transparent 45%),
+    linear-gradient(160deg,$wizard60 10.23%,$rose40 80.88%);
+   
+    transition: .2s all linear;
+    
     }
     
     &:active { //mouseup
         background: $wizard20;
-        color: $wizard60;
-        border-color: $wizard60;
+        color: $wizard70;
+        border-color: $wizard70;
         transform: scale(.97);
     }
     
     &:focus { //click
         outline: $rose30;
+        color: $carrot10;
+        background: $wizard20;
+        border-color: $wizard70;
     }
 }
 
@@ -36,9 +49,9 @@
 
 
 .btn-pgtn {
-    border: 3px solid $cocoa30;
-    background: $cocoa30; 
-    color: $carrot20;
+    border: $border;
+    background: $wizard70; 
+    color: $carrot10;
     margin: 0;
     font-size: 20px;
     line-height: 1.0;
@@ -46,20 +59,20 @@
 
 .pgtn-rt {
     margin: 5px 0;
-    border-radius: 100em 0 0 100em;
+    border-radius: .1rem;
 }
 
 .pgtn-lt {
     margin: 5px 0;
-    border-radius: 0 100em 100em 0;
+    border-radius: .1rem;
 }
 
 
 @media only screen and (min-width: 800px) {
-    .btn,
-    .card-btn {
-        width: auto;
-    }
+    // .btn,
+    // .card-btn {
+    //     width: auto;
+    // }
     .btn-pgtn {
         font-size: 22px;
     }

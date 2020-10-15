@@ -17,7 +17,7 @@ tags: about
 </div>
 
 <figure class="abt-fig col-">
-<img class="abt-img" src="{{"/assets/images/profile-charcoal.png" | url}}" alt="">
+<img class="abt-img" src="{{"/assets/images/profile-royal-blue.png" | url}}" alt="">
 <div class="abt-img-overlay"></div>
 <figcaption>↑ Click me to see more selfies.</figcaption>
 </figure>
