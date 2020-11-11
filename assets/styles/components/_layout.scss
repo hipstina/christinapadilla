@@ -1,32 +1,32 @@
-* ,
+*,
 ::after,
-::before { 
-    box-sizing: border-box; 
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
+::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
-body { 
-    margin: 0 $space;
-    background: $carrot10;
-    // background: linear-gradient(180deg, $carrot10 0%, $carrot10 60%, $carrot10 80%, $carrot20 90%, $flesh20 95%, $rose20 100%);
-    // background: linear-gradient(180deg, $carrot10 0%, $carrot10 75%, $flesh20 87.5%, $rose20 100%);
- }
+body {
+  margin: 0 $space;
+  background: $carrot10;
+  // background: linear-gradient(180deg, $carrot10 0%, $carrot10 60%, $carrot10 80%, $carrot20 90%, $flesh20 95%, $rose20 100%);
+  // background: linear-gradient(180deg, $carrot10 0%, $carrot10 75%, $flesh20 87.5%, $rose20 100%);
+}
 
-.container { 
-    position: relative;
-    margin: $space;
+.container {
+  position: relative;
+  margin: $space;
 }
 
 .row {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
 }
 
 .column {
-    margin: 0;
-    padding: 0 0 $space 0;
+  margin: 0;
+  padding: 0 0 $space 0;
 }
 
 // column width is out of 12 units where 12 is container
@@ -40,50 +40,49 @@ body {
 .col-8,
 .col-9,
 .col-10,
-.col-11{
-    width: 100%;
-    // margin: 0 auto;
+.col-11 {
+  width: 100%;
+  // margin: 0 auto;
 }
 
-
-  /* =DEVICES >800px
+/* =DEVICES >800px
 ============================================ */
 @media only screen and (min-width: 700px) {
-    // .col-12 {
-    //     width: 100%;
-    // }
+  // .col-12 {
+  //     width: 100%;
+  // }
 
-    .col-10 {
-        width: 58.33%;
-    }
+  .col-10 {
+    width: 58.33%;
+  }
 
-    .col-8 {
-        width: 66.66%;
-    }
+  .col-8 {
+    width: 66.66%;
+  }
 }
 
-  /* =DEVICES >1300px
+/* =DEVICES >1300px
 ============================================ */
 @media only screen and (min-width: 1100px) {
-    .container {
-        max-width: 1100px;
-        padding: 0 $space*4;
-        margin: 0 auto;
-    }
+  .container {
+    max-width: 1100px;
+    padding: 0 $space * 4;
+    margin: 0 auto;
+  }
 
-    .col-4 {
-        width: 33.33%;
-    }
+  .col-4 {
+    width: 33.33%;
+  }
 
-    // .col-6 {
-    //     width: 50%;
-    // }
+  // .col-6 {
+  //     width: 50%;
+  // }
 
-    .col-9 {
-        width: 75%;
-    }
+  .col-9 {
+    width: 75%;
+  }
 
-    .col-12 {
-        width: 100%;
-    }
+  .col-12 {
+    width: 100%;
+  }
 }
