@@ -151,7 +151,9 @@ footer {
   align-content: center;
   max-width: 200px;
   margin: auto;
-  padding: 0;
+
+  // padding: 0;
+  padding: $space * 2 0 100px 0;
   // margin: 0;
   // color: $wizard50;
   // border: 1px solid red;
@@ -187,5 +189,6 @@ footer {
 
   .socials {
     margin: 0;
+    padding: 0;
   }
 }

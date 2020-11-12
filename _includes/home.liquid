@@ -1,8 +1,8 @@
 ---
 layout: base.liquid
 ---
-<header>
-    <ul class="nav">
+<header class="full-bleed">
+    <ul class="nav ">
     
         <li class="nav-item"><a class="abt-img-link" href="/about">
         <img class="abt-nav-img" src="{{"/assets/images/hipstina-circ.jpg" | url}}" alt=""></a>
@@ -18,7 +18,7 @@ layout: base.liquid
         
     <h1 class="intro-title">Hey there. My name is <a class="abt-link" id="abtLink1" href="/about">Christina</a>. </h1>
     <h1 class="intro-title">I started learning Javascript during quarantine.</h1>
-    <h1 class="intro-title">Now I make things that live on the web.</h1> 
+    <h1 class="intro-title"></h1> 
 
 <!-- <div class="intro-overlay-1" id="intro1"></div>
 <div class="intro-overlay-2" id="intro2"></div> -->
@@ -28,12 +28,12 @@ layout: base.liquid
 </div>
 
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
-<div class="cards" id="projects">
+<div class="cards " id="projects">
 {%- for entry in collections.project %}
     <div class="card col-10 col-6 col-12 ">
         <a href="{{entry.url}}">
             <div class="card-img-wrapper">
-                <img class="card-img" src="{{entry.data.project_thumbnail | url}}" alt="">
+                <img class="card-img" src="{{entry.data.project_thumbnail_color | url}}" alt="">
                 <div class="card-img-overlay"></div>
             </div>
         </a>

@@ -2,13 +2,13 @@
 layout: internal.liquid
 
 ---
-<body>
+<body class="">
     <h1 class="prj-detail-title"> {{project_title}} </h1>
-    <div class="prj-img-wrapper">
-    <image class="prj-img" src="{{project_thumbnail}}" alt="{{thumbnail_alt}}">
+    <div class="prj-img-wrapper full-bleed">
+    <image class="prj-img " src="{{project_thumbnail_color}}" alt="{{thumbnail_alt}}">
     
 </div>
-    <div class="prj">
+    <div class="prj ">
         <div class="prj-item">
             <p class="prj-label">Type</p>
             <p class="prj-data"> {{project_type}} </p>
@@ -36,8 +36,8 @@ layout: internal.liquid
     {%- for entry in collections.project %}
     {%- if entry.url != page.url %} 
     <div class="ftr-cta">
-        <a href="{{ '/' | url}}"><button class="btn pgtn-rt btn-pgtn">Return Home</button></a>
-        <a href="{{entry.url}}"><button class="btn pgtn-lt btn-pgtn">Next Project</button></a>
+        <a href="{{ '/' | url}}"><button class="btn ">Return Home</button></a>
+        <a href="{{entry.url}}"><button class="btn ">Next Project</button></a>
     </div>
     {% endif %}
 {%- endfor %}

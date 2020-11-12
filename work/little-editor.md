@@ -5,7 +5,8 @@ permalink: /my-little-editor/
 favicon: 📝
 tags: project 
 project_title: My Little Editor
-project_thumbnail: "/assets/images/project2.png"
+project_thumbnail_color: "/assets/images/editor-color.png"
+project_thumbnail_bw: "/assets/images/editor-bw.png"
 # thumbnail_alt: 
 project_summary: A tool for editing and previewing simple HTML markup.
 project_type: Personal

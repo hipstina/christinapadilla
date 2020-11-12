@@ -34,23 +34,23 @@
      
     <div class="container">
        
-    <main>
+    <main class="wrapper">
         
     
-<header>
+<header class="full-bleed">
     <a class="return-nav" id="return" href="/">
         <p id="returnIcon" class="return-icon">←</p>
         <p id="returnLink" class="return-link">Return Home</p>
     </a>
 </header>
-<body>
-    <body>
+<body class="">
+    <body class="">
     <h1 class="prj-detail-title"> IPA API </h1>
-    <div class="prj-img-wrapper">
-    <image class="prj-img" src="/assets/images/project3.png" alt="">
+    <div class="prj-img-wrapper full-bleed">
+    <image class="prj-img " src="/assets/images/api-color.png" alt="Alt text here">
     
 </div>
-    <div class="prj">
+    <div class="prj ">
         <div class="prj-item">
             <p class="prj-label">Type</p>
             <p class="prj-data"> Personal </p>
@@ -75,12 +75,24 @@
 <h3>Purpose &amp; Goal</h3>
 <p>I was charmed by <a href="tandia.dev">tania.dev</a>'s simple exercise for <a href="https://tania.dev/how-to-connect-to-an-api-with-javascript">connecting to an API with plain Javascript</a>, and so I decided to expand upon her tutorial and make my web app interactive, too. To keep things simple, I picked a free, open-source API that didn't require authentication or a password to connect to the data. I also chose this API as it happened to be related to a passion of mine: craft beer.</p>
 <p>Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.</p>
+<figure class="prj-fig">
+<img class=" full-bleed" src="/assets/images/project3.png" alt="Alt text here">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
 <h3>Thought process</h3>
 <p>An issue I faced during development was in constructing a new XMLHttpRequest based on user triggered events. I needed to chain together one or multiple parameters and update the rendered data everytime a filter changed states. I solved this by storing the user input value and then using a separate function to check the current state of the other filter types.</p>
 <p>Another issue I faced was repainting an updated Menu everytime a new search filter was (de)selected. I am particularly proud of a simple little function I wrote <code>wipeMenu</code> for recursively removing HTML elements when a filter was updated.</p>
+<figure class="prj-fig">
+<img class=" full-bleed" src="/assets/images/project3.png" alt="Alt text here">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
 <h3>Takeaways</h3>
 <p>This project gave me a lot of insight into how powerful APIs can be, and also that a web app is only as robust as its API. The API I used capped each data request at no more than 80 beers at a time, and lacked methods for searching within many of the beer properties. In the future, I know better what I should look for the next time I get to work with an API of my choice.</p>
 <p>As this is the biggest project I've worked on so far, I also got a taste of just how important my code structure is for development. As my web app grew more complex with each feature, I iterated through my scripts quite a bit until I realized that I needed to just break up my 3-4 giant functions into smaller pieces. This step toward modularity improved my code's readabilty and made adding new features more efficient because it allowed me to introduce complexity quickly.</p>
+<figure class="prj-fig">
+<img class=" full-bleed" src="/assets/images/project3.png" alt="Alt text here">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
 <p>A project is never truly finished, there is always something that can be improved. To improve this project, there are 2 features I may add on later:</p>
 <ul>
 <li>A button on each card that triggers an overlay of the beer description.</li>
@@ -90,12 +102,13 @@
         </div>
     </main> 
     <div class="ftr-cta">
-        <a href="/"><button class="btn pgtn-rt btn-pgtn">Return Home</button></a>
-        <a href="/my-little-editor/"><button class="btn pgtn-lt btn-pgtn">Next Project</button></a>
+        <a href="/"><button class="btn ">Return Home</button></a>
+        <a href="/my-little-editor/"><button class="btn ">Next Project</button></a>
     </div>
     
 
-    </body> 
+    </body>
+    
     <script src="/assets/scripts/main.js"></script>
 
 </body>

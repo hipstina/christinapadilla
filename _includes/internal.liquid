@@ -4,14 +4,15 @@ layout: base.liquid
 
 ---
 
-<header>
+<header class="full-bleed">
     <a class="return-nav" id="return" href="/">
         <p id="returnIcon" class="return-icon">←</p>
         <p id="returnLink" class="return-link">Return Home</p>
     </a>
 </header>
-<body>
-    {{content}} 
+<body class="">
+    {{content}}
+    
     <script src="{{"/assets/scripts/main.js" | url}}"></script>
 
 </body>

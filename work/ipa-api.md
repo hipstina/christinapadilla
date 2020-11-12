@@ -5,7 +5,12 @@ permalink: /ipa-api/
 favicon: 🍺
 tags: project
 project_title: IPA API
-project_thumbnail: "/assets/images/project3.png" 
+project_thumbnail_color: "/assets/images/api-color.png" 
+project_thumbnail_bw: "/assets/images/api-bw.png" 
+thumbnail_alt: Alt text here
+project_thumbnail1: "/assets/images/project3.png" 
+project_thumbnail2: "/assets/images/project3.png" 
+project_thumbnail3: "/assets/images/project3.png" 
 
 # thumbnail_alt: 
 project_summary: A digital beer menu that filters beers by style, ABV, and IBU.
@@ -24,7 +29,10 @@ I was charmed by [tania.dev](tandia.dev)'s simple exercise for [connecting to an
 
 Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.
 
-
+<figure class="prj-fig">
+<img class=" full-bleed" src="{{project_thumbnail1}}" alt="{{thumbnail_alt}}">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
 
 ### Thought process
 An issue I faced during development was in constructing a new XMLHttpRequest based on user triggered events. I needed to chain together one or multiple parameters and update the rendered data everytime a filter changed states. I solved this by storing the user input value and then using a separate function to check the current state of the other filter types. 
@@ -32,11 +40,24 @@ An issue I faced during development was in constructing a new XMLHttpRequest bas
 Another issue I faced was repainting an updated Menu everytime a new search filter was (de)selected. I am particularly proud of a simple little function I wrote `wipeMenu` for recursively removing HTML elements when a filter was updated.
 
 
+<figure class="prj-fig">
+<img class=" full-bleed" src="{{project_thumbnail2}}" alt="{{thumbnail_alt}}">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
+
 ### Takeaways
 This project gave me a lot of insight into how powerful APIs can be, and also that a web app is only as robust as its API. The API I used capped each data request at no more than 80 beers at a time, and lacked methods for searching within many of the beer properties. In the future, I know better what I should look for the next time I get to work with an API of my choice.
 
 As this is the biggest project I've worked on so far, I also got a taste of just how important my code structure is for development. As my web app grew more complex with each feature, I iterated through my scripts quite a bit until I realized that I needed to just break up my 3-4 giant functions into smaller pieces. This step toward modularity improved my code's readabilty and made adding new features more efficient because it allowed me to introduce complexity quickly.
 
+<figure class="prj-fig">
+<img class=" full-bleed" src="{{project_thumbnail3}}" alt="{{thumbnail_alt}}">
+<figcaption>↑ A caption for my project.</figcaption>
+</figure>
+
+
 A project is never truly finished, there is always something that can be improved. To improve this project, there are 2 features I may add on later:
 * A button on each card that triggers an overlay of the beer description. 
 * Make the side toolbar toggle in-to and out-of view, so that the app holds up better on smaller devices.
+  
+
