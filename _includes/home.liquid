@@ -5,26 +5,37 @@ layout: base.liquid
     <ul class="nav ">
     
         <li class="nav-item"><a class="abt-img-link" href="/about">
-        <img class="abt-nav-img" src="{{"/assets/images/hipstina-circ.jpg" | url}}" alt=""></a>
+        <img class="abt-nav-img" src="
+        {{"/assets/images/hipstina-circ.jpg" | url}}
+        " alt="">
+    </a>
         </li>
         <li class="nav-item"><a class="abt-img-link" href="https://twitter.com/hipstina/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li class="nav-item"><a class="abt-img-link" href="https://github.com/hipstina/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
     
     </ul>
 </header>
+<div class="intro-wrapper ">
+    <figure class="intro-fig">
+        <img class="intro-img" src="{{"/assets/images/profile-charcoal.png" | url}}"
+            alt="">
+        <div class="intro-img-overlay"></div>
+        <figcaption>↑ me</figcaption>
+    </figure>
+    <div class="intro ">
 
-<div class="intro col-10 col-6 ">
-   
-        
-    <h1 class="intro-title">Hey there. My name is <a class="abt-link" id="abtLink1" href="/about">Christina</a>. </h1>
-    <h1 class="intro-title">I started learning Javascript during quarantine.</h1>
-    <h1 class="intro-title"></h1> 
+            
+        <h1 class="intro-title">Hey there. My name is <a class="abt-link" id="abtLink1" href="/about">Christina</a>. I started learning Javascript during quarantine. </h1>
+        <p class="intro-sub">Working for several years as a tech support specialist has completely informed the kind of front-end developer I'm trying to be now: focused on the user and curious about the full development lifecycle. </p>
+        <p class="intro-sub">This site is a collection of some of my recent projects.</p>
+    
 
-<!-- <div class="intro-overlay-1" id="intro1"></div>
-<div class="intro-overlay-2" id="intro2"></div> -->
+    <!-- <div class="intro-overlay-1" id="intro1"></div>
+    <div class="intro-overlay-2" id="intro2"></div> -->
 
-    <h1 class="intro-title"></br></h1>
-        <!-- <h1> ↓</h1> -->
+        <h1 class="intro-title"></br></h1>
+            <!-- <h1> ↓</h1> -->
+    </div>
 </div>
 
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->

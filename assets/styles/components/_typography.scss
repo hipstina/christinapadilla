@@ -73,7 +73,7 @@ a,
 a:visited {
   color: $cocoa30;
   text-decoration: underline 2px solid $wizard60;
-  font-weight: 600;
+  font-weight: inherit;
   transition: 0.2s all cubic-bezier(0.42, -0.01, 0, 1.51);
   //   margin: 0;
   //   padding: 0;
@@ -96,5 +96,9 @@ a:visited {
 }
 
 .about {
-  //   font-size: 1.5rem;
+  // font-size: 1.5rem;
+  font-size: calc(20px + 30 * ((60vw - 100px) / 1025));
+  @media only screen and (min-width: 1000px) {
+    font-size: 35px;
+  }
 }
