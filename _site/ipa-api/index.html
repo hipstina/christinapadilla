@@ -30,7 +30,7 @@
    
 </head>
 
- <body>
+ <body id="body" class="body-class">
      
     <div class="container">
        
@@ -46,6 +46,7 @@
 <body class="">
     <body class="">
     <h1 class="prj-detail-title"> IPA API </h1>
+    <p class="prj-sum">A digital beer menu that filters beers by style, ABV, and IBU.</p>
     <div class="prj-img-wrapper full-bleed">
     <image class="prj-img " src="/assets/images/api-color.png" alt="Alt text here">
     
@@ -76,22 +77,22 @@
 <p>I was charmed by <a href="tandia.dev">tania.dev</a>'s simple exercise for <a href="https://tania.dev/how-to-connect-to-an-api-with-javascript">connecting to an API with plain Javascript</a>, and so I decided to expand upon her tutorial and make my web app interactive, too. To keep things simple, I picked a free, open-source API that didn't require authentication or a password to connect to the data. I also chose this API as it happened to be related to a passion of mine: craft beer.</p>
 <p>Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/project3.png" alt="Alt text here">
-<figcaption>↑ A caption for my project.</figcaption>
+<img class=" full-bleed" src="/assets/images/api-bw.png" alt="Alt text here">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Thought process</h3>
 <p>An issue I faced during development was in constructing a new XMLHttpRequest based on user triggered events. I needed to chain together one or multiple parameters and update the rendered data everytime a filter changed states. I solved this by storing the user input value and then using a separate function to check the current state of the other filter types.</p>
 <p>Another issue I faced was repainting an updated Menu everytime a new search filter was (de)selected. I am particularly proud of a simple little function I wrote <code>wipeMenu</code> for recursively removing HTML elements when a filter was updated.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/project3.png" alt="Alt text here">
-<figcaption>↑ A caption for my project.</figcaption>
+<img class=" full-bleed" src="/assets/images/api-color.png" alt="Alt text here">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Takeaways</h3>
 <p>This project gave me a lot of insight into how powerful APIs can be, and also that a web app is only as robust as its API. The API I used capped each data request at no more than 80 beers at a time, and lacked methods for searching within many of the beer properties. In the future, I know better what I should look for the next time I get to work with an API of my choice.</p>
 <p>As this is the biggest project I've worked on so far, I also got a taste of just how important my code structure is for development. As my web app grew more complex with each feature, I iterated through my scripts quite a bit until I realized that I needed to just break up my 3-4 giant functions into smaller pieces. This step toward modularity improved my code's readabilty and made adding new features more efficient because it allowed me to introduce complexity quickly.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/project3.png" alt="Alt text here">
-<figcaption>↑ A caption for my project.</figcaption>
+<img class=" full-bleed" src="/assets/images/api-bw.png" alt="Alt text here">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <p>A project is never truly finished, there is always something that can be improved. To improve this project, there are 2 features I may add on later:</p>
 <ul>
@@ -100,12 +101,26 @@
 </ul>
  
         </div>
-    </main> 
-    <div class="ftr-cta">
-        <a href="/"><button class="btn ">Return Home</button></a>
-        <a href="/my-little-editor/"><button class="btn ">Next Project</button></a>
-    </div>
+    </main>
+  
     
+            
+              
+<nav> 
+        
+            <a href="/my-little-editor/"><button class="ftr btn">My Little Editor </button></a> 
+        
+            <a href="/random-quote-generator/"><button class="ftr btn">Random Quote Generator </button></a> 
+        
+            <a href="/markdown-previewer/"><button class="ftr btn">Markdown Previewer </button></a> 
+        
+            <a href="/drum-machine/"><button class="ftr btn">Drum machine </button></a> 
+        
+            <a href="/js-calculator/"><button class="ftr btn">Javascript Calculator </button></a>
+   
+    
+   
+</nav>
 
     </body>
     
@@ -114,8 +129,8 @@
 </body>
 
     </main>
-    
-    <footer class="">
+    <div class"wrapper">
+    <footer class="ftr ">
         <!-- <a class="logo" href="/"><img class="logo-img" src="/assets/images/logo-04-dk-purp-yell.svg" alt=""></a> -->
         <p class="ftr-copy">© 2020 Christina Padilla</p>
 
@@ -138,6 +153,7 @@
 
     </footer>
     </div>
+    </div>
 </body>
-
+<script src="/assets/scripts/base.js"></script>
 </html>

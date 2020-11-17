@@ -1,14 +1,31 @@
 /* nav */
 /* ----------------*/
 header {
-  height: 100px;
-  margin: 0 0 $space * 2 0;
+  height: 90px;
+  margin: 0;
+  color: #efefef;
   //   padding: 0 0 $space 0;
-  border-bottom: 3px solid $cocoa30;
+  border-top: 3px solid $cocoa30;
+
+  @media only screen and (min-width: 700px) {
+    margin: 0 0 $space 0;
+  }
 }
 
 /* about-img link */
 /* ----------------*/
+
+.nav-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 100%;
+  // background: $wizard60;
+  // color: #efefef;
+  border-radius: 0.4rem;
+}
+
 .nav {
   display: flex;
   list-style: none;
@@ -17,6 +34,9 @@ header {
   align-items: center;
   margin: 0;
   padding: $space * 2 0 0 0;
+  @media only screen and (min-width: 700px) {
+    padding: $space 0 0 0;
+  }
 }
 
 .nav-item {
@@ -106,7 +126,10 @@ footer {
   text-align: center;
   border-top: 3px solid $cocoa30;
   width: 100%;
-  height: 100px;
+  height: 100%;
+  // background: $wizard60;
+  // border-radius: 0.4rem;
+  // color: #efefef;
   margin: 200px auto $space auto;
   padding: 0;
 }
@@ -127,15 +150,24 @@ footer {
   // color: $wizard50;
   // border: 1px solid red;
   padding: $space * 1.5 0;
+  margin: 0 0 0 $space * 2;
+}
+.logo-wrapper {
+  display: flex;
+  list-style: none;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
   margin: 0;
+  padding: $space * 4 0 0 0;
 }
 
-.logo {
-  background: transparent;
-  max-height: 100px;
+// .logo {
+//   background: transparent;
+//   max-height: 100px;
 
-  // margin: $space  auto $space*2 auto;
-}
+//   // margin: $space  auto $space*2 auto;
+// }
 
 .logo-img {
   margin: $space 0;
@@ -174,8 +206,36 @@ footer {
 }
 
 .logo {
-  margin-bottom: $space;
-  // border: 1px solid red;
+  background: transparent;
+  // background: rgba(101, 220, 176, 0.86);
+  // box-shadow: -8px 8px 0px 0px $wizard60;
+  // font-weight: 700;
+  font-family: "Bungee Shade", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  // word-break: break-all;
+  padding: 0;
+  // border: 3px solid $wizard60;
+  margin: 0;
+  // margin-bottom: $space;
+  // border: 3px solid $wizard60;
+
+  @media only screen and (min-width: 400px) {
+    font-size: 5vw;
+    font-size: 20px;
+    // margin: 0 $space;
+  }
+
+  @media only screen and (min-width: 700px) {
+    font-size: 40px;
+    padding: 0 0 0 $space;
+    // margin: 0;
+    // padding: 25px 25px;
+  }
+}
+
+.logo-link {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 700px) {

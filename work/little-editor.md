@@ -15,22 +15,23 @@ project_stack: JavaScript, HTML, CSS
 project_demo: https://hipstina.github.io/little-editor
 project_code: https://github.com/hipstina/little-editor 
 
+
 ---
 
 ### Overview
 My Little Editor is a tool for editing and previewing simple HTML markup. **Key feature:** Raw text can be edited and preview window will automatically display the rendered HTML. 
 
-<figure>
-<img class="img" src="" alt="">
-<figcaption>↑ A caption for my project.</figcaption>
+<figure class="prj-fig">
+<img class=" full-bleed" src="{{project_thumbnail_color}}" alt="{{thumbnail_alt}}">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 
 ### Purpose & Goal
 The Little Editor is a project I designed and developed when I first started learning about the DOM and event handlers. The idea for this project came about because I wanted to create a tool for my hard coded website that would let me write and export short notes or posts. I also wanted to reinforce my understanding of browser events and event handlers, so I knew I'd be developing this tool from scratch to really exercise my DOM manipulation skills. 
 
-<figure>
-<img class="img" src="" alt="">
-<figcaption>↑ A caption for my project.</figcaption>
+<figure class="prj-fig">
+<img class=" full-bleed" src="{{project_thumbnail_color}}" alt="{{thumbnail_alt}}">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 
 ### Thought process 

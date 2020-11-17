@@ -5,10 +5,12 @@
   color: $carrot10;
   font-weight: 500;
   height: 50px;
-  background: $wizard50;
-  background: $cocoa30;
-
-  border: 3px solid transparent;
+  background: $carrot10;
+  // background: $cocoa30;
+  background-image: url("/assets/images/halftone-bw.png");
+  background-position: top;
+  background-size: 90%;
+  border: 3px solid $wizard60;
 
   border-radius: 0.1rem;
   margin: $space 0;
@@ -17,10 +19,13 @@
   &:hover {
     //mouseover
     background: $carrot10;
+    // background-image: url("/assets/images/halftone-bg.png");
+    // background-position: center;
+    // background-size: 100%;
     // background-image: linear-gradient(55deg, $wizard40 0%, transparent 45%),
     //   linear-gradient(160deg, $wizard60 10.23%, $rose40 80.88%);
     color: $wizard60;
-    border-color: $cocoa30;
+    // border-color: $cocoa30;
   }
 
   &:active {
@@ -53,12 +58,14 @@
 
 .pgtn-lt {
   margin: 5px 0;
+
   border-radius: 0 100em 100em 0;
 }
 
 @media only screen and (min-width: 800px) {
   .btn,
   .card-btn {
+    background-size: 150%;
     width: auto;
   }
   .btn-pgtn {

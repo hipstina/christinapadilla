@@ -30,7 +30,7 @@
    
 </head>
 
- <body>
+ <body id="body" class="body-class">
      
     <div class="container">
        
@@ -46,6 +46,7 @@
 <body class="">
     <body class="">
     <h1 class="prj-detail-title"> My Little Editor </h1>
+    <p class="prj-sum">A tool for editing and previewing simple HTML markup.</p>
     <div class="prj-img-wrapper full-bleed">
     <image class="prj-img " src="/assets/images/editor-color.png" alt="">
     
@@ -72,15 +73,15 @@
         <div class="prj-details">
             <h3>Overview</h3>
 <p>My Little Editor is a tool for editing and previewing simple HTML markup. <strong>Key feature:</strong> Raw text can be edited and preview window will automatically display the rendered HTML.</p>
-<figure>
-<img class="img" src="" alt="">
-<figcaption>↑ A caption for my project.</figcaption>
+<figure class="prj-fig">
+<img class=" full-bleed" src="/assets/images/editor-color.png" alt="">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Purpose &amp; Goal</h3>
 <p>The Little Editor is a project I designed and developed when I first started learning about the DOM and event handlers. The idea for this project came about because I wanted to create a tool for my hard coded website that would let me write and export short notes or posts. I also wanted to reinforce my understanding of browser events and event handlers, so I knew I'd be developing this tool from scratch to really exercise my DOM manipulation skills.</p>
-<figure>
-<img class="img" src="" alt="">
-<figcaption>↑ A caption for my project.</figcaption>
+<figure class="prj-fig">
+<img class=" full-bleed" src="/assets/images/editor-color.png" alt="">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Thought process</h3>
 <p>This project was a good way for me to get some practical experience with some simple yet powerful DOM navigation methods and properties. To make the user experience as frictionless as possible, I decided to focus on building a tool that was as intuitive as any other text editor (like WordPress)--albeit on a much smaller scale.</p>
@@ -89,12 +90,26 @@
 <p>I learned quite a bit while developing this tool. I learned the hard way that defining a project's scope is crucial to the development process, no matter how simple the initial idea seems; it's quite easy to let a project run away from you if you're making it up as you go. On a technical level, I gained a lot of insight into how the browser interprets events.</p>
  
         </div>
-    </main> 
-    <div class="ftr-cta">
-        <a href="/"><button class="btn ">Return Home</button></a>
-        <a href="/ipa-api/"><button class="btn ">Next Project</button></a>
-    </div>
+    </main>
+  
     
+            
+              
+<nav> 
+        
+            <a href="/ipa-api/"><button class="ftr btn">IPA API </button></a> 
+        
+            <a href="/random-quote-generator/"><button class="ftr btn">Random Quote Generator </button></a> 
+        
+            <a href="/markdown-previewer/"><button class="ftr btn">Markdown Previewer </button></a> 
+        
+            <a href="/drum-machine/"><button class="ftr btn">Drum machine </button></a> 
+        
+            <a href="/js-calculator/"><button class="ftr btn">Javascript Calculator </button></a>
+   
+    
+   
+</nav>
 
     </body>
     
@@ -103,8 +118,8 @@
 </body>
 
     </main>
-    
-    <footer class="">
+    <div class"wrapper">
+    <footer class="ftr ">
         <!-- <a class="logo" href="/"><img class="logo-img" src="/assets/images/logo-04-dk-purp-yell.svg" alt=""></a> -->
         <p class="ftr-copy">© 2020 Christina Padilla</p>
 
@@ -127,6 +142,7 @@
 
     </footer>
     </div>
+    </div>
 </body>
-
+<script src="/assets/scripts/base.js"></script>
 </html>

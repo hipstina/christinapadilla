@@ -30,45 +30,64 @@
    
 </head>
 
- <body>
+ <body id="body" class="body-class">
      
     <div class="container">
        
     <main class="wrapper">
         
-    <header class="full-bleed">
+    <header class="">
+    <div class="nav-wrapper">
     <ul class="nav ">
-    
-        <li class="nav-item"><a class="abt-img-link" href="/about">
+        <li  class="nav-item logo"><a class="logo-link " href="/">  chris<wbr>tina
+            <!-- <i class="fa fa-certificate" aria-hidden="true"></i>
+            <i class="fa fa-certificate" aria-hidden="true"></i>  -->
+        </a>
+        </li>
+    </ul>
+    <ul class="nav ">
+        <!-- <li class="nav-item "><a class="abt-img-link" href="/about">
         <img class="abt-nav-img" src="
         /assets/images/hipstina-circ.jpg
-        " alt="">
-    </a>
+        " alt=""></a>
+        </li> -->
+        <li class="nav-item "><a class="abt-img-link" href="/about">
+                <h4>About</h4></a>
         </li>
         <li class="nav-item"><a class="abt-img-link" href="https://twitter.com/hipstina/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li class="nav-item"><a class="abt-img-link" href="https://github.com/hipstina/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
     
     </ul>
+    </div>
 </header>
 <div class="intro-wrapper ">
     <figure class="intro-fig">
-        <img class="intro-img" src="/assets/images/profile-charcoal.png"
+        <img class="intro-img" src="/assets/images/profile-rot@4x copy 2.png"
             alt="">
         <div class="intro-img-overlay"></div>
-        <figcaption>↑ me</figcaption>
+        <!-- <figcaption class="fig-caption">↑ Me. </figcaption> -->
     </figure>
     <div class="intro ">
 
             
-        <h1 class="intro-title">Hey there. My name is <a class="abt-link" id="abtLink1" href="/about">Christina</a>. I started learning Javascript during quarantine. </h1>
-        <p class="intro-sub">Working for several years as a tech support specialist has completely informed the kind of front-end developer I'm trying to be now: focused on the user and curious about the full development lifecycle. </p>
-        <p class="intro-sub">This site is a collection of some of my recent projects.</p>
+        <h1 class="intro-title">Hey there. I'm Christina. I started learning Javascript during quarantine. </h1>
+        <!-- <p class="intro-sub"> </p> -->
+
+        <!-- <p class="intro-sub">Check out some of the things I've been working on.
+        </p> -->
+        
+        
+
+        <!-- <p class="intro-sub">In March 2020, I decided that being a go-between for devs and users wasn't
+        enough for me anymore. I'd been quietly cultivating an interest in web
+        development after many years working as a tech support specialist. </p> -->
+        
     
 
     <!-- <div class="intro-overlay-1" id="intro1"></div>
     <div class="intro-overlay-2" id="intro2"></div> -->
 
-        <h1 class="intro-title"></br></h1>
+        <!-- <h1 class="intro-title"></br></h1> -->
             <!-- <h1> ↓</h1> -->
     </div>
 </div>
@@ -105,14 +124,74 @@
             </a>
         </div>
     </div>
+    <div class="card col-10 col-6 col-12 ">
+        <a href="/random-quote-generator/">
+            <div class="card-img-wrapper">
+                <img class="card-img" src="/assets/images/random-quote-col.png" alt="">
+                <div class="card-img-overlay"></div>
+            </div>
+        </a>
+        <div class="card-data">
+            <h1 class="card-title">Random Quote Generator</h1>
+            <p class="card-sum">A modal that fetches random quotes from an API.</p>
+            <a  class="card-btn-wrapper" href="/random-quote-generator/">
+                <button class="card-btn">View Details</button>
+            </a>
+        </div>
+    </div>
+    <div class="card col-10 col-6 col-12 ">
+        <a href="/markdown-previewer/">
+            <div class="card-img-wrapper">
+                <img class="card-img" src="/assets/images/md-previewer.png" alt="">
+                <div class="card-img-overlay"></div>
+            </div>
+        </a>
+        <div class="card-data">
+            <h1 class="card-title">Markdown Previewer</h1>
+            <p class="card-sum">A tool for editing and previewing Markdown & simple HTML.</p>
+            <a  class="card-btn-wrapper" href="/markdown-previewer/">
+                <button class="card-btn">View Details</button>
+            </a>
+        </div>
+    </div>
+    <div class="card col-10 col-6 col-12 ">
+        <a href="/drum-machine/">
+            <div class="card-img-wrapper">
+                <img class="card-img" src="/assets/images/drum-machine-col.png" alt="">
+                <div class="card-img-overlay"></div>
+            </div>
+        </a>
+        <div class="card-data">
+            <h1 class="card-title">Drum machine</h1>
+            <p class="card-sum">Interactive buttons that emit quirky sounds.</p>
+            <a  class="card-btn-wrapper" href="/drum-machine/">
+                <button class="card-btn">View Details</button>
+            </a>
+        </div>
+    </div>
+    <div class="card col-10 col-6 col-12 ">
+        <a href="/js-calculator/">
+            <div class="card-img-wrapper">
+                <img class="card-img" src="/assets/images/js-calc-col.png" alt="">
+                <div class="card-img-overlay"></div>
+            </div>
+        </a>
+        <div class="card-data">
+            <h1 class="card-title">Javascript Calculator</h1>
+            <p class="card-sum">A calculator utilizing formula logic.</p>
+            <a  class="card-btn-wrapper" href="/js-calculator/">
+                <button class="card-btn">View Details</button>
+            </a>
+        </div>
+    </div>
 </div>
 <script src="/assets/scripts/card.js"></script>
 <script src="/assets/scripts/intro.js"></script>
 
 
     </main>
-    
-    <footer class="">
+    <div class"wrapper">
+    <footer class="ftr ">
         <!-- <a class="logo" href="/"><img class="logo-img" src="/assets/images/logo-04-dk-purp-yell.svg" alt=""></a> -->
         <p class="ftr-copy">© 2020 Christina Padilla</p>
 
@@ -135,6 +214,7 @@
 
     </footer>
     </div>
+    </div>
 </body>
-
+<script src="/assets/scripts/base.js"></script>
 </html>
