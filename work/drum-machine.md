@@ -8,7 +8,7 @@ project_title: Drum machine
 project_thumbnail_color: "/assets/images/drum-machine-col.png"
 project_thumbnail_bw: "/assets/images/drum-machine-col.png"
 # thumbnail_alt: 
-project_summary: Interactive buttons that emit quirky sounds.
+project_summary: Mini virtual drum pad that can be played with the keyboard or mouse.
 project_type: Personal
 project_role: Front-end development, visual design
 project_stack: React, HTML, SCSS 

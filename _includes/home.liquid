@@ -2,80 +2,99 @@
 layout: base.liquid
 ---
 <header class="">
-    <div class="nav-wrapper">
-    <ul class="nav ">
-        <li  class="nav-item logo"><a class="logo-link " href="/">  chris<wbr>tina
-            <!-- <i class="fa fa-certificate" aria-hidden="true"></i>
-            <i class="fa fa-certificate" aria-hidden="true"></i>  -->
-        </a>
-        </li>
-    </ul>
-    <ul class="nav ">
-        <!-- <li class="nav-item "><a class="abt-img-link" href="/about">
-        <img class="abt-nav-img" src="
-        {{"/assets/images/hipstina-circ.jpg" | url}}
-        " alt=""></a>
-        </li> -->
-        <li class="nav-item "><a class="abt-img-link" href="/about">
-                <h4>About</h4></a>
-        </li>
-        <li class="nav-item"><a class="abt-img-link" href="https://twitter.com/hipstina/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li class="nav-item"><a class="abt-img-link" href="https://github.com/hipstina/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-    
-    </ul>
-    </div>
+    <nav class="nav-wrapper">
+        <ul class="nav">
+            <a class="logo-link" href="/"><li class="logo">
+                 <h2 class="logo-text">CP</h2>
+                
+            </li></a>
+        </ul>
+        <ul class="nav ">
+            <li class="nav-item "><a class="abt-img-link" href="/about">
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://twitter.com/hipstina/">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://github.com/hipstina/">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<div class="intro-wrapper ">
-    <figure class="intro-fig">
-        <img class="intro-img" src="{{"/assets/images/profile-rot@4x copy 2.png" | url}}"
-            alt="">
-        <div class="intro-img-overlay"></div>
-        <!-- <figcaption class="fig-caption">↑ Me. </figcaption> -->
-    </figure>
+
+<!-- <section class="intro-wrapper-top ">
     <div class="intro ">
-
-            
-        <h1 class="intro-title">Hey there. I'm Christina. I started learning Javascript during quarantine. </h1>
-        <!-- <p class="intro-sub"> </p> -->
-
-        <!-- <p class="intro-sub">Check out some of the things I've been working on.
-        </p> -->
-        
-        
-
-        <!-- <p class="intro-sub">In March 2020, I decided that being a go-between for devs and users wasn't
-        enough for me anymore. I'd been quietly cultivating an interest in web
-        development after many years working as a tech support specialist. </p> -->
-        
-    
-
-    <!-- <div class="intro-overlay-1" id="intro1"></div>
-    <div class="intro-overlay-2" id="intro2"></div> -->
-
-        <!-- <h1 class="intro-title"></br></h1> -->
-            <!-- <h1> ↓</h1> -->
+        <h1 class="intro-title">CHRISTINA PADILLA</h1>
+        <p class="intro-sub">Front-end web developer based in Chicago.
+        </p>
     </div>
-</div>
+</section> -->
 
+<section class="intro-wrapper ">
+    <div class="intro ">
+        <h1 class="intro-title">I'm Christina, a frontend web developer based in Chicago.</h1>
+        <p class="intro-sub">I cultivated an interest in user experience and web
+            development after several years of working as a tech support specialist. Here are some things I've made.</p>
+
+    </div>
+    <figure class="intro-fig">
+        <img class="intro-img" src="/assets/images/profile-rot@4x copy 2.png"
+            alt="">
+    </figure>
+</section>
+
+
+<section class="">
+    
+        <h4 class="banner">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            &nbsp;This website is currently under construction. </h4>
+          
+   
+   
+   
+
+</section>
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
+
+
+<section class="cards-wrapper">
+
 <div class="cards " id="projects">
 {%- for entry in collections.project %}
-    <div class="card col-10 col-6 col-12 ">
-        <a href="{{entry.url}}">
-            <div class="card-img-wrapper">
-                <img class="card-img" src="{{entry.data.project_thumbnail_color | url}}" alt="">
-                <div class="card-img-overlay"></div>
-            </div>
-        </a>
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="{{entry.url}}" alt="View details for {{entry.data.project_title}}">
         <div class="card-data">
-            <h1 class="card-title">{{entry.data.project_title}}</h1>
-            <p class="card-sum">{{entry.data.project_summary}}</p>
-            <a  class="card-btn-wrapper" href="{{entry.url}}">
-                <button class="card-btn">View Details</button>
-            </a>
+            
+            <div class="card-category">Featured Project</div>
+            
+            <h2 class="card-title">{{entry.data.project_title}}</h2>
+            
+            <p class="card-sum">{{entry.data.project_summary}} </p>
+           
+            <!-- <a class="" href="{{entry.url}}">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
         </div>
-    </div>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="{{entry.data.project_thumbnail_color | url}}"
+                alt="">
+        </div> -->
+    </article>
 {%- endfor %}
 </div>
+</section>
 <script src="{{"/assets/scripts/card.js" | url}}"></script>
 <script src="{{"/assets/scripts/intro.js" | url}}"></script>

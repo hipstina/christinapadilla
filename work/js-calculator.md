@@ -8,7 +8,7 @@ project_title: Javascript Calculator
 project_thumbnail_color: "/assets/images/js-calc-col.png"
 project_thumbnail_bw: "/assets/images/js-calc-col.png"
 # thumbnail_alt: 
-project_summary: A calculator utilizing formula logic.
+project_summary: A calculator built in React utilizing formula logic.
 project_type: Personal
 project_role: Front-end development, visual design
 project_stack: React, HTML, SCSS 

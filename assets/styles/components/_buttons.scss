@@ -6,11 +6,11 @@
   font-weight: 500;
   height: 50px;
   background: $carrot10;
-  // background: $cocoa30;
+  // background: $black;
   background-image: url("/assets/images/halftone-bw.png");
   background-position: top;
   background-size: 90%;
-  border: 3px solid $wizard60;
+  border: 3px solid $black;
 
   border-radius: 0.1rem;
   margin: $space 0;
@@ -24,15 +24,15 @@
     // background-size: 100%;
     // background-image: linear-gradient(55deg, $wizard40 0%, transparent 45%),
     //   linear-gradient(160deg, $wizard60 10.23%, $rose40 80.88%);
-    color: $wizard60;
-    // border-color: $cocoa30;
+    color: $black;
+    // border-color: $black;
   }
 
   &:active {
     //mouseup
     background: $wizard20;
-    color: $wizard60;
-    border-color: $wizard60;
+    color: $black;
+    border-color: $black;
     transform: scale(0.97);
   }
 
@@ -43,8 +43,8 @@
 }
 
 .btn-pgtn {
-  border: 3px solid $cocoa30;
-  background: $cocoa30;
+  border: 3px solid $black;
+  background: $black;
   color: $carrot20;
   margin: 0;
   font-size: 20px;

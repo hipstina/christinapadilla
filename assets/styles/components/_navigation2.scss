@@ -1,0 +1,211 @@
+header {
+  height: 100%;
+  margin: 0;
+  color: #efefef;
+}
+
+/* main nav */
+/* ----------------*/
+
+.nav-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 100%;
+  border-bottom: 1px solid $black;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 $space/2;
+  padding: 0 $space;
+  font-size: 22px;
+  padding: 0;
+
+  @media only screen and (min-width: 500px) {
+    font-size: 28px;
+    margin: 0 $space;
+  }
+}
+
+.logo {
+  background: transparent;
+  //   font-family: "Bungee Shade", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  //     Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: $space $space * 2;
+  margin: 0;
+  border-right: 1px solid $black;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.abt-img-link {
+  text-decoration: none;
+}
+
+/* internal nav */
+/* ----------------*/
+
+.return-nav {
+  display: block;
+  padding: $space $space * 2;
+  border-bottom: 1px solid $black;
+
+  text-decoration: none;
+}
+
+.return-icon {
+  display: inline;
+}
+
+.return-link {
+  display: inline;
+  padding: $space;
+}
+
+/* footer */
+/* ----------------*/
+
+.ftr-title {
+  padding: $space * 4 $space * 2 $space * 2 $space * 2;
+}
+
+.ftr {
+  //   background: $black;
+  //   color: $white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+
+  border-top: 1px solid $black;
+
+  margin: 0;
+  padding: 0;
+  @media only screen and (min-width: 800px) {
+    border-top: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+.ftr-home {
+  //   color: $white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  @media only screen and (min-width: 800px) {
+    align-self: end;
+  }
+}
+
+.ftr-home-text {
+  padding: $space;
+  text-decoration: none;
+
+  @media only screen and (min-width: 800px) {
+    border-top: 1px solid $black;
+    border-right: 1px solid $black;
+  }
+}
+
+.socials,
+.colophon,
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: space-between;
+  padding: $space * 2;
+  //   max-width: 200px;
+  @media only screen and (min-width: 500px) {
+    padding: $space * 3 $space * 6 $space * 3 $space * 3;
+  }
+}
+
+.contact-socials {
+  display: flex;
+  flex-flow: column nowrap;
+
+  @media only screen and (min-width: 500px) {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+.ftr-text,
+.ftr-copy {
+  margin-top: $space/3;
+}
+
+.ftr-home ul,
+.socials ul,
+.colophon ul,
+.contact ul {
+  list-style: none;
+  padding: 0 0 0 $space;
+}
+
+.socials-text {
+  margin: 0;
+  padding: 0 0 0 $space;
+}
+
+.socials li i,
+.contact li i {
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+.socials li,
+.contact li {
+  //   color: $white;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: $space/2 0;
+}
+
+.bread {
+  list-style: none;
+  padding: $space $space * 2 0 $space * 2;
+  margin: 0;
+  font-weight: 600;
+  border-right: 1px solid $black;
+  height: 100%;
+}
+
+.bread-wrapper,
+.cta-wrapper {
+  text-decoration: none;
+}
+
+.ftr-nav {
+  //   background: $black;
+  //   color: $white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  border-top: 1px solid $black;
+}
+
+.cta {
+  border-left: 1px solid $black;
+  list-style: none;
+  padding: $space $space * 2 0 $space * 2;
+  margin: 0;
+  height: 100%;
+  //   padding: $space $space * 2;
+}

@@ -1,4 +1,4 @@
-// Theme Name: Papaya
+// Theme Name: Bruto-lite
 // Description: Portfolio website
 // Author: christina padilla
 // Author URI: https://christinapadilla.com/
@@ -17,11 +17,15 @@
 @import "base/variables";
 
 // Components
-
+@import "components/about";
 @import "components/buttons";
-@import "components/_card";
-@import "components/layout";
-@import "components/navigation";
-@import "components/sections";
+// @import "components/card";
+@import "components/cards2";
+// @import "components/layout";
+@import "components/layout2";
+// @import "components/navigation";
+@import "components/navigation2";
+// @import "components/sections";
+@import "components/sections2";
 @import "components/typography";
 @import "components/gradient";

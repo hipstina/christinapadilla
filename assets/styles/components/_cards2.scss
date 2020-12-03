@@ -1,0 +1,105 @@
+$card-width: auto;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto, 100%);
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  margin: $space;
+
+  @media only screen and (min-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 100%);
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    margin: 0;
+  }
+}
+
+.card-wrapper {
+  padding: $space;
+  border-top: 0.5px solid $black;
+  border-bottom: 0.5px solid $black;
+  border-right: 1px solid $black;
+  border-left: 1px solid $black;
+
+  &:nth-of-type(1) {
+    border: 1px solid $black;
+    border-bottom: 0.5px solid $black;
+  }
+
+  &:last-of-type {
+    border-bottom: 1px solid $black;
+  }
+
+  @media only screen and (min-width: 800px) {
+    border: 0.5px solid $black;
+    border-right: 0px solid $black;
+    border-left: 0px solid $black;
+
+    &:nth-of-type(1) {
+      border: 0.5px solid $black;
+      border-top: 1px solid $black;
+      border-right: 1px solid $black;
+      border-left: 0px solid $black;
+    }
+
+    &:nth-of-type(2) {
+      border: 0.5px solid $black;
+      border-top: 1px solid $black;
+      border-right: 0px solid $black;
+      border-left: 0px solid $black;
+    }
+
+    &:nth-of-type(odd) {
+      border-right: 1px solid $black;
+    }
+
+    &:nth-last-of-type(2) {
+      border-bottom: 1px solid $black;
+      border-right: 1px solid $black;
+      border-left: 0px solid $black;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $black;
+      border-right: 0px solid $black;
+      border-left: 0px solid $black;
+    }
+  }
+}
+
+.card {
+  display: block;
+  min-height: 100%;
+  text-decoration: none;
+  transition: 0.3s all cubic-bezier(0.25, 0.75, 0.25, 1);
+
+  @media only screen and (min-width: 800px) {
+    &:hover {
+      background: darken($background, 3%);
+    }
+  }
+}
+
+.card-data {
+  display: block;
+  padding: $space * 3;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-category {
+  margin-bottom: $space * 2;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
