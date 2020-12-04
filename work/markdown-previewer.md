@@ -14,5 +14,5 @@ project_role: Front-end development, visual design
 project_stack: React, HTML, CSS 
 project_demo: https://codepen.io/hipstina/full/pobNxKB
 project_code: https://github.com/hipstina/little-editor 
-
+state: disabled
 ---

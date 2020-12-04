@@ -37,50 +37,103 @@
     <main class="wrapper">
         
     
-<header class="full-bleed">
-    <a class="return-nav" id="return" href="/">
-        <p id="returnIcon" class="return-icon">←</p>
-        <p id="returnLink" class="return-link">Return Home</p>
-    </a>
+<header class="wrapper">
+    <!-- <a class="return-nav" id="return" href="/">
+        <h2 id="returnIcon" class="return-icon">←</h2>
+        <h2 id="returnLink" class="return-link">Return Home</h2>
+    </a> -->
+    <nav class="nav-wrapper">
+        <ul class="nav">
+            <a class="logo-link" href="/">
+                <li class="logo">
+                    <h2 class="logo-text">CP</h2>
+    
+                </li>
+            </a>
+        </ul>
+        <ul class="nav ">
+            <li class="nav-item "><a class="abt-img-link" href="/about">
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://twitter.com/hipstina/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://github.com/hipstina/">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <body class="">
     <body class="">
-    <h1 class="prj-detail-title"> My Little Editor </h1>
-    <p class="prj-sum">A tool for editing and previewing simple HTML markup.</p>
-    <div class="prj-img-wrapper full-bleed">
-    <image class="prj-img " src="/assets/images/editor-color.png" alt="">
+
     
-</div>
+
+<div class="prj-wrapper">
+    <div></div>
+
+    <div>
+        <h1 class="prj-detail-title"> My Little Editor </h1>
+        <p class="prj-sum">A tool for editing and previewing simple HTML markup.</p>
+    </div>
+
+    
+
     <div class="prj ">
         <div class="prj-item">
-            <p class="prj-label">Type</p>
+            <p class="category">Type</p>
             <p class="prj-data"> Personal </p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Role</p>
+            <p class="category">Role</p>
             <p class="prj-data">Front-end development, visual design</p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Stack</p>
+            <p class="category">Stack</p>
             <p class="prj-data">JavaScript, HTML, CSS</p>
         </div>
+        <div class="">
+            <a href="https://hipstina.github.io/little-editor"><button class="btn">Demo</button></a>
+            <a href="https://github.com/hipstina/little-editor"><button class="btn">Source Code</button></a>
+        </div>
     </div>
-    <div class="cta">
-        <a href="https://hipstina.github.io/little-editor"><button class="btn">Demo</button></a>
-        <a href="https://github.com/hipstina/little-editor"><button class="btn">Source Code</button></a>
-    </div>
-    <main> 
-        <div class="prj-details">
-            <h3>Overview</h3>
+
+
+    
+</div>
+
+    
+
+    <div class="prj-details">
+        <div></div>
+
+        <div class="prj-img-wrapper ">
+            <figure>
+                <image class="prj-img " src="/assets/images/editor-color.png"
+                    alt="">
+                    <figcaption class="fig-caption">↑ Click me to see more selfies.
+                    </figcaption>
+            </figure>
+        </div>
+
+        
+
+        <div class="prj-details-text">
+        <h3>Overview</h3>
 <p>My Little Editor is a tool for editing and previewing simple HTML markup. <strong>Key feature:</strong> Raw text can be edited and preview window will automatically display the rendered HTML.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/editor-color.png" alt="">
+<img class="prj-img" src="/assets/images/editor-color.png" alt="">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Purpose &amp; Goal</h3>
 <p>The Little Editor is a project I designed and developed when I first started learning about the DOM and event handlers. The idea for this project came about because I wanted to create a tool for my hard coded website that would let me write and export short notes or posts. I also wanted to reinforce my understanding of browser events and event handlers, so I knew I'd be developing this tool from scratch to really exercise my DOM manipulation skills.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/editor-color.png" alt="">
+<img class="prj-img" src="/assets/images/editor-color.png" alt="">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Thought process</h3>
@@ -90,12 +143,10 @@
 <p>I learned quite a bit while developing this tool. I learned the hard way that defining a project's scope is crucial to the development process, no matter how simple the initial idea seems; it's quite easy to let a project run away from you if you're making it up as you go. On a technical level, I gained a lot of insight into how the browser interprets events.</p>
  
         </div>
-    </main>
-  
-    
-            
-              
-<nav> 
+        
+        <div></div>
+    </div>
+<!-- 
         
             <a href="/drum-machine/"><button class="ftr btn">Drum machine </button></a> 
         
@@ -105,11 +156,9 @@
         
             <a href="/markdown-previewer/"><button class="ftr btn">Markdown Previewer </button></a> 
         
-            <a href="/random-quote-generator/"><button class="ftr btn">Random Quote Generator </button></a>
+            <a href="/random-quote-generator/"><button class="ftr btn">Random Quote Generator </button></a> -->
    
-    
-   
-</nav>
+
 
     </body>
     
@@ -118,29 +167,67 @@
 </body>
 
     </main>
-    <div class"wrapper">
-    <footer class="ftr ">
-        <!-- <a class="logo" href="/"><img class="logo-img" src="/assets/images/logo-04-dk-purp-yell.svg" alt=""></a> -->
-        <p class="ftr-copy">© 2020 Christina Padilla</p>
+    <div class="wrapper">
+        <footer>
+            <div class="ftr">
+                <div class="colophon">
+                    <div class="category">Colophon</div>
+                    <ul>
+                        <li class="ftr-copy">© 2020 Christina Padilla</li>
+                        <li class="ftr-text">🎈 <a href="www.11ty.dev/">Powered by 11ty</a></li>
+                        
+                    </ul>
+                </div>
 
-        <div class="colophon">
+                <div class="contact-socials">
             
-            <p class="ftr-text">Powered by 11ty</p>
-        </div>
+                <div class="contact">
+                    <div class="category" >Contact</div>
+                    <ul>
+                        <li class="email">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="">
+                                <p class="socials-text">Email</p>
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div>
 
-        <ul class="socials">
-            <li class="email">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </li>
-            <li  class="twitter">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-            </li>
-            <li class="github">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </li>
-        </ul>
+                <div class="socials">
+                    <div class="category">Links</div>
+                    <ul>
+                        
+                        <li class="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> 
+                            <a href=""><p class="socials-text">Twitter</p></a>
+                        </li>
+                        <li class="github">
+                            <i class="fa fa-github" aria-hidden="true"></i> 
+                            <a href=""><p class="socials-text">GitHub</p></a>
+                        </li>
+                        <li class="codepen">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                            <a href=""><p class="socials-text">CodePen</p></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="ftr-nav">
+            <a  class="bread-wrapper" href="/">
+                <ul class="bread">
+                    <li class="bread-crumb">CP</li>
+                </ul>
+            </a>
+                <a  class="cta-wrapper" href="/">
+                 <ul class="cta">
+                    <li class="category">Say hello</li>
+                </ul>
+            </a>
+            </div>
+        </footer>
 
-    </footer>
     </div>
     </div>
 </body>
