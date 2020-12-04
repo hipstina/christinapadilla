@@ -4,14 +4,41 @@ layout: base.liquid
 
 ---
 
-<header>
-    <a class="return-nav" id="return" href="/">
-        <p id="returnIcon" class="return-icon">←</p>
-        <p id="returnLink" class="return-link">Return Home</p>
-    </a>
+<header class="wrapper">
+    <!-- <a class="return-nav" id="return" href="/">
+        <h2 id="returnIcon" class="return-icon">←</h2>
+        <h2 id="returnLink" class="return-link">Return Home</h2>
+    </a> -->
+    <nav class="nav-wrapper">
+        <ul class="nav">
+            <a class="logo-link" href="/">
+                <li class="logo">
+                    <h2 class="logo-text">CP</h2>
+    
+                </li>
+            </a>
+        </ul>
+        <ul class="nav ">
+            <li class="nav-item "><a class="abt-img-link" href="/about">
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://twitter.com/hipstina/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://github.com/hipstina/">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<body>
-    {{content}} 
+<body class="">
+    {{content}}
+    
     <script src="{{"/assets/scripts/main.js" | url}}"></script>
 
 </body>

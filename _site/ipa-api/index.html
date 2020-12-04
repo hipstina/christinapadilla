@@ -30,57 +30,123 @@
    
 </head>
 
- <body>
+ <body id="body" class="body-class">
      
     <div class="container">
        
-    <main>
+    <main class="wrapper">
         
     
-<header>
-    <a class="return-nav" id="return" href="/">
-        <p id="returnIcon" class="return-icon">←</p>
-        <p id="returnLink" class="return-link">Return Home</p>
-    </a>
-</header>
-<body>
-    <body>
-    <h1 class="prj-detail-title"> IPA API </h1>
-    <div class="prj-img-wrapper">
-    <image class="prj-img" src="/assets/images/project3.png" alt="">
+<header class="wrapper">
+    <!-- <a class="return-nav" id="return" href="/">
+        <h2 id="returnIcon" class="return-icon">←</h2>
+        <h2 id="returnLink" class="return-link">Return Home</h2>
+    </a> -->
+    <nav class="nav-wrapper">
+        <ul class="nav">
+            <a class="logo-link" href="/">
+                <li class="logo">
+                    <h2 class="logo-text">CP</h2>
     
-</div>
-    <div class="prj">
+                </li>
+            </a>
+        </ul>
+        <ul class="nav ">
+            <li class="nav-item "><a class="abt-img-link" href="/about">
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://twitter.com/hipstina/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://github.com/hipstina/">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body class="">
+    <body class="">
+
+    
+
+<div class="prj-wrapper">
+    <div></div>
+
+    <div>
+        <h1 class="prj-detail-title"> IPA API </h1>
+        <p class="prj-sum">A digital beer menu that filters beers by style, ABV, and IBU.</p>
+    </div>
+
+    
+
+    <div class="prj ">
         <div class="prj-item">
-            <p class="prj-label">Type</p>
+            <p class="category">Type</p>
             <p class="prj-data"> Personal </p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Role</p>
+            <p class="category">Role</p>
             <p class="prj-data">Front-end development, visual design</p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Stack</p>
+            <p class="category">Stack</p>
             <p class="prj-data">JavaScript, HTML, CSS</p>
         </div>
+        <div class="">
+            <a href="https://hipstina.github.io/ipa-api"><button class="btn">Demo</button></a>
+            <a href="https://github.com/hipstina/ipa-api"><button class="btn">Source Code</button></a>
+        </div>
     </div>
-    <div class="cta">
-        <a href="https://hipstina.github.io/ipa-api"><button class="btn">Demo</button></a>
-        <a href="https://github.com/hipstina/ipa-api"><button class="btn">Source Code</button></a>
-    </div>
-    <main> 
-        <div class="prj-details">
-            <h3>Overview</h3>
+
+
+    
+</div>
+
+    
+
+    <div class="prj-details">
+        <div></div>
+
+        <div class="prj-img-wrapper ">
+            <figure>
+                <image class="prj-img " src="/assets/images/api-color.png"
+                    alt="Alt text here">
+                    <figcaption class="fig-caption">↑ Click me to see more selfies.
+                    </figcaption>
+            </figure>
+        </div>
+
+        
+
+        <div class="prj-details-text">
+        <h3>Overview</h3>
 <p>A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU. <strong>Key feature:</strong> Client side tools fetch and filter beers styles from an API.</p>
 <h3>Purpose &amp; Goal</h3>
 <p>I was charmed by <a href="tandia.dev">tania.dev</a>'s simple exercise for <a href="https://tania.dev/how-to-connect-to-an-api-with-javascript">connecting to an API with plain Javascript</a>, and so I decided to expand upon her tutorial and make my web app interactive, too. To keep things simple, I picked a free, open-source API that didn't require authentication or a password to connect to the data. I also chose this API as it happened to be related to a passion of mine: craft beer.</p>
 <p>Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.</p>
+<figure class="prj-fig">
+<img class="prj-img" src="/assets/images/api-bw.png" alt="Alt text here">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
+</figure>
 <h3>Thought process</h3>
 <p>An issue I faced during development was in constructing a new XMLHttpRequest based on user triggered events. I needed to chain together one or multiple parameters and update the rendered data everytime a filter changed states. I solved this by storing the user input value and then using a separate function to check the current state of the other filter types.</p>
 <p>Another issue I faced was repainting an updated Menu everytime a new search filter was (de)selected. I am particularly proud of a simple little function I wrote <code>wipeMenu</code> for recursively removing HTML elements when a filter was updated.</p>
+<figure class="prj-fig">
+<img class="prj-img" src="/assets/images/api-color.png" alt="Alt text here">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
+</figure>
 <h3>Takeaways</h3>
 <p>This project gave me a lot of insight into how powerful APIs can be, and also that a web app is only as robust as its API. The API I used capped each data request at no more than 80 beers at a time, and lacked methods for searching within many of the beer properties. In the future, I know better what I should look for the next time I get to work with an API of my choice.</p>
 <p>As this is the biggest project I've worked on so far, I also got a taste of just how important my code structure is for development. As my web app grew more complex with each feature, I iterated through my scripts quite a bit until I realized that I needed to just break up my 3-4 giant functions into smaller pieces. This step toward modularity improved my code's readabilty and made adding new features more efficient because it allowed me to introduce complexity quickly.</p>
+<figure class="prj-fig">
+<img class="prj-img" src="/assets/images/api-bw.png" alt="Alt text here">
+<figcaption class="fig-caption">↑ A caption for my project.</figcaption>
+</figure>
 <p>A project is never truly finished, there is always something that can be improved. To improve this project, there are 2 features I may add on later:</p>
 <ul>
 <li>A button on each card that triggers an overlay of the beer description.</li>
@@ -88,41 +154,93 @@
 </ul>
  
         </div>
-    </main> 
-    <div class="ftr-cta">
-        <a href="/"><button class="btn pgtn-rt btn-pgtn">Return Home</button></a>
-        <a href="/my-little-editor/"><button class="btn pgtn-lt btn-pgtn">Next Project</button></a>
+        
+        <div></div>
     </div>
-    
+<!-- 
+        
+            <a href="/my-little-editor/"><button class="ftr btn">My Little Editor </button></a> 
+        
+            <a href="/random-quote-generator/"><button class="ftr btn">Random Quote Generator </button></a> 
+        
+            <a href="/markdown-previewer/"><button class="ftr btn">Markdown Previewer </button></a> 
+        
+            <a href="/drum-machine/"><button class="ftr btn">Drum machine </button></a> 
+        
+            <a href="/js-calculator/"><button class="ftr btn">Javascript Calculator </button></a> -->
+   
 
-    </body> 
+
+    </body>
+    
     <script src="/assets/scripts/main.js"></script>
 
 </body>
 
     </main>
-    
-    <footer class="">
-        <a class="logo" href="/"><img class="logo-img" src="/assets/images/logo-04-dk-purp-yell.svg" alt=""></a>
+    <div class="wrapper">
+        <footer>
+            <div class="ftr">
+                <div class="colophon">
+                    <div class="category">Colophon</div>
+                    <ul>
+                        <li class="ftr-copy">© 2020 Christina Padilla</li>
+                        <li class="ftr-text">🎈 <a href="www.11ty.dev/">Powered by 11ty</a></li>
+                        
+                    </ul>
+                </div>
 
-        <div class="colophon">
-            <p class="ftr-copy">© 2020 Christina Padilla</p>
-        </div>
+                <div class="contact-socials">
+            
+                <div class="contact">
+                    <div class="category" >Contact</div>
+                    <ul>
+                        <li class="email">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="">
+                                <p class="socials-text">Email</p>
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div>
 
-        <ul class="socials">
-            <li class="email">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </li>
-            <li  class="linkedin">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </li>
-            <li class="github">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </li>
-        </ul>
+                <div class="socials">
+                    <div class="category">Links</div>
+                    <ul>
+                        
+                        <li class="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> 
+                            <a href=""><p class="socials-text">Twitter</p></a>
+                        </li>
+                        <li class="github">
+                            <i class="fa fa-github" aria-hidden="true"></i> 
+                            <a href=""><p class="socials-text">GitHub</p></a>
+                        </li>
+                        <li class="codepen">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                            <a href=""><p class="socials-text">CodePen</p></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="ftr-nav">
+            <a  class="bread-wrapper" href="/">
+                <ul class="bread">
+                    <li class="bread-crumb">CP</li>
+                </ul>
+            </a>
+                <a  class="cta-wrapper" href="/">
+                 <ul class="cta">
+                    <li class="category">Say hello</li>
+                </ul>
+            </a>
+            </div>
+        </footer>
 
-    </footer>
+    </div>
     </div>
 </body>
-
+<script src="/assets/scripts/base.js"></script>
 </html>

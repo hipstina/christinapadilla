@@ -1,45 +1,102 @@
 ---
 layout: base.liquid
 ---
-<header>
-    <div class="abt-nav">
-    <a class="abt-img-link" href="/about">
-        <img class="abt-nav-img" src="" alt="">
-    </a>
-    </div>
+<header class="">
+    <nav class="nav-wrapper">
+        <ul class="nav">
+            <a class="logo-link" href="/"><li class="logo">
+                 <h2 class="logo-text">CP</h2>
+                
+            </li></a>
+        </ul>
+        <ul class="nav ">
+            <li class="nav-item "><a class="abt-img-link" href="/about">
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://twitter.com/hipstina/">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://github.com/hipstina/">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
-<div class="intro col-10 col-6 col-4">
-   
-        
-    <h1 class="intro-title">My name's <a class="abt-link" id="abtLink1" href="/about">Christina</a> 
-and I'm making things that live on the web. See what I've been <a class="abt-link" id="abtLink2" href="/#projects">working on</a>.</h1>
-<!-- <div class="intro-overlay-1" id="intro1"></div>
-<div class="intro-overlay-2" id="intro2"></div> -->
-
-    <h1 class="intro-title"></br></h1>
-        <!-- <h1> ↓</h1> -->
-</div>
-
-<!-- iterate over project_collection to generate a preview of each project on the homepage -->
-<div class="cards" id="projects">
-{%- for entry in collections.project %}
-    <div class="card col-10 col-6 col-12 ">
-        <a href="{{entry.url}}">
-            <div class="card-img-wrapper">
-                <img class="card-img" src="{{entry.data.project_thumbnail | url}}" alt="">
-                <div class="card-img-overlay"></div>
-            </div>
-        </a>
-        <div class="card-data">
-            <h1 class="card-title">{{entry.data.project_title}}</h1>
-            <p class="card-sum">{{entry.data.project_summary}}</p>
-            <a  class="card-btn-wrapper" href="{{entry.url}}">
-                <button class="card-btn">View Details</button>
-            </a>
-        </div>
+<!-- <section class="intro-wrapper-top ">
+    <div class="intro ">
+        <h1 class="intro-title">CHRISTINA PADILLA</h1>
+        <p class="intro-sub">Front-end web developer based in Chicago.
+        </p>
     </div>
+</section> -->
+
+<section class="intro-wrapper ">
+    <div class="intro ">
+        <h1 class="intro-title">I'm Christina, a frontend web developer based in Chicago.</h1>
+        <p class="intro-sub">I cultivated an interest in user experience and web
+            development after several years of working as a tech support specialist. Here are some things I've made.</p>
+
+    </div>
+    <figure class="intro-fig">
+        <img class="intro-img" src="/assets/images/profile-rot@4x copy 2.png"
+            alt="">
+    </figure>
+</section>
+
+
+<section class="">
+    
+        <div class="banner">
+            <p><i class="fa fa-bullhorn" aria-hidden="true"></i>
+            &nbsp;<strong>This website is under construction.</strong>
+            <hr class="hr">
+            I am in the process of building out my portfolio, so you might notice some funky things on the site. You can <a href="/">follow along on GitHub</a> for updates.</p>
+        </div>
+   
+   
+   
+
+</section>
+<!-- iterate over project_collection to generate a preview of each project on the homepage -->
+
+
+<section class="cards-wrapper">
+
+<div class="cards " id="projects">
+{%- for entry in collections.project %}
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="{{entry.url}}" alt="View details for {{entry.data.project_title}}">
+        <div class="card-data">
+            
+            <div class="category">Featured Project</div>
+            
+            <h2 class="card-title">{{entry.data.project_title}}</h2>
+            
+            <p class="card-sum">{{entry.data.project_summary}} </p>
+           
+            <!-- <a class="" href="{{entry.url}}">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
+        </div>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="{{entry.data.project_thumbnail_color | url}}"
+                alt="">
+        </div> -->
+    </article>
 {%- endfor %}
 </div>
+</section>
 <script src="{{"/assets/scripts/card.js" | url}}"></script>
 <script src="{{"/assets/scripts/intro.js" | url}}"></script>

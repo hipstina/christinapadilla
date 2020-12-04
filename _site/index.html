@@ -30,92 +30,300 @@
    
 </head>
 
- <body>
+ <body id="body" class="body-class">
      
     <div class="container">
        
-    <main>
+    <main class="wrapper">
         
-    <header>
-    <div class="abt-nav">
-    <a class="abt-img-link" href="/about">
-        <img class="abt-nav-img" src="" alt="">
-    </a>
-    </div>
+    <header class="">
+    <nav class="nav-wrapper">
+        <ul class="nav">
+            <a class="logo-link" href="/"><li class="logo">
+                 <h2 class="logo-text">CP</h2>
+                
+            </li></a>
+        </ul>
+        <ul class="nav ">
+            <li class="nav-item "><a class="abt-img-link" href="/about">
+                    <h4>About</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://twitter.com/hipstina/">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="abt-img-link" href="https://github.com/hipstina/">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
-<div class="intro col-10 col-6 col-4">
+<!-- <section class="intro-wrapper-top ">
+    <div class="intro ">
+        <h1 class="intro-title">CHRISTINA PADILLA</h1>
+        <p class="intro-sub">Front-end web developer based in Chicago.
+        </p>
+    </div>
+</section> -->
+
+<section class="intro-wrapper ">
+    <div class="intro ">
+        <h1 class="intro-title">I'm Christina, a frontend web developer based in Chicago.</h1>
+        <p class="intro-sub">I cultivated an interest in user experience and web
+            development after several years of working as a tech support specialist. Here are some things I've made.</p>
+
+    </div>
+    <figure class="intro-fig">
+        <img class="intro-img" src="/assets/images/profile-rot@4x copy 2.png"
+            alt="">
+    </figure>
+</section>
+
+
+<section class="">
+    
+        <div class="banner">
+            <p><i class="fa fa-bullhorn" aria-hidden="true"></i>
+            &nbsp;<strong>This website is under construction.</strong>
+            <hr class="hr">
+            I am in the process of building out my portfolio, so you might notice some funky things on the site. You can <a href="/">follow along on GitHub</a> for updates.</p>
+        </div>
    
-        
-    <h1 class="intro-title">My name's <a class="abt-link" id="abtLink1" href="/about">Christina</a> 
-and I'm making things that live on the web. See what I've been <a class="abt-link" id="abtLink2" href="/#projects">working on</a>.</h1>
-<!-- <div class="intro-overlay-1" id="intro1"></div>
-<div class="intro-overlay-2" id="intro2"></div> -->
+   
+   
 
-    <h1 class="intro-title"></br></h1>
-        <!-- <h1> ↓</h1> -->
-</div>
-
+</section>
 <!-- iterate over project_collection to generate a preview of each project on the homepage -->
-<div class="cards" id="projects">
-    <div class="card col-10 col-6 col-12 ">
-        <a href="/ipa-api/">
-            <div class="card-img-wrapper">
-                <img class="card-img" src="/assets/images/project3.png" alt="">
-                <div class="card-img-overlay"></div>
-            </div>
-        </a>
+
+
+<section class="cards-wrapper">
+
+<div class="cards " id="projects">
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="/ipa-api/" alt="View details for IPA API">
         <div class="card-data">
-            <h1 class="card-title">IPA API</h1>
-            <p class="card-sum">A digital beer menu that filters beers by style, ABV, and IBU.</p>
-            <a  class="card-btn-wrapper" href="/ipa-api/">
-                <button class="card-btn">View Details</button>
-            </a>
+            
+            <div class="category">Featured Project</div>
+            
+            <h2 class="card-title">IPA API</h2>
+            
+            <p class="card-sum">A digital beer menu that filters beers by style, ABV, and IBU. </p>
+           
+            <!-- <a class="" href="/ipa-api/">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
         </div>
-    </div>
-    <div class="card col-10 col-6 col-12 ">
-        <a href="/my-little-editor/">
-            <div class="card-img-wrapper">
-                <img class="card-img" src="/assets/images/project2.png" alt="">
-                <div class="card-img-overlay"></div>
-            </div>
-        </a>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="/assets/images/api-color.png"
+                alt="">
+        </div> -->
+    </article>
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="/my-little-editor/" alt="View details for My Little Editor">
         <div class="card-data">
-            <h1 class="card-title">My Little Editor</h1>
-            <p class="card-sum">A tool for editing and previewing simple HTML markup.</p>
-            <a  class="card-btn-wrapper" href="/my-little-editor/">
-                <button class="card-btn">View Details</button>
-            </a>
+            
+            <div class="category">Featured Project</div>
+            
+            <h2 class="card-title">My Little Editor</h2>
+            
+            <p class="card-sum">A tool for editing and previewing simple HTML markup. </p>
+           
+            <!-- <a class="" href="/my-little-editor/">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
         </div>
-    </div>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="/assets/images/editor-color.png"
+                alt="">
+        </div> -->
+    </article>
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="/random-quote-generator/" alt="View details for Random Quote Generator">
+        <div class="card-data">
+            
+            <div class="category">Featured Project</div>
+            
+            <h2 class="card-title">Random Quote Generator</h2>
+            
+            <p class="card-sum">A modal that fetches random quotes from an API. </p>
+           
+            <!-- <a class="" href="/random-quote-generator/">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
+        </div>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="/assets/images/random-quote-col.png"
+                alt="">
+        </div> -->
+    </article>
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="/markdown-previewer/" alt="View details for Markdown Previewer">
+        <div class="card-data">
+            
+            <div class="category">Featured Project</div>
+            
+            <h2 class="card-title">Markdown Previewer</h2>
+            
+            <p class="card-sum">A tool for editing and previewing Markdown & simple HTML. </p>
+           
+            <!-- <a class="" href="/markdown-previewer/">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
+        </div>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="/assets/images/md-previewer.png"
+                alt="">
+        </div> -->
+    </article>
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="/drum-machine/" alt="View details for Drum machine">
+        <div class="card-data">
+            
+            <div class="category">Featured Project</div>
+            
+            <h2 class="card-title">Drum machine</h2>
+            
+            <p class="card-sum">Mini virtual drum pad that can be played with the keyboard or mouse. </p>
+           
+            <!-- <a class="" href="/drum-machine/">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
+        </div>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="/assets/images/drum-machine-col.png"
+                alt="">
+        </div> -->
+    </article>
+
+    <article class="card-wrapper">
+        
+            
+    <a class="card " href="/js-calculator/" alt="View details for Javascript Calculator">
+        <div class="card-data">
+            
+            <div class="category">Featured Project</div>
+            
+            <h2 class="card-title">Javascript Calculator</h2>
+            
+            <p class="card-sum">A calculator built in React utilizing formula logic. </p>
+           
+            <!-- <a class="" href="/js-calculator/">
+                <button class="card-btn">View Details</button> -->
+                <!-- <span>↗</span> 
+            </a>-->
+        </div>
+    </a>
+       
+        <!-- <div class="card-img-wrapper">
+            <img class="card-img" src="/assets/images/js-calc-col.png"
+                alt="">
+        </div> -->
+    </article>
 </div>
+</section>
 <script src="/assets/scripts/card.js"></script>
 <script src="/assets/scripts/intro.js"></script>
 
 
     </main>
-    
-    <footer class="">
-        <a class="logo" href="/"><img class="logo-img" src="/assets/images/logo-04-dk-purp-yell.svg" alt=""></a>
+    <div class="wrapper">
+        <footer>
+            <div class="ftr">
+                <div class="colophon">
+                    <div class="category">Colophon</div>
+                    <ul>
+                        <li class="ftr-copy">© 2020 Christina Padilla</li>
+                        <li class="ftr-text">🎈 <a href="www.11ty.dev/">Powered by 11ty</a></li>
+                        
+                    </ul>
+                </div>
 
-        <div class="colophon">
-            <p class="ftr-copy">© 2020 Christina Padilla</p>
-        </div>
+                <div class="contact-socials">
+            
+                <div class="contact">
+                    <div class="category" >Contact</div>
+                    <ul>
+                        <li class="email">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <a href="">
+                                <p class="socials-text">Email</p>
+                            </a>
+                        </li>
+                
+                    </ul>
+                </div>
 
-        <ul class="socials">
-            <li class="email">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </li>
-            <li  class="linkedin">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </li>
-            <li class="github">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </li>
-        </ul>
+                <div class="socials">
+                    <div class="category">Links</div>
+                    <ul>
+                        
+                        <li class="twitter">
+                            <i class="fa fa-twitter" aria-hidden="true"></i> 
+                            <a href=""><p class="socials-text">Twitter</p></a>
+                        </li>
+                        <li class="github">
+                            <i class="fa fa-github" aria-hidden="true"></i> 
+                            <a href=""><p class="socials-text">GitHub</p></a>
+                        </li>
+                        <li class="codepen">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                            <a href=""><p class="socials-text">CodePen</p></a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="ftr-nav">
+            <a  class="bread-wrapper" href="/">
+                <ul class="bread">
+                    <li class="bread-crumb">CP</li>
+                </ul>
+            </a>
+                <a  class="cta-wrapper" href="/">
+                 <ul class="cta">
+                    <li class="category">Say hello</li>
+                </ul>
+            </a>
+            </div>
+        </footer>
 
-    </footer>
+    </div>
     </div>
 </body>
-
+<script src="/assets/scripts/base.js"></script>
 </html>

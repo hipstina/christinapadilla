@@ -1,13 +1,13 @@
 //  sass CLI commands
 //  + to compile sass file:
 //      `   sass style.scss:style.css   `
-//  
+//
 //  +  to initiate sass watch for css file:
 //      `   sass --watch styles.scss:style.css    `
-//  
+//
 //  +  to initiate sass watch for compressed css file:
-//      `   sass --watch main.scss:css/style.min.css --style compressed    `    
-//  
+//      `   sass --watch main.scss:css/style.min.css --style compressed    `
+//
 //  [Press Ctrl-C to stop.]
 //  ------------------------------------------------------------------------
 
@@ -16,14 +16,16 @@
 $cocoa40: #211918;
 // $cocoa30: #3f2f2d;
 $cocoa30: #5934d5;
+
 $cocoa30: #3d209c;
+$cocoa30: rgb(35, 35, 44);
 $cocoa20: #5d4542;
 $cocoa10: #7b5b57;
 
 $flesh60: #87341c;
 $flesh50: #c64d29;
 $flesh40: #d96a49;
-$flesh30: #E69E88;
+$flesh30: #e69e88;
 $flesh20: #efc0b2;
 $flesh10: #f8e3dc;
 
@@ -34,6 +36,7 @@ $carrot30: #e2b075;
 // $carrot20: #f4dfc7;
 $carrot20: #f8ebdc;
 $carrot10: #fcf7f2;
+$carrot10: #efefef;
 
 $rose40: #bd406e;
 $rose30: #cb658b;
@@ -42,6 +45,7 @@ $rose10: #e5b1c5;
 
 $wizard70: #24135d;
 $wizard60: #3d209c;
+$wizard60: rgb(35, 35, 44);
 $wizard50: #3c13c5;
 $wizard40: #8d73e2;
 $wizard30: #af9deb;
@@ -49,12 +53,11 @@ $wizard20: #cdc2f2;
 $wizard10: #ded7f6;
 $wizard0: #f4f2fc;
 
-
 /* Shadows + borders */
 $flesh-grey: #6d4e45;
 $flesh-lt-grey: #ece2df;
 $carrot-grey: #6d5b45;
-$carrot-lt-grey: #DEDDDC;
+$carrot-lt-grey: #dedddc;
 $rose-grey: #65434f;
 $rose-lt-grey: #eadee2;
 $wizard-grey: #58516f;
@@ -62,3 +65,215 @@ $wizard-lt-grey: #e5e3ed;
 
 /* Padding + margins */
 $space: 15px;
+
+/* VARIABLES
+=============================================================================
+  Containers
+  Breakpoints
+  Global Colors
+    Shadows & borders
+  Typography  
+    Body
+    Headings
+  Spacing
+  Borders
+  Border-radius
+  Buttons
+    Accent
+    Muted
+    Round
+  Forms
+  Tables
+  Code
+  Transitions
+
+*/
+
+/* Containers
+============================================================================= */
+
+$xx-small: 400px !default;
+$x-small: 600px !default;
+$small: 800px !default;
+$medium: 1000px !default;
+$large: 1200px !default;
+$x-large: 1500px !default;
+
+/* Breakpoints
+============================================================================= */
+
+$mobile: $x-small !default;
+$tablet: $small !default;
+$desktop: $medium !default;
+
+/* Global Colors
+============================================================================= */
+
+$background: #efefef !default;
+$primary-color: #6affc9 !default;
+$secondary-color: rgba(253, 125, 225, 1) !default;
+$accent-color: #fcff6d !default;
+$alternate-background: #efefef !default;
+$alternate-color: rgba(211, 155, 255, 1) !default;
+$link-color: darken($primary-color, 25%) !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$highlight: rgba(252, 255, 101, 1) !default;
+$error: rgba(253, 125, 225, 1) !default;
+$success: rgb(10, 145, 95) !default;
+$bq-border: 16px solid #f0f0f0 !default;
+$black: rgba(35, 35, 44, 1) !default;
+$white: rgba(255, 255, 255, 1) !default;
+$focus-color: rgb(161, 159, 240) !default;
+
+// Shadows & borders
+$grey: lighten($black, 70);
+$grey-primary: desaturate(darken($primary-color, 25), 70);
+$grey-secondary: desaturate(darken($secondary-color, 25), 70);
+$grey-accent: desaturate(darken($accent-color, 25), 70);
+$grey-alternate: desaturate(darken($alternate-color, 25), 70);
+
+/* Typography
+============================================================================= */
+
+// Body
+$body-font: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif !default;
+$mono-font: Consolas, Menlo, monospace !default;
+$font-size: 1.1rem !default;
+$body-font-size: 1rem !default;
+$font-style: normal !default;
+$font-variant: normal !default;
+$font-weight: normal !default;
+$font-color: $black !default;
+$font-family: $body-font;
+$line-height: 1.667 !default;
+
+// Headings
+$heading-font-color: $black !default;
+$heading-font-weight: 600 !default;
+$heading-font-family: $body-font;
+$heading-line-height: 1.2 !default;
+
+$h1-mobile: 1.75rem !default;
+$h2-mobile: 1.5rem !default;
+$h3-mobile: 1.25rem !default;
+$h4-mobile: 1.1rem !default;
+$h5-mobile: 1rem !default;
+
+$h1: 2.25rem !default;
+$h2: 2rem !default;
+$h3: 1.75rem !default;
+$h4: 1.5rem !default;
+$h5: 1.25rem !default;
+
+/* Spacing
+============================================================================= */
+$sp01: 0.1rem;
+$sp025: 0.25rem;
+$sp05: 0.5rem;
+$sp075: 0.75rem;
+$sp1: 1rem;
+$sp2: $sp1 * 2;
+$sp3: $sp1 * 3;
+$sp4: $sp1 * 4;
+
+$content-padding: $sp4 0 !default;
+$content-padding-mobile: $sp2 0 !default;
+
+/* Line-thickness
+============================================================================= */
+
+$line01: 0.1rem;
+$line025: 0.25rem;
+$line05: 0.5rem;
+$line075: 0.75rem;
+$line1: 1rem;
+
+/* Borders
+============================================================================= */
+
+$border-width: $line01 !default;
+$border-style: solid !default;
+$border-color: #dedede !default;
+$borders: $border-width $border-style $border-color !default;
+
+/* Border-radius
+============================================================================= */
+
+$border-radius-01: $sp01 !default;
+$border-radius-025: $sp025 !default;
+$border-radius-05: $sp05 !default;
+$border-radius-075: $sp075 !default;
+$border-radius-1: $sp1 !default;
+$border-radius-2: $sp2 !default;
+$border-radius-3: $sp3 !default;
+
+/* Buttons
+============================================================================= */
+
+$button-background: $primary-color !default;
+$button-background-hover: darken($button-background, 10%) !default;
+$button-color: $white !default;
+$button-font-weight: 600 !default;
+$button-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
+  Helvetica, Arial, sans-serif !default;
+$button-font-size: $font-size !default;
+$button-border-width: $border-width !default;
+$button-border-style: solid !default;
+$button-border-color: $button-background !default;
+$button-border-radius: $border-radius-01 !default;
+$button-text-transform: none !default;
+
+// Accent buttons
+$accent-button-background: $secondary-color !default;
+$accent-button-color: $white !default;
+$accent-button-color-hover: $white !default;
+
+// Muted Buttons
+$muted-border: $border-width solid $accent-color !default;
+$muted-border-hover: $border-width solid darken($accent-color, 30%) !default;
+$muted-background: transparent !default;
+$muted-background-hover: transparent !default;
+$muted-color: darken($accent-color, 50%) !default;
+$muted-color-hover: darken($accent-color, 50%) !default;
+
+/* Forms
+============================================================================= */
+
+$forms: (
+  "[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea"
+) !default;
+$buttons: (
+  ".button, a.button, button, [type=submit], [type=reset], [type=button]"
+) !default;
+$input-background: transparent !default;
+$placeholder: darken($accent-color, 20%) !default;
+$form-border: $border-width solid $border-color !default;
+$form-border-hover: $border-width solid darken($border-color, 10%) !default;
+$form-border-focus: $border-width solid $link-color !default;
+
+/* Tables
+============================================================================= */
+
+$stripes: #efefef !default;
+$caption: #ababab !default;
+
+/* Code
+============================================================================= */
+
+$code-color: $font-color !default;
+$code-size: 14px !default;
+$code-family: $mono-font;
+$code-background: transparent !default;
+$code-borders: $borders !default;
+
+/* Transitions
+============================================================================= */
+$bouncy: cubic-bezier(0.42, -0.01, 0, 1.51);
+$bloom: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$duration-1: 0.3s;
+$duration-2: $duration-1 * 2;
+$duration-3: $duration-1 * 3;
+
+$transition-bouncy: all $duration-1 $bouncy !default;
+$transition-bloom: all $duration-2 $bloom !default;

@@ -1,0 +1,118 @@
+.prj-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space;
+
+  margin: 0;
+  border-bottom: 1px solid $black;
+
+  @media only screen and (min-width: 800px) {
+    grid-template-columns: 0.2fr 1fr 0.75fr;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    grid-template-columns: 0.4fr 1fr 0.75fr;
+  }
+}
+.prj-detail-title {
+  margin: $space * 2 auto $space auto;
+  padding: 0 $space;
+  font-size: calc(20px + 30 * ((60vw - 100px) / 1025));
+  @media only screen and (min-width: 800px) {
+    margin: 60px auto 0 auto;
+    padding: 0 $space * 3;
+  }
+}
+.prj-sum {
+  padding: $space $space 0 $space;
+  line-height: 1.6;
+  margin: 0 auto 0 auto;
+  @media only screen and (min-width: 800px) {
+    margin: $space * 2 auto 0 auto;
+    padding: 0 $space * 3;
+  }
+}
+
+.prj-img-wrapper {
+  @media only screen and (min-width: 800px) {
+    position: sticky;
+    top: 100px;
+    max-height: 300px;
+  }
+}
+
+.prj-img-wrapper,
+.prj-fig {
+  max-width: 40vw;
+  height: auto;
+  background-size: contain;
+}
+
+.prj-fig {
+  margin: 3rem 1rem 3.5rem 1rem;
+}
+
+.prj-img,
+.prj-fig img {
+  background-size: contain;
+  max-width: 25vw;
+}
+
+.prj-img {
+  border: 1px solid $black;
+}
+
+.prj {
+  border-top: 1px solid $black;
+
+  border-left: none;
+  border-right: none;
+  padding: 0;
+  margin: 0;
+  @media only screen and (min-width: 800px) {
+    border-left: 1px solid $black;
+    border-top: none;
+    position: sticky;
+    top: 100px;
+    max-height: auto;
+  }
+}
+
+.prj-item {
+  padding: $space;
+  border-bottom: 1px solid $black;
+}
+
+.prj-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+
+.prj-data {
+  margin-top: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.prj-details {
+  display: grid;
+  grid-template-columns: min(100vw, 45ch);
+  gap: $space;
+  justify-content: center;
+
+  @media only screen and (min-width: 800px) {
+    margin: 120px 0 350px 0;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  }
+}
+
+.prj-details-text {
+  padding: 0 $space * 2;
+  @media only screen and (min-width: 800px) {
+    min-width: 45ch;
+    max-width: 55ch;
+    padding: 0;
+  }
+}

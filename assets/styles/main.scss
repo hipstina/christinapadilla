@@ -1,30 +1,32 @@
-
-// Theme Name: Papaya
+// Theme Name: Bruto-lite
 // Description: Portfolio website
 // Author: christina padilla
 // Author URI: https://christinapadilla.com/
 // Tags: js, scss, portfolio, personal
 // Version: 1.0.0
 
-/* --watch main.scss:css/style.min.css --style compressed  */
+/* sass --watch main.scss:css/style.min.css --style compressed  */
 
 /* Table of contents */
 /* ============================================ */
 
 // Base
-@import 'base/mixins';
-@import 'base/normalize';
-@import 'base/variables';
 
+@import "base/mixins";
+@import "base/normalize";
+@import "base/variables";
 
 // Components
-@import 'components/buttons';
-@import 'components/_card';
-@import 'components/layout';
-@import 'components/navigation';
-@import 'components/sections';
-@import 'components/typography';
-
-
-
-
+@import "components/about";
+@import "components/buttons";
+// @import "components/card";
+@import "components/cards2";
+// @import "components/layout";
+@import "components/layout2";
+// @import "components/navigation";
+@import "components/navigation2";
+// @import "components/sections";
+@import "components/sections2";
+@import "components/typography";
+@import "components/gradient";
+@import "components/work";
