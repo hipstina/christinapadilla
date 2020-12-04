@@ -71,53 +71,80 @@
 </header>
 <body class="">
     <body class="">
-    <h1 class="prj-detail-title"> IPA API </h1>
-    <p class="prj-sum">A digital beer menu that filters beers by style, ABV, and IBU.</p>
-    <div class="prj-img-wrapper full-bleed">
-    <image class="prj-img " src="/assets/images/api-color.png" alt="Alt text here">
+
     
-</div>
+
+<div class="prj-wrapper">
+    <div></div>
+
+    <div>
+        <h1 class="prj-detail-title"> IPA API </h1>
+        <p class="prj-sum">A digital beer menu that filters beers by style, ABV, and IBU.</p>
+    </div>
+
+    
+
     <div class="prj ">
         <div class="prj-item">
-            <p class="prj-label">Type</p>
+            <p class="category">Type</p>
             <p class="prj-data"> Personal </p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Role</p>
+            <p class="category">Role</p>
             <p class="prj-data">Front-end development, visual design</p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Stack</p>
+            <p class="category">Stack</p>
             <p class="prj-data">JavaScript, HTML, CSS</p>
         </div>
+        <div class="">
+            <a href="https://hipstina.github.io/ipa-api"><button class="btn">Demo</button></a>
+            <a href="https://github.com/hipstina/ipa-api"><button class="btn">Source Code</button></a>
+        </div>
     </div>
-    <div class="cta">
-        <a href="https://hipstina.github.io/ipa-api"><button class="btn">Demo</button></a>
-        <a href="https://github.com/hipstina/ipa-api"><button class="btn">Source Code</button></a>
-    </div>
-    <main> 
-        <div class="prj-details">
-            <h3>Overview</h3>
+
+
+    
+</div>
+
+    
+
+    <div class="prj-details">
+        <div></div>
+
+        <div class="prj-img-wrapper ">
+            <figure>
+                <image class="prj-img " src="/assets/images/api-color.png"
+                    alt="Alt text here">
+                    <figcaption class="fig-caption">↑ Click me to see more selfies.
+                    </figcaption>
+            </figure>
+        </div>
+
+        
+
+        <div class="prj-details-text">
+        <h3>Overview</h3>
 <p>A web app that allows the user to generate a custom beer menu by filtering beers by style, ABV, and IBU. <strong>Key feature:</strong> Client side tools fetch and filter beers styles from an API.</p>
 <h3>Purpose &amp; Goal</h3>
 <p>I was charmed by <a href="tandia.dev">tania.dev</a>'s simple exercise for <a href="https://tania.dev/how-to-connect-to-an-api-with-javascript">connecting to an API with plain Javascript</a>, and so I decided to expand upon her tutorial and make my web app interactive, too. To keep things simple, I picked a free, open-source API that didn't require authentication or a password to connect to the data. I also chose this API as it happened to be related to a passion of mine: craft beer.</p>
 <p>Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/api-bw.png" alt="Alt text here">
+<img class="prj-img" src="/assets/images/api-bw.png" alt="Alt text here">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Thought process</h3>
 <p>An issue I faced during development was in constructing a new XMLHttpRequest based on user triggered events. I needed to chain together one or multiple parameters and update the rendered data everytime a filter changed states. I solved this by storing the user input value and then using a separate function to check the current state of the other filter types.</p>
 <p>Another issue I faced was repainting an updated Menu everytime a new search filter was (de)selected. I am particularly proud of a simple little function I wrote <code>wipeMenu</code> for recursively removing HTML elements when a filter was updated.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/api-color.png" alt="Alt text here">
+<img class="prj-img" src="/assets/images/api-color.png" alt="Alt text here">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <h3>Takeaways</h3>
 <p>This project gave me a lot of insight into how powerful APIs can be, and also that a web app is only as robust as its API. The API I used capped each data request at no more than 80 beers at a time, and lacked methods for searching within many of the beer properties. In the future, I know better what I should look for the next time I get to work with an API of my choice.</p>
 <p>As this is the biggest project I've worked on so far, I also got a taste of just how important my code structure is for development. As my web app grew more complex with each feature, I iterated through my scripts quite a bit until I realized that I needed to just break up my 3-4 giant functions into smaller pieces. This step toward modularity improved my code's readabilty and made adding new features more efficient because it allowed me to introduce complexity quickly.</p>
 <figure class="prj-fig">
-<img class=" full-bleed" src="/assets/images/api-bw.png" alt="Alt text here">
+<img class="prj-img" src="/assets/images/api-bw.png" alt="Alt text here">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 <p>A project is never truly finished, there is always something that can be improved. To improve this project, there are 2 features I may add on later:</p>
@@ -127,12 +154,10 @@
 </ul>
  
         </div>
-    </main>
-  
-    
-            
-              
-<nav> 
+        
+        <div></div>
+    </div>
+<!-- 
         
             <a href="/my-little-editor/"><button class="ftr btn">My Little Editor </button></a> 
         
@@ -142,11 +167,9 @@
         
             <a href="/drum-machine/"><button class="ftr btn">Drum machine </button></a> 
         
-            <a href="/js-calculator/"><button class="ftr btn">Javascript Calculator </button></a>
+            <a href="/js-calculator/"><button class="ftr btn">Javascript Calculator </button></a> -->
    
-    
-   
-</nav>
+
 
     </body>
     
@@ -156,10 +179,10 @@
 
     </main>
     <div class="wrapper">
-        <footer class=" ">
+        <footer>
             <div class="ftr">
                 <div class="colophon">
-                    <h4>Colophon</h4>
+                    <div class="category">Colophon</div>
                     <ul>
                         <li class="ftr-copy">© 2020 Christina Padilla</li>
                         <li class="ftr-text">🎈 <a href="www.11ty.dev/">Powered by 11ty</a></li>
@@ -170,7 +193,7 @@
                 <div class="contact-socials">
             
                 <div class="contact">
-                    <h4>Contact</h4>
+                    <div class="category" >Contact</div>
                     <ul>
                         <li class="email">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -183,7 +206,7 @@
                 </div>
 
                 <div class="socials">
-                    <h4>Links</h4>
+                    <div class="category">Links</div>
                     <ul>
                         
                         <li class="twitter">
@@ -205,12 +228,14 @@
             <div class="ftr-nav">
             <a  class="bread-wrapper" href="/">
                 <ul class="bread">
-                    <li ><h2 class="bread-crumb">CP</h2></li>
-                </ul></a>
-                <a  class="cta-wrapper" href="">
+                    <li class="bread-crumb">CP</li>
+                </ul>
+            </a>
+                <a  class="cta-wrapper" href="/">
                  <ul class="cta">
-                    <li class="">Say hello</li>
-                </ul></a>
+                    <li class="category">Say hello</li>
+                </ul>
+            </a>
             </div>
         </footer>
 

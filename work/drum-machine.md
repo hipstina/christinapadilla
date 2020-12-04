@@ -14,7 +14,7 @@ project_role: Front-end development, visual design
 project_stack: React, HTML, SCSS 
 project_demo: https://codepen.io/hipstina/full/rNLjjVO
 project_code: https://github.com/hipstina/drum-machine 
-
+state: disabled
 
 
 ---

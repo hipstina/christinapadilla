@@ -31,7 +31,7 @@ I was charmed by [tania.dev](tandia.dev)'s simple exercise for [connecting to an
 Building this web app gave me experience working with the XMLHttpRequest object and the opportunity to build a client-side tool for rendering filtered API data. It also gave me a chance to create the kind of tool that I'd like to see on a beer site or digital bar menus: visually informative and targeting amateur or less experienced beer drinkers.
 
 <figure class="prj-fig">
-<img class=" full-bleed" src="{{project_thumbnail_bw}}" alt="{{thumbnail_alt}}">
+<img class="prj-img" src="{{project_thumbnail_bw}}" alt="{{thumbnail_alt}}">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Another issue I faced was repainting an updated Menu everytime a new search filt
 
 
 <figure class="prj-fig">
-<img class=" full-bleed" src="{{project_thumbnail_color}}" alt="{{thumbnail_alt}}">
+<img class="prj-img" src="{{project_thumbnail_color}}" alt="{{thumbnail_alt}}">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ This project gave me a lot of insight into how powerful APIs can be, and also th
 As this is the biggest project I've worked on so far, I also got a taste of just how important my code structure is for development. As my web app grew more complex with each feature, I iterated through my scripts quite a bit until I realized that I needed to just break up my 3-4 giant functions into smaller pieces. This step toward modularity improved my code's readabilty and made adding new features more efficient because it allowed me to introduce complexity quickly.
 
 <figure class="prj-fig">
-<img class=" full-bleed" src="{{project_thumbnail_bw}}" alt="{{thumbnail_alt}}">
+<img class="prj-img" src="{{project_thumbnail_bw}}" alt="{{thumbnail_alt}}">
 <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
 </figure>
 

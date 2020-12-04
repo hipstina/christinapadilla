@@ -3,51 +3,73 @@ layout: internal.liquid
 
 ---
 <body class="">
-    <h1 class="prj-detail-title"> {{project_title}} </h1>
-    <p class="prj-sum">{{project_summary}}</p>
-    <div class="prj-img-wrapper full-bleed">
-    <image class="prj-img " src="{{project_thumbnail_color}}" alt="{{thumbnail_alt}}">
+
     
-</div>
+
+<div class="prj-wrapper">
+    <div></div>
+
+    <div>
+        <h1 class="prj-detail-title"> {{project_title}} </h1>
+        <p class="prj-sum">{{project_summary}}</p>
+    </div>
+
+    
+
     <div class="prj ">
         <div class="prj-item">
-            <p class="prj-label">Type</p>
+            <p class="category">Type</p>
             <p class="prj-data"> {{project_type}} </p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Role</p>
+            <p class="category">Role</p>
             <p class="prj-data">{{project_role}}</p>
         </div>
         <div class="prj-item">
-            <p class="prj-label">Stack</p>
+            <p class="category">Stack</p>
             <p class="prj-data">{{project_stack}}</p>
         </div>
-    </div>
-    <div class="cta">
-        <a href="{{project_demo}}"><button class="btn">Demo</button></a>
-        <a href="{{project_code}}"><button class="btn">Source Code</button></a>
-    </div>
-    <main> 
-        <div class="prj-details">
-            {{content}} 
+        <div class="">
+            <a href="{{project_demo}}"><button class="btn">Demo</button></a>
+            <a href="{{project_code}}"><button class="btn">Source Code</button></a>
         </div>
-    </main>
-  
+    </div>
+
+
     
-            
-              
-<nav>
+</div>
+
     
+
+    <div class="prj-details">
+        <div></div>
+
+        <div class="prj-img-wrapper ">
+            <figure>
+                <image class="prj-img " src="{{project_thumbnail_color}}"
+                    alt="{{thumbnail_alt}}">
+                    <figcaption class="fig-caption">↑ Click me to see more selfies.
+                    </figcaption>
+            </figure>
+        </div>
+
+        
+
+        <div class="prj-details-text">
+        {{content}} 
+        </div>
+        
+        <div></div>
+    </div>
+<!-- 
     {%- for entry in collections.project %}    
     {%- if entry.data.permalink != page.url %} 
         
             <a href="{{ entry.data.permalink }}"><button class="ftr btn">{{entry.data.project_title}} </button></a>
         
         {%-endif %}
-    {%- endfor %}
+    {%- endfor %} -->
    
-    
-   
-</nav>
+
 
     </body>

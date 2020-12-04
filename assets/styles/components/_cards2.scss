@@ -1,6 +1,16 @@
 $card-width: auto;
 
+// .cards-wrapper {
+//   display: grid;
+//   grid-template-columns:
+//     1fr
+//     min(1200px, 90%)
+//     1fr;
+// }
+
 .cards {
+  // width: 100%;
+  // grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(auto, 100%);
@@ -8,22 +18,29 @@ $card-width: auto;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
-  margin: $space;
+  margin: 100px $space;
 
   @media only screen and (min-width: 800px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 100%);
     align-items: stretch;
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     margin: 0;
+    // margin: 200px 0 400px 0;
   }
 }
 
+// .card-wrapper {
+//   border: 1px solid $black;
+//   margin: $space;
+// }
+
 .card-wrapper {
   padding: $space;
+
   border-top: 0.5px solid $black;
   border-bottom: 0.5px solid $black;
   border-right: 1px solid $black;
@@ -53,12 +70,19 @@ $card-width: auto;
     &:nth-of-type(2) {
       border: 0.5px solid $black;
       border-top: 1px solid $black;
-      border-right: 0px solid $black;
+      border-right: 1px solid $black;
       border-left: 0px solid $black;
     }
 
-    &:nth-of-type(odd) {
+    &:nth-of-type(3) {
+      border-top: 1px solid $black;
+      border-right: 0px solid $black;
+    }
+
+    &:nth-last-of-type(3) {
+      border-bottom: 1px solid $black;
       border-right: 1px solid $black;
+      border-left: 0px solid $black;
     }
 
     &:nth-last-of-type(2) {
@@ -90,16 +114,21 @@ $card-width: auto;
 
 .card-data {
   display: block;
-  padding: $space * 3;
+  padding: $space * 2;
+  max-width: 36ch;
 }
 
 .card-title {
   font-weight: 500;
+  margin-top: $space * 2;
+  max-width: 16ch;
 }
 
-.card-category {
-  margin-bottom: $space * 2;
+.category {
+  margin: 0;
+  padding: 0;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-size: 0.8rem;
+  line-height: 2;
 }

@@ -14,5 +14,6 @@ project_role: Front-end development, visual design
 project_stack: React, HTML, SCSS 
 project_demo: https://codepen.io/hipstina/full/abZaWyY
 project_code: https://github.com/hipstina/js-calc 
+state: disabled
 
 ---

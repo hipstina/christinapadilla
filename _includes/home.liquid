@@ -52,10 +52,12 @@ layout: base.liquid
 
 <section class="">
     
-        <h4 class="banner">
-            <i class="fa fa-bullhorn" aria-hidden="true"></i>
-            &nbsp;This website is currently under construction. </h4>
-          
+        <div class="banner">
+            <p><i class="fa fa-bullhorn" aria-hidden="true"></i>
+            &nbsp;<strong>This website is under construction.</strong>
+            <hr class="hr">
+            I am in the process of building out my portfolio, so you might notice some funky things on the site. You can <a href="/">follow along on GitHub</a> for updates.</p>
+        </div>
    
    
    
@@ -75,7 +77,7 @@ layout: base.liquid
     <a class="card " href="{{entry.url}}" alt="View details for {{entry.data.project_title}}">
         <div class="card-data">
             
-            <div class="card-category">Featured Project</div>
+            <div class="category">Featured Project</div>
             
             <h2 class="card-title">{{entry.data.project_title}}</h2>
             

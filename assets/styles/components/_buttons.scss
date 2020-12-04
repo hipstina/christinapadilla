@@ -2,15 +2,15 @@
 .card-btn {
   width: 100%;
   // color: $carrot10;
-  color: $carrot10;
+  // color: $black;
   font-weight: 500;
   height: 50px;
   background: $carrot10;
   // background: $black;
-  background-image: url("/assets/images/halftone-bw.png");
+  // background-image: url("/assets/images/halftone-bw.png");
   background-position: top;
   background-size: 90%;
-  border: 3px solid $black;
+  border: 3px solid transparent;
 
   border-radius: 0.1rem;
   margin: $space 0;
@@ -30,9 +30,9 @@
 
   &:active {
     //mouseup
-    background: $wizard20;
+    // background: $wizard20;
     color: $black;
-    border-color: $black;
+    // border-color: $black;
     transform: scale(0.97);
   }
 
@@ -43,7 +43,7 @@
 }
 
 .btn-pgtn {
-  border: 3px solid $black;
+  // border: 3px solid $black;
   background: $black;
   color: $carrot20;
   margin: 0;
