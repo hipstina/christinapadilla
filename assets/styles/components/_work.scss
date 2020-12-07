@@ -36,7 +36,7 @@
 .prj-img-wrapper {
   @media only screen and (min-width: 800px) {
     position: sticky;
-    top: 100px;
+    top: 70px;
     max-height: 300px;
   }
 }
@@ -49,7 +49,7 @@
 }
 
 .prj-fig {
-  margin: 3rem 1rem 3.5rem 1rem;
+  margin: 1rem 1rem 3.5rem 1rem;
 }
 
 .prj-img,
@@ -78,9 +78,17 @@
   }
 }
 
-.prj-item {
+.prj-item:not(:last-of-type) {
   padding: $space;
   border-bottom: 1px solid $black;
+}
+
+.prj-item:last-of-type {
+  padding: $space * 2 0;
+}
+
+.prj-item-cta {
+  padding: 1rem 0;
 }
 
 .prj-label {
@@ -115,4 +123,9 @@
     max-width: 55ch;
     padding: 0;
   }
+}
+
+.prj-details-text a[target="_blank"]:after {
+  font-family: "FontAwesome";
+  content: " \f08e";
 }

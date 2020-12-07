@@ -18,12 +18,12 @@ tags: about
 <p class="about"> When I'm not trying to apply JS concepts to real life, I like solving crossword puzzles, listening to movie podcasts, and canceling plans.</p>
 </div>
 
-<figure class="abt-fig col-">
-<img class="abt-img" src="{{"/assets/images/profile-rot@4x copy.png" | url}}" alt="">
-<figcaption class="fig-caption">↑ Click me to see more selfies.</figcaption>
+<figure class="abt-fig col-" aria-labelledby="home-img" role="group">
+<img id="home-img" class="abt-img" src="{{"/assets/images/profile-rot@4x copy.png" | url}}" alt="Profile picture of Christina smiling. Image styled in halftone dots." title="Christina Padilla">
+<figcaption class="fig-caption">↑ I take all my own selfies.</figcaption>
 </figure>
 
-<div></div>
+<!-- <div></div> -->
 
 </div>
 

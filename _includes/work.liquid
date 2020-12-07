@@ -7,7 +7,7 @@ layout: internal.liquid
     
 
 <div class="prj-wrapper">
-    <div></div>
+    <div aria-hidden="true"></div>
 
     <div>
         <h1 class="prj-detail-title"> {{project_title}} </h1>
@@ -29,9 +29,11 @@ layout: internal.liquid
             <p class="category">Stack</p>
             <p class="prj-data">{{project_stack}}</p>
         </div>
-        <div class="">
-            <a href="{{project_demo}}"><button class="btn">Demo</button></a>
-            <a href="{{project_code}}"><button class="btn">Source Code</button></a>
+        <div class="prj-item">
+            <a href="{{project_demo}}" class="socials-text"><span class="prj-item-cta">Demo</span> <span class="sr-only">Opens in new window</span><i aria-hidden="true"
+                class="fa fa-edit fa-external-link"></i></a>
+            <a href="{{project_code}}" class="socials-text"><span class="prj-item-cta">Source Code</span> <span class="sr-only">Opens in new window</span><i aria-hidden="true"
+                class="fa fa-edit fa-external-link"></i></a>
         </div>
     </div>
 
@@ -42,14 +44,19 @@ layout: internal.liquid
     
 
     <div class="prj-details">
-        <div></div>
+        <div aria-hidden="true"></div>
 
         <div class="prj-img-wrapper ">
-            <figure>
+            <!-- <figure>
                 <image class="prj-img " src="{{project_thumbnail_color}}"
                     alt="{{thumbnail_alt}}">
-                    <figcaption class="fig-caption">↑ Click me to see more selfies.
+                    <figcaption class="fig-caption">↑ {{thumbnail_alt}}
                     </figcaption>
+            </figure> -->
+            <figure class="prj-fig" aria-labelledby="{{id_name}}-img" role="group">
+                <img id="{{id_name}}-img" class="prj-img" src="{{project_thumbnail_color}}"
+                    alt="{{thumbnail_alt}}">
+                <figcaption class="fig-caption">↑ A caption for my project.</figcaption>
             </figure>
         </div>
 
@@ -59,7 +66,7 @@ layout: internal.liquid
         {{content}} 
         </div>
         
-        <div></div>
+        <div aria-hidden="true"></div>
     </div>
 <!-- 
     {%- for entry in collections.project %}    

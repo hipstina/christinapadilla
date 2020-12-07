@@ -24,7 +24,7 @@
   padding: $space;
 
   @media only screen and (min-width: 900px) {
-    grid-template-columns: 1fr 45ch auto 0.5fr;
+    grid-template-columns: 1fr 45ch 1fr;
     grid-template-rows: 1fr 100px;
     align-content: start;
     margin-top: 100px;

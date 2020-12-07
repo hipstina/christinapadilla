@@ -111,29 +111,12 @@ $card-img-ht-lg: calc(230px + 15vw);
 }
 
 .banner {
-  // border-bottom: 1px solid $black;
-  // border-top: 1px solid $black;
-  // border-left: 1px solid $black;
-  // border-right: 1px solid $black;
-
-  background-color: lighten($highlight, 6%);
-  // color: $background;
-  // font-weight: 400;
-  // letter-spacing: 0.03rem;
+  background-color: darken($background, 3%);
+  // box-shadow: 0px 0px 0px 1px darken($highlight, 25%);
   padding: $space $space * 2;
   margin: $space;
 
   @media only screen and (min-width: 800px) {
     margin: $space * 2;
   }
-
-  // @media only screen and (min-width: 800px) {
-  //   // border-bottom: none;
-  //   border-top: 1px solid $black;
-  // }
-}
-
-.hr {
-  border: none;
-  border-bottom: 1px dotted yellow;
 }

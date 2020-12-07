@@ -99,6 +99,9 @@ a:visited {
   }
 }
 
+p > a {
+  padding: 0.4rem 0;
+}
 // .about {
 //   // font-size: 1.5rem;
 //   font-size: calc(20px + 30 * ((60vw - 100px) / 1025));
@@ -109,4 +112,25 @@ a:visited {
 
 ::selection {
   background: $highlight;
+}
+
+.coming-soon,
+.disabled-text {
+  padding: 0 0.4rem;
+
+  color: lighten($black, 30%);
+  text-decoration: underline wavy;
+  // text-underline-style: 1px dashed lighten($black, 30%);
+  // border: 1px solid lighten($black, 40%);
+}
+
+.disabled {
+  color: currentColor;
+  display: inline-block; /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.not-allowed {
+  cursor: not-allowed;
 }
